@@ -1,0 +1,334 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightpink;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: yellowgreen;
+}
+
+/* Body styles */
+body {
+  overflow-y: scroll;
+  cursor: none;
+  background-color: beige; 
+  margin:0;
+  padding: 0;
+
+}
+#custom-cursor1 {
+    position: fixed;
+    width: 32px; /* Adjust the width of your cursor image */
+    height: 32px; /* Adjust the height of your cursor image */
+    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
+    background-image: url('img/icon/tomato.png'); /* Set the path to your custom cursor image */
+    background-size: cover;
+    z-index: 9999; /* Ensure the cursor is above other elements */
+  }
+#custom-cursor2 {
+    position: fixed;
+    width: 32px; /* Adjust the width of your cursor image */
+    height: 32px; /* Adjust the height of your cursor image */
+    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
+    background-image: url('img/icon/pumpkin.png'); /* Set the path to your custom cursor image */
+    background-size: cover;
+    z-index: 9999; /* Ensure the cursor is above other elements */
+  }
+#custom-cursor3 {
+    position: fixed;
+    width: 32px; /* Adjust the width of your cursor image */
+    height: 32px; /* Adjust the height of your cursor image */
+    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
+    background-image: url('img/icon/cabbage.png'); /* Set the path to your custom cursor image */
+    background-size: cover;
+    z-index: 9999; /* Ensure the cursor is above other elements */
+  }
+#custom-cursor4 {
+    position: fixed;
+    width: 32px; /* Adjust the width of your cursor image */
+    height: 32px; /* Adjust the height of your cursor image */
+    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
+    background-image: url('img/icon/garlic.png'); /* Set the path to your custom cursor image */
+    background-size: cover;
+    z-index: 9999; /* Ensure the cursor is above other elements */
+  }
+/* Header styles */
+#title {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-top: 1%;
+  background-color: aliceblue;
+  border-bottom: 5px solid #6ee0e6;
+  border-left: 5px solid yellowgreen;
+  border-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Paragraph styles */
+.p {
+  padding-left: 5%;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+/* Page header styles */
+.pagehead {
+  background-color: white;
+  border-bottom: 5px solid #6ee0e6;
+  border-left: 5px solid yellowgreen;
+
+  margin-left: 10%;
+  border-radius: 10px;
+}
+
+/* Home styles */
+#home {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+/* Div1 styles */
+#div1 {
+  background-color: lightpink;
+  padding:0;
+  margin: 0;
+}
+
+/* Galleries styles */
+.galleries {
+  float: left;
+  background-color: yellowgreen;
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 2%;
+  transition: 500ms ease;
+  border-radius: 10px;
+}
+
+/* Profile styles */
+.profile {
+  background-color: #6ee0e6;
+  width: 100px;
+  height: 100px;
+  float: right;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+/* G styles */
+.g {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+/* Menu styles */
+.menu {
+  background-color: lightpink;
+  float: left;
+  height: 100vh;
+  width: 50px;
+  position: fixed;
+  opacity: 0.75;
+  transition: 200ms ease;
+  border-radius: 25px;
+}
+
+/* Navigation styles */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 100%;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  height: 5%;
+  text-decoration: none;
+}
+
+.navlink img {
+  min-width: 20px;
+  opacity: 1;
+}
+
+.text {
+  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+  display: none;
+  margin-left: 0px;
+  opacity: 1.0;
+}
+
+.menu:hover {
+  background-color: #FFB6C0;
+  width: 120px;
+}
+
+.menu:hover .text {
+  display: block;
+}
+
+/* C1 styles */
+.c1 {
+  float: left;
+  background-color: yellowgreen;
+  width: 88%;
+  height: 50%;
+  margin-left: 5%;
+}
+
+.c1 img {
+  display: none;
+}
+
+.c1:hover img {
+  display: block;
+}
+
+/* Cover image styles */
+.coverimg {
+  display: none;
+  width: 100%;
+  height: auto;
+  float: none;
+  opacity: 0.5;
+}
+
+.galleries:hover .coverimg {
+  display: block;
+}
+
+/* Iframe styles */
+.iframe {
+  width: 95%;
+  height: 600px;
+  border-width: 5px;
+  border-color:yellowgreen;
+  border-top-color: #6ee0e6;
+  border-right-color: #6ee0e6;
+  padding:10px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.frame{
+height: auto;
+margin-left: 2.5%;
+}
+
+/* Explore styles */
+#explore {
+  text-align: right;
+  margin-right: 60px;
+}
+
+/* M styles */
+.m {
+  margin-top: 3em;
+}
+
+/* Description styles */
+#descript {
+  background-color: rgb(255, 255, 255);
+ 
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+}
+
+/* Video container styles */
+/* Video container styles */
+.video-container {
+    background-color: yellowgreen;
+    width: 80%;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    border-style:dashed;
+    border-color: lightpink;
+    border-width: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-grid {
+    display: grid;
+    gap: 15px;
+    padding-top: 20px;
+    grid-template-columns: repeat(4, 1fr); /* Divide into four equal columns */
+}
+
+.video-item {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    background-color: #6ee0e6;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.video-item a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.video-item:hover {
+    background-color: #FFB6C0;
+}
+
+/* Video player styles */
+#video-player {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-style:inset;
+   border-color: yellowgreen;
+   border-bottom-color: #6ee0e6;
+   border-right-color: #6ee0e6;
+   border-width: 5px;
+   
+}
+
+/* Media Query for small screens */
+@media (min-width: 0px) and (max-width: 576px) {
+    .video-container {
+        width: 90%;
+    }
+    .video-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .video-item {
+        margin-bottom: 0px;
+    }
+}
+
+
+  
