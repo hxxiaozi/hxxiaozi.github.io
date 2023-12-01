@@ -17,15 +17,26 @@
 ::-webkit-scrollbar-thumb:hover {
   background: yellowgreen;
 }
-
-/* Body styles */
+html {
+  scroll-behavior: smooth;
+}
 body {
   overflow-y: scroll;
   cursor: none;
   background-color: beige; 
+  background-image: url("img/sheep.png");
+  background-size: contain;
   margin:0;
   padding: 0;
-
+}
+#custom-cursor0{
+  position: fixed;
+    width: 32px; /* Adjust the width of your cursor image */
+    height: 32px; /* Adjust the height of your cursor image */
+    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
+    background-image: url('img/me.JPG'); /* Set the path to your custom cursor image */
+    background-size: cover;
+    z-index: 9999; /* Ensure the cursor is above other elements */
 }
 #custom-cursor1 {
     position: fixed;
@@ -36,6 +47,8 @@ body {
     background-size: cover;
     z-index: 9999; /* Ensure the cursor is above other elements */
   }
+
+
 #custom-cursor2 {
     position: fixed;
     width: 32px; /* Adjust the width of your cursor image */
@@ -142,7 +155,6 @@ body {
 /* G styles */
 .g {
   margin-left: 50px;
-  padding: 1px;
   
 }
 
@@ -207,14 +219,10 @@ body {
   width: 88%;
   height: 50%;
   margin-left: 5%;
-}
-
-.c1 img {
-  display: none;
-}
-
-.c1:hover img {
-  display: block;
+  display: grid;
+  gap: 15px;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
 }
 
 /* Cover image styles */
@@ -228,6 +236,9 @@ body {
 
 .galleries:hover .coverimg {
   display: block;
+}
+.galleries:hover img {
+  display: none;
 }
 
 /* Iframe styles */
@@ -327,16 +338,28 @@ margin-left: 2.5%;
    border-bottom-color: #6ee0e6;
    border-right-color: #6ee0e6;
    border-width: 5px;
-   
+}
+#video-player2 {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border-style:inset;
+ border-color: yellowgreen;
+ border-bottom-color: #6ee0e6;
+ border-right-color: #6ee0e6;
+ border-width: 5px;
+ 
 }
 .section-container{
-  margin-left: 50px;
     gap: 30px;
-    margin-top: 20px;
+    margin: 20px;
+    margin-left: 8vw;
+    
     padding: 5px;
     justify-content: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -345,19 +368,18 @@ margin-left: 2.5%;
 .sections {
   background-color: yellowgreen;
   border-radius: 5px;
+  height: auto;
   width: fit-content;
-  padding-left: 3%;
-  padding-right: 3%; 
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
 }
 
 .sections:hover a{
-
   color: white;
 }
 .sections:hover {
   background-color: lightpink;
- 
 }
 
 .sections a{
