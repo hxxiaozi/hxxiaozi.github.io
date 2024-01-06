@@ -132,8 +132,6 @@ body {
   color:white;
   background-color: #6ee0e6;
   border-radius: 5px;
-
-  
 }
 
 .galleries a{
@@ -154,8 +152,7 @@ body {
 
 /* G styles */
 .g {
-  margin-left: 50px;
-  
+  margin-left: 30px;
 }
 
 /* Menu styles */
