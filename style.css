@@ -243,14 +243,19 @@ body {
   float: left;
   /* background-color: yellowgreen; */
   background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%);
-  border-radius: 5px;
+  border-radius: 10px;
   width: 88%;
   height: 50%;
   margin-left: 5%;
   display: grid;
   gap: 15px;
   padding: 20px;
-  grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
+  grid-template-columns: repeat(3, 1fr); /* Divide into four equal columns */
+  
+}
+
+.c1 img{
+  border-radius: 5px;
 }
 
 /* Cover image styles */
@@ -473,6 +478,9 @@ margin-left: 2.5%;
     }
     .video-item {
         margin-bottom: 0px;
+    }
+    .c1{
+      grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
     }
 }
 
