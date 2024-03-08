@@ -32,7 +32,7 @@ body {
   cursor: none;
   background-color: beige; 
   background-image: url("img/sheep.png");
-  background-size: contain;
+  background-size:contain;
   margin:0;
   padding: 0;
 }
@@ -138,7 +138,7 @@ body {
 #div1 {
   background:linear-gradient(to  right ,#92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
    /* animation: gradientAnimation 5s ease infinite alternate; */
- 
+   animation:gradientAnimation 120s linear 0s infinite ;
   padding:5px;
 }
 
@@ -150,6 +150,7 @@ body {
   /* background-color: yellowgreen; */
   /* background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%); */
   background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  animation: gradientAnimation 5s ease infinite alternate;
 
   width: 20%;
   margin-left: 3%;
@@ -159,10 +160,10 @@ body {
 
 @keyframes gradientAnimation {
   0% {
-      background-position: 0% 0%;
+      background-position: 0% 50%;
   }
   100% {
-      background-position: 100% 100%;
+      background-position: 100% 50%;
   }
 }
 .galleries :hover{
@@ -328,7 +329,7 @@ margin-left: 2.5%;
   background-color: rgb(255, 255, 255);
  
   margin-top: 2%;
-  margin-bottom: 2%;
+  
   padding-bottom: 1%;
   padding-left: 5%;
 }
@@ -438,12 +439,9 @@ margin-left: 2.5%;
   /* background-color: yellowgreen; */
 
   background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%);
-
-  border-radius: 5px;
-  height: auto;
-  width: fit-content;
-  padding-left: 10px;
-  padding-right: 10px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
 }
 
@@ -453,7 +451,7 @@ margin-left: 2.5%;
 .sections:hover {
   /* background-color: #6ee0e6; */
   /* background:linear-gradient(to top right ,lightpink 0%, #6ee0e6 100%); */
-  background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
   
 }
 
