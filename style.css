@@ -31,7 +31,7 @@ body {
   overflow-y: scroll;
   cursor: none;
   background-color: beige; 
-  background-image: url("img/sheep.png");
+  background-image: url("img/sheep.jpg");
   background-size:contain;
   margin:0;
   padding: 0;
