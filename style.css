@@ -193,7 +193,7 @@ body {
 
 /* G styles */
 .g {
-  margin-left: 30px;
+  margin-left: 5%;
 }
 
 /* Menu styles */
@@ -329,7 +329,6 @@ margin-left: 2.5%;
   background-color: rgb(255, 255, 255);
  
   margin-top: 2%;
-  
   padding-bottom: 1%;
   padding-left: 5%;
 }
@@ -339,10 +338,10 @@ margin-left: 2.5%;
     /* background-color: yellowgreen; */
     background:linear-gradient(to bottom right ,yellowgreen 0%, #41a2ecc9 100%);
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 30px;
   
-     padding: 20px;
+     padding: 2.5%;
     border-radius: 10px;
     border-style:dashed;
     border-color: lightpink;
@@ -423,7 +422,7 @@ margin-left: 2.5%;
  
 }
 .section-container{
-    gap: 30px;
+    gap: 2.5%;
     margin: 20px;
     margin-left: 8vw;
     
@@ -442,6 +441,7 @@ margin-left: 2.5%;
   border-radius: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: small;
   font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
 }
 
@@ -468,13 +468,9 @@ margin-left: 2.5%;
 }
 
 .unity-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-style: dashed;
-  border-width:0;
-  border-top-width: 5px; 
-  border-top-color:lightpink ;
-  border-radius: 5px;
+  margin-top:20px;
+  border-radius: 5px; 
+  border-top: 5px dashed lightpink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
@@ -483,15 +479,22 @@ margin-left: 2.5%;
 .unity-image {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .unity-container {
   text-align: center;
 }
 /* Media Query for small screens */
+@media (min-width: 576px) and (max-width: 768px) {
+  .c1{
+    grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
+  }
+}
 @media (min-width: 0px) and (max-width: 576px) {
-    .video-container {
-        width: 90%;
+    .menu{
+     opacity: 50%;
+     
     }
     .video-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -499,8 +502,11 @@ margin-left: 2.5%;
     .video-item {
         margin-bottom: 0px;
     }
+    .unity-content{
+      grid-template-columns: repeat(1, 1fr)
+    }
     .c1{
-      grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
+      grid-template-columns: repeat(1, 1fr); /* Divide into four equal columns */
     }
 }
 
