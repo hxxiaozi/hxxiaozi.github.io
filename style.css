@@ -41,7 +41,7 @@ body {
     width: 32px; /* Adjust the width of your cursor image */
     height: 32px; /* Adjust the height of your cursor image */
     pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/me.JPG'); /* Set the path to your custom cursor image */
+    background-image: url('img/me.png'); /* Set the path to your custom cursor image */
     background-size: cover;
     z-index: 9999; /* Ensure the cursor is above other elements */
 }
