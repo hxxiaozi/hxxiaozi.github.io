@@ -186,9 +186,7 @@ body {
 }
 .galleries :hover{
   color:white;
-  /* background-color: #6ee0e6; */
-  
-  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+
   
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6 100%); */
   border-radius: 5px;
@@ -196,9 +194,7 @@ body {
 
 .galleries1 :hover{
   color:white;
-  /* background-color: #6ee0e6; */
-  
-  background: linear-gradient(to  right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  background-color: yellowgreen; 
   
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6 100%); */
   border-radius: 5px;
