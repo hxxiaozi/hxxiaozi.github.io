@@ -148,8 +148,26 @@ body {
   text-align: center;
   float: left;
   /* background-color: yellowgreen; */
+  /* background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%); 
+  background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);*/
+
+  
+  background: linear-gradient(to bottom right, lightpink 0%, #6ee0e6 100%);
+  animation: gradientAnimation 5s ease infinite alternate;
+
+  width: 20%;
+  margin-left: 3%;
+  margin-top: 2%;
+  border-radius: 10px;
+}
+
+.galleries1 {
+  padding: 5px;
+  text-align: center;
+  float: left;
+  /* background-color: yellowgreen; */
   /* background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%); */
-  background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  background: linear-gradient(to bottom right, #92e66e 0%, #ffb861 90%);
   animation: gradientAnimation 5s ease infinite alternate;
 
   width: 20%;
@@ -169,7 +187,18 @@ body {
 .galleries :hover{
   color:white;
   /* background-color: #6ee0e6; */
-  background-color: yellowgreen;
+  
+  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  
+  /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6 100%); */
+  border-radius: 5px;
+}
+
+.galleries1 :hover{
+  color:white;
+  /* background-color: #6ee0e6; */
+  
+  background: linear-gradient(to  right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
   
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6 100%); */
   border-radius: 5px;
@@ -178,7 +207,23 @@ body {
 .galleries a{
   text-decoration: none;
 }
+.galleries1 a{
+  text-decoration: none;
+}
 
+.galleries:hover .coverimg {
+  display: block;
+}
+.galleries:hover img {
+  display: none;
+}
+
+.galleries1:hover .coverimg {
+  display: block;
+}
+.galleries1:hover img {
+  display: none;
+}
 
 /* Profile styles */
 .profile {
@@ -287,12 +332,7 @@ body {
   opacity: 0.5;
 }
 
-.galleries:hover .coverimg {
-  display: block;
-}
-.galleries:hover img {
-  display: none;
-}
+
 
 /* Iframe styles */
 .iframe {
