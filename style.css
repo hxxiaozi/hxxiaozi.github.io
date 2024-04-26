@@ -121,7 +121,6 @@ body {
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
       background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, lightpink,yellowgreen, #6ee0e6);
-     ;
   
   margin-left: 9%;
   padding-left: 5%;
@@ -136,9 +135,11 @@ body {
 
 /* Div1 styles */
 #div1 {
-  background:linear-gradient(to  right ,#92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);
+  background:linear-gradient(to  right ,#92e66e 0%, #e6c66e 15%,lightpink 30%, #6ee0e6ae 45%,#92e66e 55%, #e6c66e 80%,lightpink 90%, #6ee0e6 100%);
    /* animation: gradientAnimation 5s ease infinite alternate; */
-   animation:gradientAnimation 120s linear 0s infinite ;
+   animation:gradientAnimation  10s ease infinite;
+   background-size: 200% 200%;
+
   padding:5px;
 }
 
@@ -152,8 +153,9 @@ body {
   background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6 100%);*/
 
   
-  background: linear-gradient(to bottom right, lightpink 0%, #6ee0e6 100%);
-  animation: gradientAnimation 5s ease infinite alternate;
+  background: linear-gradient(to top left, #92e66e 10%, #ffb861 30%,lightpink 60%, #6ee0e6 90%);
+  animation: gradientAnimation 10s linear infinite reverse ;
+  background-size: 400% 400%;
 
   width: 20%;
   margin-left: 3%;
@@ -167,8 +169,10 @@ body {
   float: left;
   /* background-color: yellowgreen; */
   /* background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%); */
-  background: linear-gradient(to bottom right, #92e66e 0%, #ffb861 90%);
-  animation: gradientAnimation 5s ease infinite alternate;
+  background: linear-gradient(to bottom right, #92e66e 10%, #ffb861 30%,lightpink 60%, #6ee0e6 90%);
+  background-size: 400% 400%;
+  
+  animation: gradientAnimation 10s linear infinite ;
 
   width: 20%;
   margin-left: 3%;
@@ -178,11 +182,14 @@ body {
 
 @keyframes gradientAnimation {
   0% {
-      background-position: 0% 50%;
-  }
-  100% {
-      background-position: 100% 50%;
-  }
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .galleries :hover{
   color:white;
