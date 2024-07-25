@@ -413,7 +413,7 @@ margin-left: 2.5%;
 
 
 /* Video player styles */
-#video-player {
+.video-player {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -425,19 +425,9 @@ margin-left: 2.5%;
    border-right-color: #6ee0e6ec;
    border-width: 5px;
 }
-#video-player2 {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border-style:inset;
- border-color: yellowgreen;
- border-bottom-color: #6ee0e6ec;
- border-right-color: #6ee0e6ec;
- border-width: 5px;
+
  
-}
+
 .section-container{
     gap: 2.5%;
     margin: 20px;
