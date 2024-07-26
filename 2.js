@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const videoPlayer = document.getElementById("video-player");
+    const videoPlayer = document.querySelector(".video-player");
     const videoList = document.querySelectorAll(".video-item");
 
     videoList.forEach((videoItem) => {
