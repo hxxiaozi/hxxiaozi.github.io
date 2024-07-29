@@ -1,9 +1,11 @@
+// Move the custom cursor element based on mouse movements
 document.addEventListener("mousemove", (e) => {
   const cursor = document.getElementById("custom-cursor0");
   cursor.style.left = e.clientX + "px";
   cursor.style.top = e.clientY + "px";
 });
 
+// Set up video player functionality once the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   const videoPlayer = document.querySelector(".video-player");
   const videoList = document.querySelectorAll(".video-item");
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         item.classList.remove("selected");
       });
 
-      // Add the 'selected' class to the clicked video item's parent div
+      // Add the 'selected' class to the clicked video item
       this.classList.add("selected");
     });
   });
