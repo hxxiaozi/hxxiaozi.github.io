@@ -82,6 +82,7 @@ body {
     background-size: cover;
     z-index: 9999; /* Ensure the cursor is above other elements */
   }
+
 /* Header styles */
 #title {
   margin-left: 20%;
@@ -102,14 +103,18 @@ body {
       background-clip: padding-box, border-box;
       background-origin: padding-box, border-box;
       background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, yellowgreen, #6ee0e6ec);
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",sans-serif;
+  
+
 }
 
 /* Paragraph styles */
 .p {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family:   "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
-
+.p2 {
+  font-family:   "ZCOOL XiaoWei", monospace, sans-serif;
+}
 /* Page header styles */
 .pagehead {
 
@@ -257,7 +262,7 @@ body {
 }
 
 .text {
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
+  font-family: "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
   display: none;
   margin-left: 0px;
   opacity: 1;
@@ -345,6 +350,7 @@ margin-left: 2.5%;
   margin-top: 2%;
   padding-bottom: 1%;
   padding-left: 5%;
+  font-family:  "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 /* Video container styles */
@@ -437,6 +443,7 @@ margin-left: 2.5%;
 
 }
 
+
 .sections {
   /* background-color: yellowgreen; */
 
@@ -445,7 +452,7 @@ margin-left: 2.5%;
   padding-left: 20px;
   padding-right: 20px;
   font-size: small;
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
+  font-family:  "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Monaco", monospace;
 }
 
 .sections:hover a{
