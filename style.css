@@ -4,8 +4,9 @@
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 10px;
-  
+
 }
+
 
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -13,75 +14,120 @@
 }
 
 ::-webkit-scrollbar-thumb {
- 
-  background:linear-gradient(to  bottom ,yellowgreen 0%, #6ee0e6ec 100%);
+
+  background: linear-gradient(to bottom, yellowgreen 0%, #6ee0e6ec 100%);
 
 }
 
 ::-webkit-scrollbar-thumb:hover {
   /* background:linear-gradient(to  top ,lightpink 0%, #6ee0e6ec 100%); */
-  background: linear-gradient(to bottom , #92e66e 0%, #e6c66e 50%,lightpink 100%);
-  
+  background: linear-gradient(to bottom, #92e66e 0%, #e6c66e 50%, lightpink 100%);
+
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   overflow-y: scroll;
   cursor: none;
-  background-color: beige; 
+  background-color: beige;
   background-image: url("img/sheep.png");
-  background-size:contain;
-  margin:0;
+  background-size: contain;
+  margin: 0;
   padding: 0;
 }
-#custom-cursor0{
+
+#custom-cursor0 {
   position: fixed;
-    width: 32px; /* Adjust the width of your cursor image */
-    height: 32px; /* Adjust the height of your cursor image */
-    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/me.png'); /* Set the path to your custom cursor image */
-    background-size: cover;
-    z-index: 9999; /* Ensure the cursor is above other elements */
+  width: 32px;
+  /* Adjust the width of your cursor image */
+  height: 32px;
+  /* Adjust the height of your cursor image */
+  pointer-events: none;
+  /* Ensure the cursor does not interfere with interactions */
+  background-image: url('img/me.png');
+  /* Set the path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+  /* Ensure the cursor is above other elements */
 }
+
 #custom-cursor1 {
-    position: fixed;
-    width: 32px; /* Adjust the width of your cursor image */
-    height: 32px; /* Adjust the height of your cursor image */
-    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/icon/tomato.png'); /* Set the path to your custom cursor image */
-    background-size: cover;
-    z-index: 9999; /* Ensure the cursor is above other elements */
-  }
+  position: fixed;
+  width: 32px;
+  /* Adjust the width of your cursor image */
+  height: 32px;
+  /* Adjust the height of your cursor image */
+  pointer-events: none;
+  /* Ensure the cursor does not interfere with interactions */
+  background-image: url('img/icon/tomato.png');
+  /* Set the path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+  /* Ensure the cursor is above other elements */
+}
 
 
 #custom-cursor2 {
-    position: fixed;
-    width: 32px; /* Adjust the width of your cursor image */
-    height: 32px; /* Adjust the height of your cursor image */
-    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/icon/pumpkin.png'); /* Set the path to your custom cursor image */
-    background-size: cover;
-    z-index: 9999; /* Ensure the cursor is above other elements */
-  }
+  position: fixed;
+  width: 32px;
+  /* Adjust the width of your cursor image */
+  height: 32px;
+  /* Adjust the height of your cursor image */
+  pointer-events: none;
+  /* Ensure the cursor does not interfere with interactions */
+  background-image: url('img/icon/pumpkin.png');
+  /* Set the path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+  /* Ensure the cursor is above other elements */
+}
+
 #custom-cursor3 {
-    position: fixed;
-    width: 32px; /* Adjust the width of your cursor image */
-    height: 32px; /* Adjust the height of your cursor image */
-    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/icon/cabbage.png'); /* Set the path to your custom cursor image */
-    background-size: cover;
-    z-index: 9999; /* Ensure the cursor is above other elements */
-  }
+  position: fixed;
+  width: 32px;
+  /* Adjust the width of your cursor image */
+  height: 32px;
+  /* Adjust the height of your cursor image */
+  pointer-events: none;
+  /* Ensure the cursor does not interfere with interactions */
+  background-image: url('img/icon/cabbage.png');
+  /* Set the path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+  /* Ensure the cursor is above other elements */
+}
+
 #custom-cursor4 {
-    position: fixed;
-    width: 32px; /* Adjust the width of your cursor image */
-    height: 32px; /* Adjust the height of your cursor image */
-    pointer-events: none; /* Ensure the cursor does not interfere with interactions */
-    background-image: url('img/icon/garlic.png'); /* Set the path to your custom cursor image */
-    background-size: cover;
-    z-index: 9999; /* Ensure the cursor is above other elements */
-  }
+  position: fixed;
+  width: 32px;
+  /* Adjust the width of your cursor image */
+  height: 32px;
+  /* Adjust the height of your cursor image */
+  pointer-events: none;
+  /* Ensure the cursor does not interfere with interactions */
+  background-image: url('img/icon/garlic.png');
+  /* Set the path to your custom cursor image */
+  background-size: cover;
+  z-index: 9999;
+  /* Ensure the cursor is above other elements */
+}
+
+:link {
+  color: #265400ec;
+  text-decoration: none;
+}
+
+:visited {
+  color: #265400ec;
+  text-decoration: none;
+}
+
+:link:active, :visited:active {
+  color: lightpink;
+}
 
 /* Header styles */
 #title {
@@ -89,46 +135,48 @@ body {
   margin-bottom: 5%;
   padding-left: 5%;
   padding-top: 1%;
-  
+
   /* border: 5px solid transparent;
   border-radius: 20px; 
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   background-image: linear-gradient(90deg alic 0%, #6ee0e6ec 100%),linear-gradient(to  bottom right， yellowgreen, #6ee0e6ec/#578AEF); 
    */
-   border: 5px solid transparent;
-      border-radius: 20px;
-      border-top: none;
-      border-right: none;
-      background-clip: padding-box, border-box;
-      background-origin: padding-box, border-box;
-      background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, yellowgreen, #6ee0e6ec);
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",sans-serif;
-  
+  border: 5px solid transparent;
+  border-radius: 20px;
+  border-top: none;
+  border-right: none;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, yellowgreen, #6ee0e6ec);
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
+
 
 }
 
 /* Paragraph styles */
 .p {
-  font-family:   "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
+
 .p2 {
-  font-family:   "ZCOOL XiaoWei", monospace, sans-serif;
+  font-family: "ZCOOL XiaoWei", monospace, sans-serif;
 }
+
 /* Page header styles */
 .pagehead {
 
   border: 5px solid transparent;
-      border-radius: 20px;
-      border-top: none;
-      border-right: none;
-      background-clip: padding-box, border-box;
-      background-origin: padding-box, border-box;
-      background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, lightpink,yellowgreen, #6ee0e6ec);
-  
+  border-radius: 20px;
+  border-top: none;
+  border-right: none;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, lightpink, yellowgreen, #6ee0e6ec);
+
   margin-left: 9%;
   padding-left: 5%;
-  
+
 }
 
 /* Home styles */
@@ -139,24 +187,20 @@ body {
 
 /* Div1 styles */
 #div1 {
-  background:linear-gradient(to  right ,#92e66e 0%, #ffc561 15%,lightpink 30%, #6ee0e6ec 45%,#92e66ee8 55%, #e6c66e 80%,lightpink 90%, #6ee0e6ec 100%);
-   /* animation: gradientAnimation 5s ease infinite alternate; */
-   animation:gradientAnimation  10s ease infinite;
-   background-size: 200% 200%;
+  background: linear-gradient(to right, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66ee8 55%, #e6c66e 80%, lightpink 90%, #6ee0e6ec 100%);
+  animation: gradientAnimation 10s ease infinite;
+  background-size: 200% 200%;
 
-  padding:5px;
+  padding: 5px;
 }
 
 /* Galleries styles */
 .galleries {
-  /* padding: 5px; */
+
   text-align: center;
   float: left;
-  /* background-color: yellowgreen; */
-  /* background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%); 
-  background: linear-gradient(to bottom right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6ec 100%);*/
-  background: linear-gradient(to top left, #92e66e 0%, #ffc561 15%,lightpink 30%, #6ee0e6ec 45%,#92e66e 57.5%, #ffc561 72.5%,lightpink 87.5%, #6ee0e6ec 100%);
-  animation: gradientAnimation 10s linear infinite reverse ;
+  background: linear-gradient(to top left, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
+  animation: gradientAnimation 10s linear infinite reverse;
   background-size: 600% 600%;
 
   width: 20%;
@@ -166,40 +210,40 @@ body {
 }
 
 .g1 {
-  
-  background: linear-gradient(to bottom right, #92e66e 0%, #ffc561 15%,lightpink 30%, #6ee0e6ec 45%,#92e66e 57.5%, #ffc561 72.5%,lightpink 87.5%, #6ee0e6ec 100%);
-  animation: gradientAnimation 10s linear infinite ;
+
+  background: linear-gradient(to bottom right, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
+  animation: gradientAnimation 10s linear infinite;
   background-size: 600% 600%;
 
 }
 
 @keyframes gradientAnimation {
   0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-.galleries :hover{
-  color:white;
+    background-position: 0% 50%;
+  }
 
-  
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.galleries :hover {
+  color: white;
+
+
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6ec 100%); */
   border-radius: 5px;
-}
-
-.galleries a{
-  text-decoration: none;
 }
 
 
 .galleries:hover .coverimg {
   display: block;
 }
+
 .galleries:hover img {
   display: none;
 }
@@ -224,8 +268,8 @@ body {
 .menu {
   /*background-color: lightpink;*/
 
-  background:linear-gradient(to bottom  ,#FFB6C0 20%, #e6c66e 75%,#92e66e 100%);
-  
+  background: linear-gradient(to bottom, #FFB6C0 20%, #e6c66e 75%, #92e66e 100%);
+
   float: left;
   height: 100vh;
   width: 50px;
@@ -245,6 +289,11 @@ body {
   align-items: center;
 }
 
+.navlink:hover {
+  color: #fff;
+  background-color: #265400ec;
+}
+
 .icon {
   width: 100%;
 }
@@ -253,7 +302,6 @@ body {
   display: flex;
   align-items: center;
   height: 5%;
-  text-decoration: none;
 }
 
 .navlink img {
@@ -272,7 +320,7 @@ body {
   /*background-color: #FFB6C0;*/
 
   /* background:linear-gradient(to bottom  ,#FFB6C0 0%,  #e6c66e 100%); */
-  background:linear-gradient(to bottom  ,#FFB6C0 20%, #e6c66e 75%,#92e66e 100%);
+  background: linear-gradient(to bottom, #FFB6C0 20%, #e6c66e 75%, #92e66e 100%);
   width: 120px;
   opacity: 0.95;
 
@@ -286,7 +334,7 @@ body {
 .c1 {
   float: left;
   /* background-color: yellowgreen; */
-  background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%);
+  background: linear-gradient(to bottom right, yellowgreen, #52a7d8d4 100%);
   border-radius: 10px;
   width: 88%;
   height: 50%;
@@ -294,11 +342,12 @@ body {
   display: grid;
   gap: 15px;
   padding: 20px;
-  grid-template-columns: repeat(3, 1fr); /* Divide into four equal columns */
-  
+  grid-template-columns: repeat(3, 1fr);
+  /* Divide into four equal columns */
+
 }
 
-.c1 img{
+.c1 img {
   border-radius: 5px;
 }
 
@@ -318,18 +367,18 @@ body {
   width: 96%;
   height: 650px;
   border-width: 5px;
-  border-color:yellowgreen;
-  
+  border-color: yellowgreen;
+
   border-top-color: #6ee0e6ec;
   border-right-color: #6ee0e6ec;
-  padding:10px;
+  padding: 10px;
   border-radius: 20px;
   margin-top: 30px;
 }
 
-.frame{
-height: auto;
-margin-left: 2.5%;
+.frame {
+  height: auto;
+  margin-left: 2.5%;
 }
 
 /* Explore styles */
@@ -346,57 +395,55 @@ margin-left: 2.5%;
 /* Description styles */
 #descript {
   background-color: rgb(255, 255, 255);
- 
+
   margin-top: 2%;
   padding-bottom: 1%;
   padding-left: 5%;
-  font-family:  "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 /* Video container styles */
 .video-container {
-    /* background-color: yellowgreen; */
-    background:linear-gradient(to bottom right ,yellowgreen 0%, #41a2ecc9 100%);
-    width: 80%;
-    margin-left: 8%;
-    margin-top: 30px;
-  
-     padding: 2.5%;
-    border-radius: 10px;
-    border-style:dashed;
-    border-color: lightpink;
-    border-width: 5px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  /* background-color: yellowgreen; */
+  background: linear-gradient(to bottom right, yellowgreen 0%, #41a2ecc9 100%);
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 30px;
+
+  padding: 2.5%;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: lightpink;
+  border-width: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-grid {
-    display: grid;
-    gap: 15px;
-    padding-top: 20px;
-    grid-template-columns: repeat(4, 1fr); /* Divide into four equal columns */
+  display: grid;
+  gap: 15px;
+  padding-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  /* Divide into four equal columns */
 }
 
 .video-item {
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    align-items: center;
-    background-color: lightpink;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  background-color: lightpink;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
 }
 
 .video-item a {
-    text-decoration: none;
-    color: #fff;
-    
+  color: #fff;
 }
 
 
@@ -405,10 +452,10 @@ margin-left: 2.5%;
 }
 
 .selected {
-  
-  background:linear-gradient(to bottom left  ,#52a7d8 0%, #6ee0e6ec 100%);
+
+  background: linear-gradient(to bottom left, #52a7d8 0%, #6ee0e6ec 100%);
   border-radius: 10px;
-  border-style:inset;
+  border-style: inset;
   border-color: #52a7d8;
   border-width: 5px;
 }
@@ -417,29 +464,27 @@ margin-left: 2.5%;
 
 /* Video player styles */
 .video-player {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border-style:inset;
-   border-color: yellowgreen;
-   border-bottom-color: #6ee0e6ec;
-   border-right-color: #6ee0e6ec;
-   border-width: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border-style: inset;
+  border-color: yellowgreen;
+  border-bottom-color: #6ee0e6ec;
+  border-right-color: #6ee0e6ec;
+  border-width: 5px;
 }
 
- 
 
-.section-container{
-    gap: 2.5%;
-    margin: 20px;
-    margin-left: 8vw;
-    
-    padding: 5px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+
+.section-container {
+  gap: 5%;
+  margin: 20px;
+  margin-left: 8vw;
+  justify-content: center;
+  display:flex;
+  align-items: center;
 
 }
 
@@ -447,41 +492,49 @@ margin-left: 2.5%;
 .sections {
   /* background-color: yellowgreen; */
 
-  background:linear-gradient(to bottom right ,yellowgreen, #52a7d8d4 100%);
-  border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: small;
-  font-family:  "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Monaco", monospace;
+  background: linear-gradient(to bottom right, yellowgreen, #52a7d8d4 100%);
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* padding: 1px; */
+
+  font-size:small;
+  font-family: "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Monaco", monospace;
+
 }
 
-.sections:hover a{
-  color: white;
-}
+
+
 .sections:hover {
   /* background-color: #6ee0e6ec; */
   /* background:linear-gradient(to top right ,lightpink 0%, #6ee0e6ec 100%); */
-  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%,lightpink 60%, #6ee0e6ec 100%);
-  
+  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%, lightpink 60%, #6ee0e6ec 100%);
+
 }
 
-.sections a{
-  text-decoration: none;
-  color: black;
+.sections a {
+
+  color: #265400ec;
+  ;
 }
 
-.content{
+.sections:hover a {
+  color: white;
+}
+
+.content {
   border-radius: 5px;
 }
-.p5-title p{
+
+.p5-title p {
   padding-left: 10%;
 }
 
 .unity-content {
-  margin-top:20px;
+  margin-top: 20px;
   margin-right: 1%;
   padding-top: 20px;
-  border-radius: 5px; 
+  border-radius: 5px;
   border-top: 5px dashed lightpink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -497,30 +550,35 @@ margin-left: 2.5%;
 .unity-container {
   text-align: center;
 }
+
 /* Media Query for small screens */
 @media (min-width: 576px) and (max-width: 768px) {
-  .c1{
-    grid-template-columns: repeat(2, 1fr); /* Divide into four equal columns */
+  .c1 {
+    grid-template-columns: repeat(2, 1fr);
+    /* Divide into four equal columns */
   }
 }
+
 @media (min-width: 0px) and (max-width: 576px) {
-    .menu{
-     opacity: 50%;
-     
-    }
-    .video-grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .video-item {
-        margin-bottom: 0px;
-    }
-    .unity-content{
-      grid-template-columns: repeat(1, 1fr)
-    }
-    .c1{
-      grid-template-columns: repeat(1, 1fr); /* Divide into four equal columns */
-    }
+  .menu {
+    opacity: 50%;
+
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-item {
+    margin-bottom: 0px;
+  }
+
+  .unity-content {
+    grid-template-columns: repeat(1, 1fr)
+  }
+
+  .c1 {
+    grid-template-columns: repeat(1, 1fr);
+    /* Divide into four equal columns */
+  }
 }
-
-
-  
