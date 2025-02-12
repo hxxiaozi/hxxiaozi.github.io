@@ -32,7 +32,7 @@ html {
 body {
   overflow-y: scroll;
   cursor: none;
-  background-color: beige;
+  background-color:cornsilk;
   background-image: url("img/sheep.png");
   background-size: contain;
   margin: 0;
