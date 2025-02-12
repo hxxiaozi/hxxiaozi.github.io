@@ -32,7 +32,9 @@ html {
 body {
   overflow-y: scroll;
   cursor: none;
-  background-color:oldlace;
+  background-color:floralwhite;
+
+  
   background-image: url("img/sheep.png");
   background-blend-mode:multiply;
   background-size:contain;
@@ -133,23 +135,19 @@ body {
 /* Header styles */
 #title {
   margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 5%;
   padding-left: 5%;
-  padding-top: 1%;
-
+ 
   /* border: 5px solid transparent;
   border-radius: 20px; 
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   background-image: linear-gradient(90deg alic 0%, #6ee0e6ec 100%),linear-gradient(to  bottom right， yellowgreen, #6ee0e6ec/#578AEF); 
    */
-  border: 5px solid transparent;
-  border-radius: 20px;
-  border-top: none;
-  border-right: none;
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-  background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, yellowgreen, #6ee0e6ec);
+
+  
+  border-radius: 10px;
   font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
 
 
@@ -157,7 +155,7 @@ body {
 
 /* Paragraph styles */
 .p {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-family: Avenir,"Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 .p2 {
