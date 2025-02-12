@@ -32,9 +32,10 @@ html {
 body {
   overflow-y: scroll;
   cursor: none;
-  background-color:cornsilk;
+  background-color:oldlace;
   background-image: url("img/sheep.png");
-  background-size: contain;
+  background-blend-mode:multiply;
+  background-size:contain;
   margin: 0;
   padding: 0;
 }
