@@ -37,7 +37,7 @@ body {
   
   background-image: url("img/sheep.png");
   background-blend-mode:multiply;
-  background-size:contain;
+  background-size:35%;
   margin: 0;
   padding: 0;
 }
@@ -134,10 +134,23 @@ body {
 
 /* Header styles */
 #title {
-  margin-left: 20%;
+  /* margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 5%;
-  padding-left: 5%;
+  margin-bottom: 5%; */
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+  /* background-color: thistle; */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  /* background:linear-gradient(to right, #92e66e 0%, #ffc561 35%, lightpink 75%, #6ee0e6ec 100%);
+ 
+  animation: gradientAnimation 10s linear infinite; */
+  background: linear-gradient(300deg,#6ee0e6ec,thistle,cornsilk);
+  background-size: 200% 200%;
+  animation: gradient-animation 15s linear infinite;
  
   /* border: 5px solid transparent;
   border-radius: 20px; 
@@ -147,10 +160,20 @@ body {
    */
 
   
-  border-radius: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", sans-serif;
 
+  font-family: "Open Sans", "Avenir", sans-serif;
 
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Paragraph styles */
@@ -260,7 +283,7 @@ body {
 
 /* G styles */
 .g {
-  margin-left: 5%;
+  margin-left: 7%;
 }
 
 /* Menu styles */
@@ -393,13 +416,17 @@ body {
 
 /* Description styles */
 #descript {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255,0.8);
+  
+  
+padding:1em;
+margin-top: 2.5%;
+margin-left: 10%;
+margin-right: 10%;
+border-radius: 10px;
 
-  margin-top: 2%;
-  padding-bottom: 1%;
-  padding-left: 5%;
-  padding-right: 2%;
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  
+  font-family: "Gill Sans", "Ma Shan Zheng","Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 /* Video container styles */
