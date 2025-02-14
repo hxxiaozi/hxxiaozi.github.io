@@ -32,12 +32,12 @@ html {
 body {
   overflow-y: scroll;
   cursor: none;
-  background-color:floralwhite;
+  background-color: floralwhite;
 
-  
+
   background-image: url("img/sheep.png");
-  background-blend-mode:multiply;
-  background-size:35%;
+  background-blend-mode: multiply;
+  background-size: 35%;
   margin: 0;
   padding: 0;
 }
@@ -132,12 +132,15 @@ body {
   color: lightpink;
 }
 
+:root{
+  --spacel: 5%;
+  --spacexl: 10%;
+}
+
 /* Header styles */
 #title {
-  /* margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 5%; */
-  padding-left: 10%;
+
+  padding-left: var(--spacel);
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -148,10 +151,10 @@ body {
   /* background:linear-gradient(to right, #92e66e 0%, #ffc561 35%, lightpink 75%, #6ee0e6ec 100%);
  
   animation: gradientAnimation 10s linear infinite; */
-  background: linear-gradient(300deg,#6ee0e6ec,thistle,cornsilk);
+  background: linear-gradient(300deg, #6ee0e6ec, thistle, cornsilk);
   background-size: 200% 200%;
   animation: gradient-animation 15s linear infinite;
- 
+
   /* border: 5px solid transparent;
   border-radius: 20px; 
   background-clip: padding-box, border-box;
@@ -159,18 +162,21 @@ body {
   background-image: linear-gradient(90deg alic 0%, #6ee0e6ec 100%),linear-gradient(to  bottom right， yellowgreen, #6ee0e6ec/#578AEF); 
    */
 
-  
+
 
   font-family: "Open Sans", "Avenir", sans-serif;
 
 }
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -178,17 +184,21 @@ body {
 
 /* Paragraph styles */
 .p {
-  font-family: Avenir,"Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-family: Avenir, "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 .p2 {
   font-family: "ZCOOL XiaoWei", monospace, sans-serif;
 }
 
+.img{
+  margin: auto;
+}
+
 /* Page header styles */
 .pagehead {
 
-  border: 5px solid transparent;
+  /* border: 5px solid transparent;
   border-radius: 20px;
   border-top: none;
   border-right: none;
@@ -197,7 +207,21 @@ body {
   background-image: linear-gradient(to right, aliceblue, aliceblue), linear-gradient(165deg, lightpink, yellowgreen, #6ee0e6ec);
 
   margin-left: 9%;
-  padding-left: 5%;
+  padding-left: 5%; */
+  padding-left: var(--spacexl);
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+
+  /* background-color: thistle; */
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  /* background:linear-gradient(to right, #92e66e 0%, #ffc561 35%, lightpink 75%, #6ee0e6ec 100%);
+ 
+  animation: gradientAnimation 10s linear infinite; */
+  background: linear-gradient(300deg, #6ee0e6ec, thistle, cornsilk);
+  background-size: 200% 200%;
+  animation: gradient-animation 15s linear infinite;
 
 }
 
@@ -220,13 +244,13 @@ body {
 .galleries {
 
   text-align: center;
-  float: left;
+  float:left;
   background: linear-gradient(to top left, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
   animation: gradientAnimation 10s linear infinite reverse;
   background-size: 600% 600%;
 
-  width: 20%;
-  margin-left: 3%;
+  width: 23%;
+  margin: 1%;
 
   border-radius: 10px;
 }
@@ -236,6 +260,8 @@ body {
   background: linear-gradient(to bottom right, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
   animation: gradientAnimation 10s linear infinite;
   background-size: 600% 600%;
+  
+ 
 
 }
 
@@ -255,7 +281,8 @@ body {
 
 .galleries :hover {
   color: white;
-  transform: scale(1.05);
+  transform: scale(1.1);
+ 
   transition: transform 0.3s ease-in-out;
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6ec 100%); */
   border-radius: 5px;
@@ -268,11 +295,13 @@ body {
 
 .galleries:hover img {
   display: none;
+  
 }
 
 /* Profile styles */
 .profile {
-  background-color: #6ee0e6ec;
+  background-color: floralwhite;
+  border: 5px none black;
   width: 100px;
   height: 100px;
   float: right;
@@ -281,9 +310,14 @@ body {
   margin-right: 2%;
 }
 
+
+
 /* G styles */
 .g {
-  margin-left: 7%;
+  
+  margin-left: 4%;
+  margin-right: 4%;
+  
 }
 
 /* Menu styles */
@@ -357,15 +391,17 @@ body {
   float: left;
   /* background-color: yellowgreen; */
   background: linear-gradient(to bottom right, yellowgreen, #52a7d8d4 100%);
-  border-radius: 10px;
-  width: 88%;
+  /* border-radius: 10px; */
+  width: auto;
   height: 50%;
-  margin-left: 5%;
+  margin-left: var(--spacel);
+  margin-right: var(--spacel);
   display: grid;
   gap: 15px;
   padding: 20px;
   grid-template-columns: repeat(3, 1fr);
   /* Divide into four equal columns */
+  border-top: 10px solid lightpink ;
 
 }
 
@@ -416,17 +452,17 @@ body {
 
 /* Description styles */
 #descript {
-  background-color: rgb(255, 255, 255,0.8);
-  
-  
-padding:1em;
-margin-top: 2.5%;
-margin-left: 10%;
-margin-right: 10%;
-border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.8);
 
-  
-  font-family: "Gill Sans", "Ma Shan Zheng","Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+
+  padding: 1em;
+  margin-top: 2.5%;
+  margin-left: var(--spacel);
+  margin-right: var(--spacel);
+  border-radius: 10px;
+
+
+  font-family: "Gill Sans", "Ma Shan Zheng", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 /* Video container styles */
@@ -517,10 +553,13 @@ border-radius: 10px;
 
 
 .sections {
-  /* background-color: yellowgreen; */
+  /* background-color: floralwhite; */
 
-  background: linear-gradient(to bottom right, yellowgreen, #52a7d8d4 100%);
+  background: linear-gradient(to bottom right, floralwhite 0%, #e6c66e 100% );
+
+
   border-radius: 30px;
+  border-bottom: 5px solid wheat;
   padding-left: 30px;
   padding-right: 30px;
   /* padding: 1px; */
@@ -535,7 +574,9 @@ border-radius: 10px;
 .sections:hover {
   /* background-color: #6ee0e6ec; */
   /* background:linear-gradient(to top right ,lightpink 0%, #6ee0e6ec 100%); */
-  background: linear-gradient(to right, #92e66e 0%, #e6c66e 30%, lightpink 60%, #6ee0e6ec 100%);
+  background: linear-gradient(to right, lightpink 0%, thistle 50%, #6ee0e6ec 100%);
+  border: none;
+  margin-top: 5px;
 
 }
 
