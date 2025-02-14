@@ -560,7 +560,6 @@ body {
 
 
 .sections {
-  /* background-color: floralwhite; */
 
   background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%);
 
@@ -607,19 +606,18 @@ body {
 
 .unity-content {
   margin-top: 20px;
-  margin-left: 1%;
+  margin-left: var(--spacel);
   padding-top: 20px;
   border-radius: 5px;
   border-top: 5px dashed lightpink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  text-align: center;
 
 }
 
 .unity-content p {
-  background-color: #f1f1f1;
+  background-color: rgba(255, 250, 240, 0.6);
   padding: 5px;
 }
 
