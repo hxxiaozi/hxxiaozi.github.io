@@ -132,9 +132,12 @@ body {
   color: lightpink;
 }
 
-:root{
+:root {
   --spacel: 5%;
   --spacexl: 10%;
+  --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
+
+
 }
 
 /* Header styles */
@@ -191,7 +194,7 @@ body {
   font-family: "ZCOOL XiaoWei", monospace, sans-serif;
 }
 
-.img{
+.img {
   margin: auto;
 }
 
@@ -233,7 +236,7 @@ body {
 
 /* Div1 styles */
 #div1 {
-  background: linear-gradient(to right, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66ee8 55%, #e6c66e 80%, lightpink 90%, #6ee0e6ec 100%);
+  background: linear-gradient(to right, var(--gradient-colors));
   animation: gradientAnimation 10s ease infinite;
   background-size: 200% 200%;
 
@@ -244,8 +247,8 @@ body {
 .galleries {
 
   text-align: center;
-  float:left;
-  background: linear-gradient(to top left, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
+  float: left;
+  background: linear-gradient(to top left, var(--gradient-colors));
   animation: gradientAnimation 10s linear infinite reverse;
   background-size: 600% 600%;
 
@@ -257,11 +260,9 @@ body {
 
 .g1 {
 
-  background: linear-gradient(to bottom right, #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%);
+  background: linear-gradient(to bottom right, var(--gradient-colors));
   animation: gradientAnimation 10s linear infinite;
   background-size: 600% 600%;
-  
- 
 
 }
 
@@ -282,7 +283,7 @@ body {
 .galleries :hover {
   color: white;
   transform: scale(1.1);
- 
+
   transition: transform 0.3s ease-in-out;
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6ec 100%); */
   border-radius: 5px;
@@ -295,7 +296,7 @@ body {
 
 .galleries:hover img {
   display: none;
-  
+
 }
 
 /* Profile styles */
@@ -314,10 +315,10 @@ body {
 
 /* G styles */
 .g {
-  
+
   margin-left: 4%;
   margin-right: 4%;
-  
+
 }
 
 /* Menu styles */
@@ -386,22 +387,27 @@ body {
   display: block;
 }
 
+.c {
+  background: linear-gradient(to bottom right, rgba(153, 205, 50, 0.75), #52a7d8d4 100%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: var(--spacel);
+  height: auto;
+ text-indent: 1em;
+  border-top: 10px solid lightpink;
+
+}
+
 /* C1 styles */
 .c1 {
-  float: left;
-  /* background-color: yellowgreen; */
-  background: linear-gradient(to bottom right, yellowgreen, #52a7d8d4 100%);
-  /* border-radius: 10px; */
+ 
   width: auto;
   height: 50%;
-  margin-left: var(--spacel);
-  margin-right: var(--spacel);
+ 
   display: grid;
   gap: 15px;
   padding: 20px;
   grid-template-columns: repeat(3, 1fr);
-  /* Divide into four equal columns */
-  border-top: 10px solid lightpink ;
 
 }
 
@@ -555,17 +561,17 @@ body {
 .sections {
   /* background-color: floralwhite; */
 
-  background: linear-gradient(to bottom right, floralwhite 0%, #e6c66e 100% );
+  background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%);
 
 
   border-radius: 30px;
-  border-bottom: 5px solid wheat;
+  border-bottom: 5px solid rosybrown;
   padding-left: 30px;
   padding-right: 30px;
   /* padding: 1px; */
 
   font-size: small;
-  font-family: "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Monaco", monospace;
+
 
 }
 
@@ -600,13 +606,20 @@ body {
 
 .unity-content {
   margin-top: 20px;
-  margin-right: 1%;
+  margin-left: 1%;
   padding-top: 20px;
   border-radius: 5px;
   border-top: 5px dashed lightpink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+  text-align: center;
+
+}
+
+.unity-content p {
+  background-color: #f1f1f1;
+  padding: 5px;
 }
 
 .unity-image {
@@ -615,9 +628,7 @@ body {
   border-radius: 5px;
 }
 
-.unity-container {
-  text-align: center;
-}
+
 
 /* Media Query for small screens */
 @media (min-width: 600px) and (max-width: 1200px) {
