@@ -136,7 +136,7 @@ body {
   --spacel: 5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-
+  --fontm:  Hi Melody, "Gill Sans", "Ma Shan Zheng", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 
 }
 
@@ -167,7 +167,7 @@ body {
 
 
 
-  font-family: "Open Sans", "Avenir", sans-serif;
+  font-family: Avenir,var(--fontm);
 
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 .p2 {
-  font-family: "ZCOOL XiaoWei", monospace, sans-serif;
+  font-family:  "ZCOOL XiaoWei", monospace, sans-serif;
 }
 
 .img {
@@ -393,17 +393,17 @@ body {
   border-bottom-right-radius: 10px;
   margin-left: var(--spacel);
   height: auto;
- text-indent: 1em;
+  text-indent: 1em;
   border-top: 10px solid lightpink;
 
 }
 
 /* C1 styles */
 .c1 {
- 
+
   width: auto;
   height: 50%;
- 
+
   display: grid;
   gap: 15px;
   padding: 20px;
@@ -467,8 +467,8 @@ body {
   margin-right: var(--spacel);
   border-radius: 10px;
 
-
-  font-family: "Gill Sans", "Ma Shan Zheng", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-size: larger;
+  font-family: var(--fontm);
 }
 
 /* Video container styles */
@@ -508,6 +508,7 @@ body {
   transition: background-color 0.3s;
   margin-bottom: 10px;
   border-radius: 10px;
+
 
 }
 
