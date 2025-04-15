@@ -136,7 +136,7 @@ body {
   --spacel: 5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm:  Hi Melody, "Gill Sans", "Ma Shan Zheng", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  --fontm: Poppins, monospace, serif;
 
 }
 
@@ -240,7 +240,6 @@ body {
   animation: gradientAnimation 10s ease infinite;
   background-size: 200% 200%;
 
-  padding: 5px;
 }
 
 /* Galleries styles */
@@ -467,7 +466,7 @@ body {
   margin-right: var(--spacel);
   border-radius: 10px;
 
-  font-size: larger;
+  font-size: medium;
   font-family: var(--fontm);
 }
 
