@@ -1,6 +1,7 @@
 /* CSS Document */
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 /* Scrollbar styles */
 ::-webkit-scrollbar {
   width: 10px;
@@ -35,9 +36,9 @@ body {
   background-color: floralwhite;
 
 
-  background-image: url("img/sheep.png");
+  /* background-image: url("img/sheep.png");
   background-blend-mode: multiply;
-  background-size: 35%;
+  background-size: 35%; */
   margin: 0;
   padding: 0;
 }
@@ -136,7 +137,9 @@ body {
   --spacel: 5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm: Poppins, monospace, serif;
+  --fontm: "Maven Pro", Poppins, monospace, serif;
+  --fontp: Avenir;
+  --fontp2:"ZCOOL XiaoWei";
 
 }
 
@@ -147,16 +150,17 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 
-
+  
   /* background-color: thistle; */
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  /* background:linear-gradient(to right, #92e66e 0%, #ffc561 35%, lightpink 75%, #6ee0e6ec 100%);
  
-  animation: gradientAnimation 10s linear infinite; */
-  background: linear-gradient(300deg, #6ee0e6ec, thistle, cornsilk);
-  background-size: 200% 200%;
+  background: linear-gradient(300deg, #6ee0e6ec, thistle, cornsilk,#6ee0e6ec);
+  background-size: 150%;
   animation: gradient-animation 15s linear infinite;
+
+  font-size: x-large;
+
 
   /* border: 5px solid transparent;
   border-radius: 20px; 
@@ -167,7 +171,7 @@ body {
 
 
 
-  font-family: Avenir,var(--fontm);
+  font-family: var(--fontm);
 
 }
 
@@ -187,11 +191,11 @@ body {
 
 /* Paragraph styles */
 .p {
-  font-family: Avenir, "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
+  font-family: var(--fontp), "Gill Sans", "Gill Sans MT", "Myriad Pro", monospace, sans-serif, serif;
 }
 
 .p2 {
-  font-family:  "ZCOOL XiaoWei", monospace, sans-serif;
+  font-family: var(--fontp2), "ZCOOL XiaoWei", monospace, sans-serif;
 }
 
 .img {
@@ -236,9 +240,13 @@ body {
 
 /* Div1 styles */
 #div1 {
-  background: linear-gradient(to right, var(--gradient-colors));
-  animation: gradientAnimation 10s ease infinite;
-  background-size: 200% 200%;
+  /* background: linear-gradient(to right, var(--gradient-colors)); */
+  animation: gradientAnimation 100s ease infinite;
+
+  background-image: url("img/sheep.png");
+
+  background-size: 20%; 
+  padding: 20px;
 
 }
 
@@ -278,6 +286,11 @@ body {
     background-position: 0% 50%;
   }
 }
+.bg {
+background-color: cornsilk;
+margin-top: 0px;
+
+}
 
 .galleries :hover {
   color: white;
@@ -291,6 +304,9 @@ body {
 
 .galleries:hover .coverimg {
   display: block;
+}
+.galleries:hover .bg {
+  background: none;
 }
 
 .galleries:hover img {
@@ -447,7 +463,13 @@ body {
 /* Explore styles */
 #explore {
   text-align: right;
-  margin-right: 60px;
+  padding-right: 60px;
+  animation: gradientAnimation 100s ease infinite;
+
+  background-image: url("img/sheep.png");
+
+  background-size: 20%; 
+  
 }
 
 /* M styles */
@@ -560,9 +582,9 @@ body {
 
 .sections {
 
-  background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%);
+  /* background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%); */
 
-
+background-color: floralwhite;
   border-radius: 30px;
   border-bottom: 5px solid rosybrown;
   padding-left: 30px;
@@ -570,6 +592,7 @@ body {
   /* padding: 1px; */
 
   font-size: small;
+
 
 
 }
@@ -582,6 +605,7 @@ body {
   background: linear-gradient(to right, lightpink 0%, thistle 50%, #6ee0e6ec 100%);
   border: none;
   margin-top: 5px;
+  
 
 }
 
