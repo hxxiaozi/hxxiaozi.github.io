@@ -557,6 +557,7 @@ margin-top: 0px;
 
 .video-item:hover {
   background-color: #6ee0e6ec;
+  transform: scale(1.05);
 }
 
 .selected {
