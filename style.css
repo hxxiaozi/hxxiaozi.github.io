@@ -44,11 +44,11 @@ body {
 }
 
 h2{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3{
-  font-weight: 600;
+  font-weight: 550;
 }
 
 h4{
@@ -258,7 +258,8 @@ h4{
   background-image: url("img/sheep.png");
 
   background-size: 20%; 
-  padding: 20px;
+
+  padding: 10px;
 
 }
 
@@ -273,7 +274,7 @@ h4{
 
   width: 23%;
   margin: 1%;
-
+  transform: scale(0.95);
   border-radius: 10px;
 }
 
@@ -306,7 +307,7 @@ margin-top: 0px;
 
 .galleries :hover {
   color: white;
-  transform: scale(1.1);
+  transform: scale(1.05);
 
   transition: transform 0.3s ease-in-out;
   /* background:linear-gradient(to left ,lightpink 0%, #6ee0e6ec 100%); */
@@ -336,9 +337,13 @@ margin-top: 0px;
   border-radius: 50px;
   margin-top: 1%;
   margin-right: 2%;
+
 }
 
+.profile:hover{
 
+  transform:scale(1.05) ;
+}
 
 /* G styles */
 .g {
