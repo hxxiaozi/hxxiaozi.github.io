@@ -43,6 +43,18 @@ body {
   padding: 0;
 }
 
+h2{
+  font-weight: 700;
+}
+
+h3{
+  font-weight: 600;
+}
+
+h4{
+  font-weight: 500;
+}
+
 #custom-cursor0 {
   position: fixed;
   width: 32px;
@@ -137,9 +149,9 @@ body {
   --spacel: 5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm: "Maven Pro", Poppins, monospace, serif;
-  --fontp: Avenir;
-  --fontp2:"ZCOOL XiaoWei";
+  --fontm: "Maven Pro",'思源黑体', '思源宋体', monospace, serif;
+  --fontp:  Work Sans, Avenir, Helvetica, sans-serif;
+  --fontp2: "Maven Pro", "ZCOOL XiaoWei";
 
 }
 
@@ -581,17 +593,14 @@ margin-top: 0px;
 
 
 .sections {
-
   /* background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%); */
-
 background-color: floralwhite;
-  border-radius: 30px;
-  border-bottom: 5px solid rosybrown;
-  padding-left: 30px;
-  padding-right: 30px;
-  /* padding: 1px; */
-
-  font-size: small;
+border-radius: 30px;
+border-bottom: 5px solid rosybrown;
+padding-left: 30px;
+padding-right: 30px;
+/* padding: 1px; */
+font-size: small;
 
 
 
