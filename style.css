@@ -36,7 +36,7 @@ body {
   background-color: floralwhite;
 
 
-  /* background-image: url("img/sheep.png");
+  /* background-image: url("img/gd/sheep.png");
   background-blend-mode: multiply;
   background-size: 35%; */
   margin: 0;
@@ -255,7 +255,7 @@ h4{
   /* background: linear-gradient(to right, var(--gradient-colors)); */
   animation: gradientAnimation 120s ease infinite;
 
-  background-image: url("img/sheep.png");
+  background-image: url("img/gd/sheep.png");
 
   background-size: 20%; 
 
@@ -483,7 +483,7 @@ margin-top: 0px;
   padding-right: 60px;
   animation: gradientAnimation 120s ease infinite;
 
-  background-image: url("img/sheep.png");
+  background-image: url("img/gd/sheep.png");
 
   background-size: 20%; 
   
