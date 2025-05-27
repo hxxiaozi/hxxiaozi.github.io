@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         videoItem.addEventListener("click", function (e) {
             e.preventDefault();
             const videoSource = this.querySelector("a").getAttribute("data-video");
+            videoSource = videoSource.replace(/ /g, "%20");
             videoPlayer.src = videoSource;
             videoPlayer.load();
             videoPlayer.play();
