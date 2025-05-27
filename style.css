@@ -63,7 +63,7 @@ h4{
   /* Adjust the height of your cursor image */
   pointer-events: none;
   /* Ensure the cursor does not interfere with interactions */
-  background-image: url('img/me.png');
+  background-image: url('img/icon/me.png');
   /* Set the path to your custom cursor image */
   background-size: cover;
   z-index: 9999;
@@ -149,7 +149,7 @@ h4{
   --spacel: 5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm: "Maven Pro",'思源黑体', '思源宋体', monospace, serif;
+  --fontm: '思源黑体', '思源宋体', Avenir, serif;
   --fontp:  Work Sans, Avenir, Helvetica, sans-serif;
   --fontp2: "Maven Pro", "ZCOOL XiaoWei";
 
@@ -399,7 +399,7 @@ margin-top: 0px;
 }
 
 .text {
-  font-family: "ZCOOL XiaoWei", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Monaco", "Courier New", monospace;
+  font-family: var(--fontp);
   display: none;
   margin-left: 0px;
   opacity: 1;
