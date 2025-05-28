@@ -150,8 +150,9 @@ h4{
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
   --fontm: '思源黑体', '思源宋体', Avenir, serif;
-  --fontp:  Work Sans, Avenir, Helvetica, sans-serif;
-  --fontp2: "Maven Pro", "ZCOOL XiaoWei";
+  --fontp:  "Maven Pro", Work Sans, Avenir, Helvetica, sans-serif;
+  --fontp2: "ZCOOL XiaoWei";
+  
 
 }
 
@@ -172,6 +173,7 @@ h4{
   animation: gradient-animation 15s linear infinite;
 
   font-size: x-large;
+  font-family:var(--fontp);
 
 
   /* border: 5px solid transparent;
@@ -183,7 +185,7 @@ h4{
 
 
 
-  font-family: var(--fontm);
+  
 
 }
 
