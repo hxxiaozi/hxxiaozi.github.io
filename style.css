@@ -212,6 +212,7 @@ h4 {
 
 .files {
   padding-bottom: 3px;
+  
 }
 
 .files:hover {
@@ -246,6 +247,13 @@ h4 {
 
 .img {
   margin: auto;
+}
+img.icon {
+  image-rendering: pixelated;
+  width: 32px;
+  height: auto;
+  justify-content: center;
+
 }
 
 /* Page header styles */
