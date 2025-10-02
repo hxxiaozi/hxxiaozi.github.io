@@ -154,39 +154,70 @@ h4 {
   --fontp: "Maven Pro", Work Sans, Avenir, Helvetica, sans-serif;
   --fontp2: "ZCOOL XiaoWei";
 
-
 }
 
 /* Header styles */
+
 #title {
-
+  display: flex;
+  justify-content: space-between;
   padding-left: var(--spacel);
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-
-  /* background-color: thistle; */
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-
-  background: linear-gradient(300deg, #6ee0e6ec, thistle, cornsilk, #6ee0e6ec);
-  background-size: 150%;
-  animation: gradient-animation 15s linear infinite;
-
+  padding-right: var(--spacel);
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: x-large;
   font-family: var(--fontp);
+}
 
 
-  /* border: 5px solid transparent;
-  border-radius: 20px; 
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
-  background-image: linear-gradient(90deg alic 0%, #6ee0e6ec 100%),linear-gradient(to  bottom right， yellowgreen, #6ee0e6ec/#578AEF); 
-   */
+.title-right {
+  display: flex;
+  gap: 5%;
+  align-items: center
+}
+
+#title:hover {
+  border-top: yellowgreen 5px solid;
+  padding-top: 0px;
+  background-color: cornsilk;
+  color: lightpink;
+
+}
+
+.header-btn {
+  padding: 5px 10px;
+  font-size: medium;
+  
+}
+
+
+.profile {
+  background-color: floralwhite;
+  border: 5px none black;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-top: 1%;
+  margin-right: 2%;
+
+}
+
+.profile:hover {
+
+  transform: scale(1.05);
+}
 
 
 
 
+.files {
+  padding-bottom: 3px;
+}
+
+.files:hover {
+  color: white;
+  border-bottom: lightpink 3px solid;
+  padding: 0px;
 
 }
 
@@ -332,23 +363,7 @@ h4 {
 
 }
 
-/* Profile styles */
-.profile {
-  background-color: floralwhite;
-  border: 5px none black;
-  width: 100px;
-  height: 100px;
-  float: right;
-  border-radius: 50px;
-  margin-top: 1%;
-  margin-right: 2%;
 
-}
-
-.profile:hover {
-
-  transform: scale(1.05);
-}
 
 /* G styles */
 .g {
