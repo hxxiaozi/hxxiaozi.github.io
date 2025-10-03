@@ -190,6 +190,11 @@ h4 {
   
 }
 
+.header-btn:hover {
+  scale: 1.1;
+  
+}
+
 
 .profile {
   background-color: floralwhite;
@@ -204,7 +209,7 @@ h4 {
 
 .profile:hover {
 
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 
@@ -313,9 +318,8 @@ img.icon {
   animation: gradientAnimation 10s linear infinite reverse;
   background-size: 600% 600%;
 
-  width: 23%;
-  margin: 1%;
-  transform: scale(0.95);
+  width: 22%;
+  margin: 1.5%;
   border-radius: 10px;
 }
 
