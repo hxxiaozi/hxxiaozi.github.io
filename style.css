@@ -158,25 +158,25 @@ h4 {
 
 /* Header styles */
 
-#title {
+.header {
   display: flex;
   justify-content: space-between;
   padding-left: var(--spacel);
   padding-right: var(--spacel);
   padding-top: 5px;
   padding-bottom: 5px;
+}
+#title{
   font-size: x-large;
   font-family: var(--fontp);
 }
-
-
 .title-right {
   display: flex;
   gap: 5%;
   align-items: center
 }
 
-#title:hover {
+.header:hover {
   border-top: yellowgreen 5px solid;
   padding-top: 0px;
   background-color: cornsilk;
@@ -293,8 +293,7 @@ img.icon {
 }
 
 /* Div1 styles */
-#div1 {
-  /* background: linear-gradient(to right, var(--gradient-colors)); */
+#sheep {
   animation: gradientAnimation 120s ease infinite;
 
   background-image: url("img/gd/sheep.png");
@@ -360,14 +359,20 @@ img.icon {
 
 .galleries:hover .coverimg {
   display: block;
+  image-rendering: pixelated;
 }
 
 .galleries:hover .bg {
   background: none;
 }
 
-.galleries:hover img {
+.galleries:hover .cov {
   display: none;
+
+}
+.cov{
+  opacity: 0.8;
+  image-rendering: pixelated;
 
 }
 
@@ -506,7 +511,6 @@ img.icon {
   width: 100%;
   height: auto;
   float: none;
-  opacity: 0.5;
 }
 
 
