@@ -6,13 +6,12 @@
   <title>Tomato</title>
   <link href="style.css" rel="stylesheet" type="text/css">
 
-
-
-
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fragment+Mono:ital@0;1&family=Hi+Melody&family=Ma+Shan+Zheng&family=Moirai+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+XiaoWei&display=swap');
+  </style>
 </head>
 
-
-<body style=" background-color:rgb(222, 197, 194);">
+<body style=" background-color:mistyrose;">
   <div id="custom-cursor1"></div>
   <script src="1.js"></script>
   <nav class="menu">
@@ -58,56 +57,29 @@
       </li>
     </ul>
   </nav>
-
-  <!-- ^navbar -->
-  <div class="header">
-    <h3 class="title"><a href="about.html">Xiaoxuan's Website :)</h3></a>
-    <div class="page">
-      <div>
-        <h3 class="p">Visual Artchive: </h3>
-      </div>
-      <div class="p page">
-
-        <p class="p"> Visual Designs & 3D Objects</p>
-      </div>
-    </div>
-
-    <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
-      <a href="about.html"> <img class="profile" src="img/icon/tomato.png" width="50%" height="50%" alt="" /></a>
-    </div>
+  <img class="profile" src="img/icon/tomato.png" width="50%" height="50%" alt="" />
+  <div class="p pagehead">
+    <h2>Visual Artchive</h2>
+    <p>Visual Designs & 3D Objects</p>
   </div>
-
-
-
-
-
-  <!-- ^head -->
-  <div class="g2">
-
-    <!-- c c1:button c2:content -->
+  <div class="g">
     <div class="c">
-      <button type="button" class="c1">
-        <p class="p"> Witch's House </p>
+      <p class="p">
+        <a href="https://youtu.be/6i4ACh4Wh2M" target="_blank">Witch's House</a>
+      </p>
+      <div class="c1">
         <img src="img/3d/Witch House.jpg" width="100%" height="auto" alt="" style="margin: auto;" />
-      </button>
-      <div class="c2">
         <img src="img/3d/witchhousea.png" width="100%" height="auto" alt="" style="margin: auto;" />
       </div>
     </div>
 
     <div class="c">
-
-      <button type="button" class="c1">
-        <p class="p">Whale Lamp</p>
-
+      <p class="p">Whale Lamp</p>
+      <div class="c1">
         <video class="video-player" autoplay muted>
           <source src="img/light/light1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </button>
-      <div class="c2">
         <video class="video-player" autoplay muted>
           <source src="img/light/light2.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -169,9 +141,9 @@
         <a target="_blank">Illustrator</a>
       </p>
       <img src="img/gd/ai1.png" width="100%" height="auto" alt="" />
-
+        
       <div class="c1">
-
+        
         <img src="img/game/mbcards/stop.jpg" width="100%" height="auto" alt="" />
         <img src="img/game/mbcards/go.jpg" width="100%" height="auto" alt="" />
         <img src="img/game/mbcards/100miles.jpg" width="100%" height="auto" alt="" />
@@ -212,7 +184,7 @@
       </div>
     </div>
 
-
+    
 
     <div class="c">
       <p class="p">butt</p>
@@ -279,26 +251,6 @@
 
 
   </div>
-
-
-  <script>
-    var coll = document.getElementsByClassName("c1");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-
-      });
-    }
-  </script>
-
 </body>
 
 </html>
