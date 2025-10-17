@@ -148,7 +148,7 @@ a:hover {
 
 
 :root {
-  --spacel: 5%;
+  --spacel: 4.25%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
   --fontm: '思源黑体', '思源宋体', Avenir, serif;
@@ -222,7 +222,6 @@ a:hover {
 }
 
 .files:hover {
-  color: white;
   border-bottom: lightpink 3px solid;
   padding: 0px;
 
@@ -348,16 +347,6 @@ img.icon {
 
 
 
-
-/* G styles */
-.g {
-
-  margin-left: 4%;
-  margin-right: 4%;
-
-
-
-}
 
 /* Menu styles */
 .menu {
@@ -501,22 +490,17 @@ img.icon {
 
 /* Iframe styles */
 .iframe {
-  width: 96%;
+  width: 100%;
   height: 650px;
-  border-width: 5px;
-  border-color: yellowgreen;
 
-  border-top-color: #6ee0e6ec;
-  border-right-color: #6ee0e6ec;
+  border-width: 5px;
+  border-color:lightpink  #6ee0e6ec yellowgreen ;
   padding: 10px;
   border-radius: 20px;
-  margin-top: 30px;
+
 }
 
-.frame {
-  height: auto;
-  margin-left: 2.5%;
-}
+
 
 /* Explore styles */
 #explore {
@@ -665,8 +649,13 @@ img.icon {
   color: white;
 }
 
-.content {
+.p5-content {
+ 
+  margin-left: var(--spacel);
+  width: 93%;
   border-radius: 5px;
+  border-top: 5px dashed lightpink;
+
 }
 
 
