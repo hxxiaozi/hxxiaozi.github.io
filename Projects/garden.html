@@ -3,114 +3,76 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Project Title | H-XX</title>
+  <title>Garden: Flowers & Fireworks | H-XX</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
-  <div id="custom-cursor3"></div>
-  <script src="3.js"></script>
-
 </head>
 
-<body>
+<body style="background-color:rgba(177, 237, 57, 0.35);">
 
-  <!-- 🌿 Navigation Bar (same as g.html) -->
-  <nav class="menu">
-    <ul class="nav">
-      <li class="icon" id="home">
-        <a href="../index.html" class="navlink">
-          <img class="profile" src="../img/icon/me.png" style="object-fit: cover; margin-left:auto;margin-right:auto"
-            alt="Xiaoxuan Han" />
-      </li>
-      <li>
-        <h4 class="p2">Home</h4></a>
-      </li>
-
-      <li class="m">
-        <a href="../g.html" class="navlink">
-          <img src="../img/icon/cabbage.png" width="50px" height="auto" alt="" />
-          <span class="text">Fun Games</span>
-        </a>
-      </li>
-
-      <li class="m">
-        <a href="../v.html" class="navlink">
-          <img src="../img/icon/pumpkin.png" width="50px" height="auto" alt="" />
-          <span class="text">Moving Images</span>
-        </a>
-      </li>
-
-      <li class="m">
-        <a href="../i.html" class="navlink">
-          <img src="../img/icon/tomato.png" width="50px" height="auto" alt="" />
-          <span class="text">Visual Artchive</span>
-        </a>
-      </li>
-
-      <li class="m">
-        <a href="../p.html" class="navlink">
-          <img src="../img/icon/garlic.png" width="50px" height="auto" alt="" />
-          <span class="text">Coming Soon</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="../about.html" class="navlink">
-          <p class="p2"><br>About</p>
-        </a>
-      </li>
-
-      <li>
-        <a href="../about.html" class="navlink">
-          <p class="p2"><br>Back</p>
-        </a>
-      </li>
-
-    </ul>
-  </nav>
-
-  <div class="header">
-    <h3 class="title"><a href="index.html">Xiaoxuan's Website :)</h3></a>
-    <div class="p page">
-      <h3 class="p page">Xiaoxuan's Games: </h3>
-      <p class="p page">&nbsp;tech & interactive works. </p>
-    </div>
-    <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
-      <a href="about.html"> <img class="profile" src="img/icon/cabbage.png" width="50%" height="50%" alt="" /></a>
+  <!-- ===================================================== -->
+  <!-- 🗂️ 1. Project Meta Info (集中信息区) -->
+  <!-- ===================================================== -->
+  <!-- 
+    Project Title: Garden: Flowers & Fireworks
+    Category: Fun Games
+    Type: Game Design / Interactive Media
+    Date: 2025
+    Description: An interactive digital garden where users can plant and nurture
+                 virtual flowers that bloom into fireworks.
+    Keywords: p5.js, interactivity, generative art
+  -->
+  <!-- 这样每个文件开头都能一眼看到项目信息，方便维护 -->
+  <!-- ===================================================== -->
 
 
-    </div>
-  </div>
+  <div id="custom-cursor3"></div>
 
-  <!-- 🍃 Project -->
-  <div class=" p" style=" margin: 0 5%;">
-    <h3>Garden:flowers & fireworks </h3>
-    <p class="p">An interactive digital garden where users can plant and nurture virtual flowers that bloom into
-      fireworks.
+  <!-- ===================================================== -->
+  <!-- 🍀 2. Navigation Bar (从外部文件加载) -->
+  <!-- ===================================================== -->
+  <div id="navbar"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('navbar').innerHTML = html)
+      .catch(err => console.error('Navigation load failed:', err));
+  </script>
+  <!-- ===================================================== -->
+
+
+  <!-- ===================================================== -->
+  <!-- 🌸 3. Project Header -->
+  <!-- ===================================================== -->
+  <div class="p" style="margin: 0 5%;">
+    <h3>Garden: Flowers & Fireworks</h3>
+    <p class="p">
+      An interactive digital garden where users can plant and nurture virtual flowers that bloom into fireworks.
     </p>
   </div>
 
-  <!-- 📋 Project Info -->
-  <div class="project-info" style=" margin: 0 5%;">
-    <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
-    <p class="p"><strong>Time:</strong> 2025</p>
-    <p class="p"><strong>Collaborators:</strong> Your Name, Collaborator Name</p>
-  </div>
+  <!-- ===================================================== -->
+  <!-- 🌼 4. Project Media Section -->
+  <!-- ===================================================== -->
 
-  <!-- 🖼️ iframe -->
+  <!-- p5.js interactive embeds -->
   <div class="p5-content">
     <p class="p">Garden</p>
     <iframe class="iframe" src="https://editor.p5js.org/q1976862147/full/LLkqT6S0c"></iframe>
-    <p class="p" class="p5-title"><a href="https://editor.p5js.org/q1976862147/full/LLkqT6S0c" target="_blank"></a></p>
+    <p class="p p5-title">
+      <a href="https://editor.p5js.org/q1976862147/full/LLkqT6S0c" target="_blank">Open in p5.js →</a>
+    </p>
   </div>
 
   <div class="p5-content">
     <p class="p">Firework</p>
     <iframe class="iframe" src="https://editor.p5js.org/q1976862147/full/HfZsrJGX2"></iframe>
-    <p class="p" class="p5-title"><a href="https://editor.p5js.org/q1976862147/full/HfZsrJGX2" target="_blank"></a></p>
+    <p class="p p5-title">
+      <a href="https://editor.p5js.org/q1976862147/full/HfZsrJGX2" target="_blank">Open in p5.js →</a>
+    </p>
   </div>
 
-  <!-- 🖼️ Image / Video Section -->
+  <!-- video -->
   <div class="video-container" style="margin-bottom: 2rem;">
     <video class="video-player" controls autoplay muted loop>
       <source src="../img/game/sample.mp4" type="video/mp4">
@@ -118,23 +80,40 @@
     </video>
   </div>
 
-  <div class="unity-content" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1rem;">
-    <img class="unity-image" src="../img/game/sample1.jpg" alt="project image 1" />
-    <img class="unity-image" src="../img/game/sample2.jpg" alt="project image 2" />
-    <img class="unity-image" src="../img/game/sample3.jpg" alt="project image 3" />
+  <!-- gallery -->
+  <div class="gallery">
+    <img src="../img/game/sample1.jpg" alt="project image 1" />
+    <img src="../img/game/sample2.jpg" alt="project image 2" />
+    <img src="../img/game/sample3.jpg" alt="project image 3" />
   </div>
 
-  <!-- ✏️ Process / Concept -->
+
+  <!-- ===================================================== -->
+  <!-- 📋 5. Project Info -->
+  <!-- ===================================================== -->
+  <div class="project-info" style="margin: 0 5%;">
+    <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
+    <p class="p"><strong>Time:</strong> 2025</p>
+  </div>
+
+
+  <!-- ===================================================== -->
+  <!-- ✏️ 6. Process & Concept -->
+  <!-- ===================================================== -->
   <div class="project-process" style="margin:3rem 10%; line-height:1.7;">
     <h3 class="p">Process & Concept</h3>
     <p class="p">
-      Write about your creative process, challenges, materials, and techniques.
-      What ideas motivated this work? How does it connect to your larger artistic goals?
-      Keep it concise and reflective — like a project statement.
+      This project explores the intersection between nature and digital play.
+      Users cultivate flowers that grow and transform into bursts of color,
+      creating an evolving ecosystem of visual energy.
+      Built using p5.js, the project emphasizes generative interaction and visual rhythm.
     </p>
   </div>
 
-  <!-- 🧭 Back / Navigation -->
+
+  <!-- ===================================================== -->
+  <!-- 🧭 7. Back Navigation -->
+  <!-- ===================================================== -->
   <div class="section-container" style="margin:auto;">
     <div class="sections">
       <a href="../g.html">
@@ -143,6 +122,7 @@
     </div>
   </div>
 
+  <script src="../3.js"></script>
 </body>
 
 </html>
