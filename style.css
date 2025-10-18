@@ -517,7 +517,7 @@ img.icon {
 
 .image-container {
   margin-top: 20px;
-
+  image-rendering: pixelated;
   width: 95%;
   height: auto;
   padding-top: 2.5%;
@@ -618,9 +618,7 @@ img.icon {
   height: auto;
   border-radius: 10px;
   border-style: inset;
-  border-color: yellowgreen;
-  border-bottom-color: #6ee0e6ec;
-  border-right-color: #6ee0e6ec;
+  border-color: lightpink #6ee0e6ec yellowgreen;
   border-width: 5px;
 }
 
