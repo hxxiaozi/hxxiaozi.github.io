@@ -488,7 +488,7 @@ img.icon {
   height: 650px;
 
   border-width: 5px;
-  border-color:lightpink  #6ee0e6ec yellowgreen ;
+  border-color: lightpink #6ee0e6ec yellowgreen;
   padding: 10px;
   border-radius: 20px;
 
@@ -523,9 +523,46 @@ img.icon {
   font-family: var(--fontm);
 }
 
+.image-container {
+  margin-top: 20px;
+
+  width: 95%;
+  height: auto;
+  padding-top: 2.5%;
+  margin-left: 4%;
+  border-top: lightpink 5px dashed;
+
+
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.row.full {
+  grid-template-columns: 1fr;
+}
+
+.row.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row.four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 /* Video container styles */
 .video-container {
- 
+
   width: 95%;
   height: auto;
   padding-top: 2.5%;
@@ -543,8 +580,10 @@ img.icon {
   gap: var(--spacel);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   width: 95%;
-  max-width: 3000px; /* 控制大屏最大宽度 */
-  margin: 30px auto 0px;    /* 居中容器 */
+  max-width: 3000px;
+  /* 控制大屏最大宽度 */
+  margin: 30px auto 0px;
+  /* 居中容器 */
 }
 
 
@@ -644,7 +683,7 @@ img.icon {
 }
 
 .p5-content {
- 
+
   margin-left: var(--spacel);
   width: 93%;
   border-radius: 5px;
