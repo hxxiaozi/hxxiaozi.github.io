@@ -247,11 +247,7 @@ img.icon {
 
 
 
-/* Home styles */
-#home {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
+
 
 
 .footer {
@@ -349,7 +345,7 @@ img.icon {
   background: linear-gradient(to bottom, #FFB6C0 20%, #e6c66e 75%, #92e66e 100%);
 
   float: left;
-  height: 100dvh;
+  height: auto;
   width: 50px;
   position: fixed;
   opacity: 0.5;
@@ -361,7 +357,7 @@ img.icon {
 .nav {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,12 +385,6 @@ img.icon {
   opacity: 1;
 }
 
-.text {
-  font-family: var(--fontp);
-  display: none;
-  margin-left: 0px;
-  opacity: 1;
-}
 
 .menu:hover {
   /*background-color: #FFB6C0;*/
@@ -408,6 +398,14 @@ img.icon {
 
 .menu:hover .text {
   display: block;
+}
+
+
+.text {
+  font-family: var(--fontp);
+  display: none;
+  margin-left: 0px;
+  opacity: 1;
 }
 
 .c {
@@ -665,7 +663,8 @@ img.icon {
 .sections:hover {
   /* background-color: #6ee0e6ec; */
   /* background:linear-gradient(to top right ,lightpink 0%, #6ee0e6ec 100%); */
-  background: linear-gradient(to right, lightpink 0%, thistle 50%, #6ee0e6ec 100%);
+  color: cornsilk;
+  background: linear-gradient(to right,  thistle 0%, lightpink 60%, yellowgreen 100%);
   border: none;
   margin-top: 5px;
 
@@ -684,9 +683,9 @@ img.icon {
 
 .p5-content {
 
+  margin-top: 20px;
   margin-left: var(--spacel);
   width: 93%;
-  border-radius: 5px;
   border-top: 5px dashed lightpink;
 
 }
@@ -695,7 +694,7 @@ img.icon {
 .unity-content {
   margin-top: 20px;
   margin-left: var(--spacel);
-  padding-top: 20px;
+  padding: 20px 0;
   border-radius: 5px;
   border-top: 5px dashed lightpink;
   display: grid;
