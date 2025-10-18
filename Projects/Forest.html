@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Forest Bubble | H-XX</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: rgba(177, 237, 57, 0.35);">
+
+  <!-- ===================================================== -->
+  <!-- 🗂️ 1. Project Meta Info -->
+  <!-- ===================================================== -->
+  <!--  
+    Project: Forest
+    Type: Interactive Media / Game Design
+    Tool: Unity
+    Year: 2023
+  -->
+
+  <div id="custom-cursor3"></div>
+
+  <!-- ===================================================== -->
+  <!-- 🍀 2. Navigation Bar -->
+  <!-- ===================================================== -->
+  <div id="navbar"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('navbar').innerHTML = html)
+      .catch(err => console.error('Navigation load failed:', err));
+  </script>
+
+  <!-- ===================================================== -->
+  <!-- 🌸 3. Project Header -->
+  <!-- ===================================================== -->
+  <div class="p p5-content files">
+    <h3>Forest Bubble</h3>
+    <p class="p">
+      An animation project created in Unity, depicting a serene forest scene turning into fire scene when the bubble
+      pop.
+    </p>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- 🌼 4. Project Media Section -->
+  <!-- ===================================================== -->
+
+  <!-- 🌺 Gallery Part 1 -->
+  <div class="image-container">
+    <div class="row full">
+
+      <img src="../img/game/vfx/forest.jpg" />
+    </div>
+  </div>
+
+  <div class="video-container">
+    <video class="video-player" autoplay muted loop>
+      <source src="../img/game/vfx/forest.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+  </div>
+
+  <!-- 🌸 Gallery Part 2 + p5 embed -->
+  <div class="image-container">
+    <div class="row two">
+      <img src="../img/game/vfx/forest1.png" />
+      <img src="../img/game/vfx/forest6.png" />
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ===================================================== -->
+  <!-- 📋 5. Project Info -->
+  <!-- ===================================================== -->
+
+  <div class="p5-content" >
+    <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
+    <p class="p"><strong>Time:</strong> 2025</p>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- ✏️ 6. Process & Concept -->
+  <!-- ===================================================== -->
+  <div class="p5-content"">
+    <h3 class="p">Process & Concept</h3>
+    <p class="p">
+      This project explores the intersection between nature and digital play.
+      Users cultivate flowers that grow and transform into bursts of color,
+      creating an evolving ecosystem of visual energy.
+      Built using p5.js, the project emphasizes generative interaction and visual rhythm.
+    </p>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- 🧭 7. Back Navigation -->
+  <!-- ===================================================== -->
+  <div class="section-container" style="margin: auto;">
+    <a href="../g.html">
+      <div class="files" style="padding-left: 2.5%;">
+        <h3 class="p2">← Back to Fun Games</h3>
+      </div>
+    </a>
+  </div>
+
+  <script src="../3.js"></script>
+</body>
+
+</html>
