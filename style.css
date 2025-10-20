@@ -28,7 +28,6 @@ html {
 
 body {
   overflow-y: auto;
-
   overscroll-behavior: none;
   cursor: none;
   background-color: floralwhite;
@@ -132,13 +131,15 @@ h4 {
 
 a:link,
 a:visited {
-  color: #265400ec;
+  color: var(--dark);
   text-decoration: none;
 }
 
 a:hover {
   color: lightpink;
+
 }
+
 
 
 :root {
@@ -148,6 +149,7 @@ a:hover {
   --fontm: '思源黑体', '思源宋体', Avenir, serif;
   --fontp: "Maven Pro", Work Sans, Avenir, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", sans-serif, serif;
   --fontp2: "ZCOOL XiaoWei", monospace, sans-serif;
+  --dark: #265400ec;
 
 }
 
@@ -221,10 +223,42 @@ a:hover {
 
 }
 
+.files img:hover {
+  background-color: lightpink;
+  border-radius: 5px;
+}
+
+
+.filelink p,
+.filelink h3 {
+  padding-bottom: 3px;
+}
+
+.filelink p:hover,
+.filelink h3:hover {
+  border-bottom: lightpink 3px solid;
+  padding: 0px;
+
+}
+
+.filelink:hover {
+  outline: lightpink 3px solid;
+  outline-offset: 2px;
+  border-radius: 5px;
+}
+
+.filelink img:hover {
+  background-color: lightpink;
+  border-radius: 5px;
+  opacity: 0.95;
+}
+
 
 /* Paragraph styles */
 .p {
   font-family: var(--fontp);
+  display: inline-block;
+
 }
 
 .p2 {
@@ -308,13 +342,6 @@ img.icon {
   }
 }
 
-.bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50px;
-  overflow: hidden;
-}
 
 .galleries :hover {
   color: white;
@@ -348,6 +375,7 @@ img.icon {
   opacity: 0.35;
   transition: 200ms ease;
   border-radius: 25px;
+  margin-top: 5%;
 }
 
 
@@ -373,7 +401,7 @@ img.icon {
 
 .navlink:hover {
   color: #fff;
-  background-color: #265400ec;
+  background-color: var(--dark);
 }
 
 .icon {
@@ -664,7 +692,7 @@ img.icon {
 
 .sections a {
 
-  color: #265400ec;
+  color: var(--dark);
   ;
 }
 
