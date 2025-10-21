@@ -24,26 +24,16 @@
       .catch(err => console.error('Navigation load failed:', err));
   </script>
 
-  <!-- ^navbar -->
-  <div class="header">
-    <h3 class="title"><a href="about.html">Xiaoxuan's Website :)</h3></a>
-    <div class="page">
-      <div>
-        <h3 class="p">Visual Artchive: </h3>
-      </div>
-      <div class="p page">
 
-        <p class="p"> Visual Designs & 3D Objects</p>
-      </div>
-    </div>
-
-    <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
-      <a href="about.html"> <img class="profile" src="img/icon/tomato.png" width="50%" height="50%" alt="" /></a>
-    </div>
-  </div>
-
+ <!-- Header -->
+   <div id="header"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html)
+      .catch(err => console.error('Header load failed:', err));
+  </script>
 
 
 
@@ -54,7 +44,7 @@
     <!-- c c1:button c2:content -->
     <div class="c">
       <button type="button" class="c1">
-        <p class="p"> Witch's House </p>
+        <p > Witch's House </p>
         <img src="img/3d/Witch House.jpg" width="100%" height="auto" alt="" style="margin: auto;" />
       </button>
       <div class="c2">
@@ -65,7 +55,7 @@
     <div class="c">
 
       <button type="button" class="c1">
-        <p class="p">Whale Lamp</p>
+        <p >Whale Lamp</p>
 
         <video class="video-player" autoplay muted>
           <source src="img/light/light1.mp4" type="video/mp4">
@@ -86,7 +76,7 @@
       </div>
     </div>
     <!-- <div class="c1">
-      <p class="p">Floral Lamp</p>
+      <p >Floral Lamp</p>
       <img src="img/light/floralamp1.jpeg" width="100%" height="auto" alt="" />
       <img src="img/light/floralamp3.jpeg" width="100%" height="auto" alt="" />
       <img src="img/light/floralamp5.jpeg" width="100%" height="auto" alt="" />
@@ -96,7 +86,7 @@
       <img src="img/light/floralamp8.jpeg" width="100%" height="auto" alt="" style="margin: auto;" />
     </div> -->
     <div class="c">
-      <p class="p">
+      <p >
         <a target="_blank">Card Game</a>
       </p>
       <div class="c1">
@@ -121,7 +111,7 @@
     </div>
 
     <div class="c">
-      <p class="p">
+      <p >
         <a target="_blank">Illustrator</a>
       </p>
       <img src="img/gd/ai1.png" width="100%" height="auto" alt="" />
@@ -137,7 +127,7 @@
     </div>
 
     <div class="c">
-      <p class="p">Virtual Toilet</p>
+      <p >Virtual Toilet</p>
       <div class="c1">
         <img src="img/3d/toilet.png" width="100%" height="auto" alt="" style="display: flex; align-self: center;" />
       </div>
@@ -145,7 +135,7 @@
     </div>
 
     <div class="c">
-      <p class="p">Glass</p>
+      <p >Glass</p>
       <!--<img src="img/sculpture/glass.JPG" width="100%" height="auto" alt="" /> -->
       <div class="c1">
         <img src="img/sculpture/glass7.JPG" width="100%" height="auto" alt="" />
@@ -170,7 +160,7 @@
 
 
     <div class="c">
-      <p class="p">butt</p>
+      <p >butt</p>
       <div class="c1">
         <img src="img/3d/3d3.jpg" width="100%" height="auto" alt="" style="margin: auto;" />
         <!-- <img src="img/3d/3d5.JPG" width="100%" height="auto" alt="" /> -->
@@ -187,7 +177,7 @@
     </div>
 
     <div class="c">
-      <p class="p">3d</p>
+      <p >3d</p>
       <!--<img src="img/3d/glass.JPG" width="100%" height="auto" alt="" /> -->
       <div class="c1">
         <img src="img/3d/3d11.JPG" width="100%" height="auto" alt="" />
@@ -200,7 +190,7 @@
     </div>
 
     <!-- <div class="c1">
-      <p class="p">pixel</p>
+      <p >pixel</p>
       <img src="" width="100%" height="auto" alt="" style="margin: auto;" />
       <img src="" width="100%" height="auto" alt="" />
       <img src="" width="100%" height="auto" alt="" />
@@ -210,19 +200,19 @@
     </div> -->
 
     <!-- <div class="c1">
-      <p class="p">Landscape Box</p>
+      <p >Landscape Box</p>
       <img src="img/sculpture/Lanscape Box.jpg" width="100%" height="auto" alt="" />
     </div> -->
 
     <!-- <div class="c1">
-      <p class="p">A Day</p>
+      <p >A Day</p>
       <img src="img/gd/Morning.JPG" width="100%" height="100%" alt="" />
       <img src="img/gd/Cooking.jpg" width="100%" height="100%" alt="" />
       <img src="img/gd/Nap.jpg" width="100%" height="100%" alt="" />
       <img src="img/gd/Night.JPG" width="100%" height="100%" alt="" />
     </div> -->
     <!-- <div class="c1">
-      <p class="p">Breakfast</p>
+      <p >Breakfast</p>
       <img src="img/IMG_1452.jpg" width="100%" height="100%" alt="" />
       <img src="img/IMG_1453.jpg" width="100%" height="100%" alt="" />
       <img src="img/IMG_1454.jpg" width="100%" height="100%" alt="" />

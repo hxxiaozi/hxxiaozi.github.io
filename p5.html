@@ -23,21 +23,15 @@
   </script>
   <!-- ^navbar -->
 
-  <div class="header">
-    <h3 class="title"><a href="index.html">Xiaoxuan's Website :)</h3></a>
-    <div class=" page">
-      <h3 class="p page"> Xiaoxuan's Games: </h3>
-      <p class="p page"> &nbsp;tech & interactive works.</p>
-    </div>
-
-    <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
-      <a href="about.html"> <img class="profile" src="img/icon/cabbage.png" width="50%" height="50%" alt="" /></a>
-
-
-    </div>
-  </div>
+   <!-- Header -->
+   <div id="header"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html)
+      .catch(err => console.error('Header load failed:', err));
+  </script>
 
 
   <div class="i3">

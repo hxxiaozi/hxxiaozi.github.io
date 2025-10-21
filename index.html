@@ -14,17 +14,15 @@
   <div id="custom-cursor0"></div>
 
   <!-- Header -->
-  <div class="header">
-    <h3 class="title">Xiaoxuan's Website :)</h3>
+   <div id="header"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html)
+      .catch(err => console.error('Header load failed:', err));
+  </script>
 
-    <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
-      <a href="about.html">
-        <img class="profile" src="img/icon/me.png" alt="A Picture" />
-      </a>
-    </div>
-  </div>
 
   <!-- Description -->
   <div id="descript">
@@ -32,7 +30,7 @@
       I am Xiaoxuan Han (韩笑萱), a multimedia artist, graduated from the School of the Art Institute of Chicago with a
       BFA,
       emphasis in Art & Technology and New Media.
-      <br><br>
+      <br>
       Through my work, I try to have fun, make it enjoyable while offering fresh perspectives of life and express my
       view of the world. I create interactive and playful experiences across game design, animation, video, 3D, and
       graphic design.
@@ -41,16 +39,17 @@
 
   <!-- Explore Section -->
   <section id="explore">
-    <h3 class="p">What do you want to explore now?</h3>
-
-    <h4 class="p" style="justify-content:center; display:flex;">Files (PDFs)</h4>
-
+    <h3>What do you want to explore now?</h3>
   </section>
 
-  <section class="i3">
+
+  
+  <section class="i3" style="background-color: cornsilk;">
+  <h4 style="margin: 0 4.25%;"><br>Files (PDFs)</h4>
+
 
     <!-- Resume -->
-    <p class="files p">
+    <p class="files ">
       <a href="cv/XiaoxuanHan_Resume2025.8.pdf" target="_blank">Resume 2025&#8599;&nbsp;</a>
       <a class="filelink" href="cv/XiaoxuanHan_Resume2025.8.pdf" download>
         <img class="icon" src="img/pixel/handshake.png" alt="">⬇
@@ -58,7 +57,7 @@
     </p>
 
     <!-- Graphic Design Portfolio -->
-    <p class="files p">
+    <p class="files">
       <a href="cv/Xiaoxuan_PortfolioGD25.9.pdf" target="_blank">Graphic Design Portfolio&#8599;&nbsp;</a>
       <a class="filelink" href="cv/Xiaoxuan_PortfolioGD25.9.pdf" download>
         <img class="icon" src="img/pixel/artwork.png" alt="">⬇
@@ -66,7 +65,7 @@
     </p>
 
     <!-- Game Portfolio -->
-    <p class="files p">
+    <p class="files">
       <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
       <a class=" filelink" href="cv/GamePortfolio25.9.pdf" download>
         <img class="icon" src="img/pixel/button.png" alt="">⬇
@@ -126,7 +125,7 @@
 
   <div class="image-container">
 
-    <p class="p">Featured Work</p>
+    <h4>Featured Work</h4>
     <div class="row full">
       <a href="Projects/garden.html">
         <img src="../img/Garden/Firework.png" alt="project image 1" />
@@ -136,7 +135,7 @@
   </div>
   <!-- Footer -->
   <footer class="footer">
-    <p class="p">© Xiaoxuan Han 2025 All Rights Reserved.</p>
+    <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
   </footer>
 
   <!-- Scripts (最好放在 body 最后，确保 DOM 已加载) -->

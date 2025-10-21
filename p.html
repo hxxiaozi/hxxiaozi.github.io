@@ -222,16 +222,25 @@
       .then(html => document.getElementById('navbar').innerHTML = html)
       .catch(err => console.error('Navigation load failed:', err));
   </script>
+ <!-- Header -->
+   <div id="header"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html)
+      .catch(err => console.error('Header load failed:', err));
+  </script>
 
   <div class="header">
     <h3 class="title"><a href="index.html">Xiaoxuan's Website :)</a></h3>
-    <div class="p page">
-      <h3 class="p page">Xiaoxuan's Random Stuff:</h3>
-      <p class="p page">&nbsp;Work In Progress&nbsp;<progress></progress></p>
+    <div class=" page">
+      <h3 class=" page">Xiaoxuan's Random Stuff:</h3>
+      <p class=" page">&nbsp;Work In Progress&nbsp;<progress></progress></p>
     </div>
     <div class="title-right">
-      <a href="about.html" class="p header-btn">About</a>
-      <a href="about.html" class="p header-btn">Contact</a>
+      <a href="about.html" class=" header-btn">About</a>
+      <a href="about.html" class=" header-btn">Contact</a>
       <a href="about.html"><img class="profile" src="img/icon/cabbage.png" width="50%" height="50%" alt=""></a>
     </div>
   </div>

@@ -8,6 +8,15 @@
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35);">
+   <!-- Header -->
+   <div id="header"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html)
+      .catch(err => console.error('Header load failed:', err));
+  </script>
 
   <!-- ===================================================== -->
   <!-- 🗂️ 1. Project Meta Info -->
