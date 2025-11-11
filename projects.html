@@ -14,13 +14,25 @@
       display: block;
       margin: auto;
     }
+
     .image-secondary {
       max-width: 100%;
       height: auto;
-      display: hidden;
       margin: auto;
+      display: none;
     }
-    .image-secondary :hover{
+
+
+    .image-secondary :hover {
+
+      border-radius: 5px;
+    }
+
+    .unity-content:hover .image {
+      display: none;
+    }
+
+    .unity-content:hover .image-secondary {
       display: block;
     }
 
@@ -39,7 +51,7 @@
   <nav id="navbar"></nav>
   <script>
     // 动态加载公共导航栏
-    fetch("../nav.html")
+    fetch("nav.html")
       .then((res) => res.text())
       .then((html) => (document.getElementById("navbar").innerHTML = html))
       .catch((err) => console.error("Navigation load failed:", err));
@@ -48,7 +60,7 @@
   <header id="header"></header>
   <script>
     // 动态加载公共导航栏
-    fetch("../header.html")
+    fetch("header.html")
       .then((res) => res.text())
       .then((html) => (document.getElementById("header").innerHTML = html))
       .catch((err) => console.error("Header load failed:", err));
@@ -69,9 +81,11 @@
 
       <div class="link-outline unity-content">
         <img class="image" src="img/Garden/Firework.png" alt="project image 1" />
-        <video class="image-secondary" autoplay loop>
-          <source src="img/Garden/flowers-drawing.mov">
-        </video>
+        <div class="image-secondary">
+          <video autoplay loop muted playsinline style="max-width: 100%;">
+            <source src="img/Garden/flowers-drawing.mov">
+          </video>
+        </div>
         <div>
           <h3>Firework & Garden</h3>
           <br><br>
@@ -92,7 +106,9 @@
           </p>
         </div>
 
-        <img class="image" src="/img/game/et/et-cover.png" alt="project image 1"
+        <img class="image" src="img/game/et/et-cover.png" alt="project image 1"
+          style="width:200%; image-rendering: pixelated;" />
+        <img class="image-secondary" src="img/game/et/gg.gif" alt="project image 1"
           style="width:200%; image-rendering: pixelated;" />
 
       </div>
@@ -100,18 +116,20 @@
 
     <div>
 
-      <a href="Projects/Alien.html">
+      <a href="Projects/Alley.html">
 
         <div class="link-outline unity-content">
-          <img class="image" src="../img/game/unity/unity1.jpg" alt="project image 1" />
+          <img class="image" src="img/game/unity/unity1.jpg" alt="project image 1" />
+          <img class="image-secondary" src="img/game/unity/unity2.jpg" alt="project image 1" />
           <div class="unity-text">
             <h3 class="link-underline">The Alley</h3>
             <br /><br />
+            <p>
           </div>
         </div>
       </a>
 
-      <a href="../Projects/SheepCity.html">
+      <a href="Projects/SheepCity.html">
         <div class="link-outline unity-content">
           <div class="unity-text">
             <h3>Sheepcity</h3>
@@ -130,7 +148,7 @@
       <h2>3D Animations</h2>
       <div>Light Ocean</div>
 
-      <a href="../Projects/Forest.html">
+      <a href="Projects/Forest.html">
         <div class="link-outline unity-content">
           <div class="unity-text">
             <h3>Forest Illusion</h3>
