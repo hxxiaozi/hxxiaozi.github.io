@@ -129,8 +129,7 @@ h4 {
 }
 
 
-a:link,
-a:visited {
+a:link {
   color: var(--dark);
   text-decoration: none;
 }
@@ -143,7 +142,7 @@ a:hover {
 
 
 :root {
-  --spacel: 4.25%;
+  --spacel: 4.5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
   --fontm: '思源黑体', '思源宋体', Avenir, serif;
@@ -167,7 +166,7 @@ a:hover {
 
   border-top: pink 5px solid;
   padding-top: 0px;
- 
+
 }
 
 .header:hover {
@@ -217,48 +216,52 @@ a:hover {
   transform: scale(1.1);
 }
 
+.margin-l {
+  margin-left: var(--spacel);
+  margin-right: 0.5%;
+}
 
-.files {
+.link-underline {
   padding-bottom: 3px;
 }
 
-.files:hover {
+.link-underline:hover {
   border-bottom: lightpink 3px solid;
   padding: 0px;
 
 }
 
-.files img:hover {
+.link-underline img:hover {
   background-color: lightpink;
   border-radius: 5px;
 }
 
 
 
-.filelink h1,
-.filelink h2,
-.filelink h3,
-.filelink h4 {
+.link-outline h1,
+.link-outline h2,
+.link-outline h3,
+.link-outline h4 {
   padding-bottom: 3px;
 }
 
 
-.filelink h1:hover,
-.filelink h2:hover,
-.filelink h3:hover,
-.filelink h4:hover {
+.link-outline h1:hover,
+.link-outline h2:hover,
+.link-outline h3:hover,
+.link-outline h4:hover {
   border-bottom: lightpink 3px solid;
   padding: 0px;
 
 }
 
-.filelink:hover {
+.link-outline:hover {
   outline: lightpink 3px solid;
   outline-offset: 2px;
   border-radius: 5px;
 }
 
-.filelink img:hover {
+.link-outline img:hover {
   background-color: lightpink;
   border-radius: 5px;
   opacity: 0.9;
@@ -282,6 +285,7 @@ p, h1, h2, h3, h4 {
 
 .img {
   margin: auto;
+  
 }
 
 img.icon {
@@ -308,6 +312,7 @@ img.icon {
   font-size: small;
   text-align: right;
 }
+
 .footer:hover {
   background-color: cornsilk;
 }
@@ -498,7 +503,7 @@ img.icon {
   width: 100%;
   height: auto;
   object-fit: fill;
-  
+
 
 }
 
@@ -668,7 +673,7 @@ img.icon {
 
 .i3 {
   display: flex;
-margin-top: 20px;
+  margin-top: 20px;
   padding: 0px var(--spacel);
 
 
@@ -731,17 +736,15 @@ margin-top: 20px;
 
 .unity-content {
   margin-top: 20px;
-  margin-left: var(--spacel);
   border-radius: 5px;
   /* border-top: 5px dashed lightpink; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-
 }
 
 
-.unity-image {
+.image-roundcorner {
   width: 100%;
   height: auto;
   border-radius: 5px;

@@ -1,81 +1,81 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tomato</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Tomato</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <body style="background-color: rgb(222, 197, 194)">
+    <div id="custom-cursor1"></div>
+    <script src="1.js"></script>
+    <div id="navbar"></div>
+    <script>
+      // 动态加载公共导航栏
+      fetch("../nav.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html))
+        .catch((err) => console.error("Navigation load failed:", err));
+    </script>
 
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+      // 动态加载公共导航栏
+      fetch("../header.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("header").innerHTML = html))
+        .catch((err) => console.error("Header load failed:", err));
+    </script>
 
-
-
-</head>
-
-
-<body style=" background-color:rgb(222, 197, 194);">
-  <div id="custom-cursor1"></div>
-  <script src="1.js"></script>
-  <div id="navbar"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../nav.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('navbar').innerHTML = html)
-      .catch(err => console.error('Navigation load failed:', err));
-  </script>
-
-
- <!-- Header -->
-   <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-
-
-
-
-  <!-- ^head -->
-  <div class="g2">
-
-    <!-- c c1:button c2:content -->
-    <div class="c">
-      <button type="button" class="c1">
-        <p > Witch's House </p>
-        <img src="img/3d/Witch House.jpg" width="100%" height="auto" alt="" style="margin: auto;" />
-      </button>
-      <div class="c2">
-        <img src="img/3d/witchhousea.png" width="100%" height="auto" alt="" style="margin: auto;" />
+    <!-- ^head -->
+    <div class="g2">
+      <!-- c c1:button c2:content -->
+      <div class="c">
+        <button type="button" class="c1">
+          <p>Witch's House</p>
+          <img
+            src="img/3d/Witch House.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+        </button>
+        <div class="c2">
+          <img
+            src="img/3d/witchhousea.png"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="c">
+      <div class="c">
+        <button type="button" class="c1">
+          <p>Whale Lamp</p>
 
-      <button type="button" class="c1">
-        <p >Whale Lamp</p>
-
-        <video class="video-player" autoplay muted>
-          <source src="img/light/light1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </button>
-      <div class="c2">
-        <video class="video-player" autoplay muted>
-          <source src="img/light/light2.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <img src="img/light/light6.jpeg" width="100%" height="auto" alt="" />
-        <img src="img/light/light7.jpeg" width="100%" height="auto" alt="" />
-        <img src="img/light/light10.jpeg" width="100%" height="auto" alt="" />
-        <img src="img/light/light12.jpeg" width="100%" height="auto" alt="" />
-        <img src="img/light/light8.jpeg" width="100%" height="auto" alt="" />
-        <img src="img/light/light9.jpeg" width="100%" height="auto" alt="" />
+          <video class="video-player" autoplay muted>
+            <source src="img/light/light1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </button>
+        <div class="c2">
+          <video class="video-player" autoplay muted>
+            <source src="img/light/light2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img src="img/light/light6.jpeg" width="100%" height="auto" alt="" />
+          <img src="img/light/light7.jpeg" width="100%" height="auto" alt="" />
+          <img src="img/light/light10.jpeg" width="100%" height="auto" alt="" />
+          <img src="img/light/light12.jpeg" width="100%" height="auto" alt="" />
+          <img src="img/light/light8.jpeg" width="100%" height="auto" alt="" />
+          <img src="img/light/light9.jpeg" width="100%" height="auto" alt="" />
+        </div>
       </div>
-    </div>
-    <!-- <div class="c1">
+      <!-- <div class="c1">
       <p >Floral Lamp</p>
       <img src="img/light/floralamp1.jpeg" width="100%" height="auto" alt="" />
       <img src="img/light/floralamp3.jpeg" width="100%" height="auto" alt="" />
@@ -85,111 +85,291 @@
       <img src="img/light/floralamp6.jpeg" width="100%" height="auto" alt="" style="margin: auto;" />
       <img src="img/light/floralamp8.jpeg" width="100%" height="auto" alt="" style="margin: auto;" />
     </div> -->
-    <div class="c">
-      <p >
-        <a target="_blank">Card Game</a>
-      </p>
-      <div class="c1">
-        <img src="img/game/cardgame/IMG_3890.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-        <img src="img/game/cardgame/IMG_3890.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-        <img src="img/game/cardgame/card2.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-        <!-- <img src="img/game/cardgame/card3.JPG" width="100%" height="auto" alt="" style="margin: auto;" /> -->
-        <img src="img/game/cardgame/card4.JPG" width="100%" height="auto" alt="" />
-        <img src="img/game/cardgame/IMG_6230.JPG" width="100%" height="auto" alt="" />
-        <img src="img/game/cardgame/card1.JPG" width="100%" height="auto" alt="" />
-        <div style="margin: auto;">
-          <img src="img/game/cardgame/IMG_6433.JPG" width="100%" height="auto" alt="" />
-          <img src="img/game/cardgame/IMG_6434.JPG" width="100%" height="auto" alt="" />
+      <div class="c">
+        <p>
+          <a target="_blank">Card Game</a>
+        </p>
+        <div class="c1">
+          <img
+            src="img/game/cardgame/IMG_3890.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+          <img
+            src="img/game/cardgame/IMG_3890.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+          <img
+            src="img/game/cardgame/card2.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+          <!-- <img src="img/game/cardgame/card3.JPG" width="100%" height="auto" alt="" style="margin: auto;" /> -->
+          <img
+            src="img/game/cardgame/card4.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/cardgame/IMG_6230.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/cardgame/card1.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <div style="margin: auto">
+            <img
+              src="img/game/cardgame/IMG_6433.JPG"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+            <img
+              src="img/game/cardgame/IMG_6434.JPG"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div>
+
+          <img
+            src="img/game/cardgame/dice3.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <div>
+            <img
+              src="img/game/cardgame/dice1.JPG"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+            <img
+              src="img/game/cardgame/dice2.JPG"
+              width="100%"
+              height="auto"
+              alt=""
+            />
+          </div>
         </div>
+      </div>
 
-        <img src="img/game/cardgame/dice3.JPG" width="100%" height="auto" alt="" />
-        <div>
-          <img src="img/game/cardgame/dice1.JPG" width="100%" height="auto" alt="" />
-          <img src="img/game/cardgame/dice2.JPG" width="100%" height="auto" alt="" />
+      <div class="c">
+        <p>
+          <a target="_blank">Illustrator</a>
+        </p>
+        <img src="img/gd/ai1.png" width="100%" height="auto" alt="" />
+
+        <div class="c1">
+          <img
+            src="img/game/mbcards/stop.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/mbcards/go.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/mbcards/100miles.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/mbcards/accident.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/mbcards/repair.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/game/mbcards/puncture.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
         </div>
       </div>
-    </div>
 
-    <div class="c">
-      <p >
-        <a target="_blank">Illustrator</a>
-      </p>
-      <img src="img/gd/ai1.png" width="100%" height="auto" alt="" />
-
-      <div class="c1">
-        <img src="img/game/mbcards/stop.jpg" width="100%" height="auto" alt="" />
-        <img src="img/game/mbcards/go.jpg" width="100%" height="auto" alt="" />
-        <img src="img/game/mbcards/100miles.jpg" width="100%" height="auto" alt="" />
-        <img src="img/game/mbcards/accident.jpg" width="100%" height="auto" alt="" />
-        <img src="img/game/mbcards/repair.jpg" width="100%" height="auto" alt="" />
-        <img src="img/game/mbcards/puncture.jpg" width="100%" height="auto" alt="" />
-      </div>
-    </div>
-
-    <div class="c">
-      <p >Virtual Toilet</p>
-      <div class="c1">
-        <img src="img/3d/toilet.png" width="100%" height="auto" alt="" style="display: flex; align-self: center;" />
+      <div class="c">
+        <p>Virtual Toilet</p>
+        <div class="c1">
+          <img
+            src="img/3d/toilet.png"
+            width="100%"
+            height="auto"
+            alt=""
+            style="display: flex; align-self: center"
+          />
+        </div>
       </div>
 
-    </div>
+      <div class="c">
+        <p>Glass</p>
+        <!--<img src="img/sculpture/glass.JPG" width="100%" height="auto" alt="" /> -->
+        <div class="c1">
+          <img
+            src="img/sculpture/glass7.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass1.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass2.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass3.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass4.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass5.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass6.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass13.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
 
-    <div class="c">
-      <p >Glass</p>
-      <!--<img src="img/sculpture/glass.JPG" width="100%" height="auto" alt="" /> -->
-      <div class="c1">
-        <img src="img/sculpture/glass7.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass1.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass2.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass3.jpg" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass4.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass5.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass6.jpg" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass13.JPG" width="100%" height="auto" alt="" />
+          <img
+            src="img/sculpture/glass16.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass11.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <img
+            src="img/sculpture/glass12.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
 
-        <img src="img/sculpture/glass16.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass11.JPG" width="100%" height="auto" alt="" />
-        <img src="img/sculpture/glass12.JPG" width="100%" height="auto" alt="" />
-
-        <img src="img/sculpture/glass17.JPG" width="100%" height="auto" alt="" />
-        <!-- <img src="img/sculpture/glass19.jpg" width="100%" height="auto" alt="" />
+          <img
+            src="img/sculpture/glass17.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+          />
+          <!-- <img src="img/sculpture/glass19.jpg" width="100%" height="auto" alt="" />
         <img src="img/sculpture/glass9.JPG" width="100%" height="auto" alt="" /> -->
+        </div>
       </div>
-    </div>
 
+      <div class="c">
+        <p>butt</p>
+        <div class="c1">
+          <img
+            src="img/3d/3d3.jpg"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+          <!-- <img src="img/3d/3d5.JPG" width="100%" height="auto" alt="" /> -->
 
+          <img
+            src="img/3d/3d10.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
 
-    <div class="c">
-      <p >butt</p>
-      <div class="c1">
-        <img src="img/3d/3d3.jpg" width="100%" height="auto" alt="" style="margin: auto;" />
-        <!-- <img src="img/3d/3d5.JPG" width="100%" height="auto" alt="" /> -->
+          <img
+            src="img/3d/3d14.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
 
-        <img src="img/3d/3d10.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-
-        <img src="img/3d/3d14.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-
-        <img src="img/3d/3d6.jpg" width="100%" height="auto" alt="" />
-        <img src="img/3d/3d8.JPG" width="100%" height="auto" alt="" />
-        <img src="img/3d/3d7.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-
+          <img src="img/3d/3d6.jpg" width="100%" height="auto" alt="" />
+          <img src="img/3d/3d8.JPG" width="100%" height="auto" alt="" />
+          <img
+            src="img/3d/3d7.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+        </div>
       </div>
-    </div>
 
-    <div class="c">
-      <p >3d</p>
-      <!--<img src="img/3d/glass.JPG" width="100%" height="auto" alt="" /> -->
-      <div class="c1">
-        <img src="img/3d/3d11.JPG" width="100%" height="auto" alt="" />
-        <img src="img/3d/3d12.JPG" width="100%" height="auto" alt="" />
+      <div class="c">
+        <p>3d</p>
+        <!--<img src="img/3d/glass.JPG" width="100%" height="auto" alt="" /> -->
+        <div class="c1">
+          <img src="img/3d/3d11.JPG" width="100%" height="auto" alt="" />
+          <img src="img/3d/3d12.JPG" width="100%" height="auto" alt="" />
 
-        <img src="img/3d/3d1.JPG" width="100%" height="auto" alt="" />
-        <img src="img/3d/3d2.JPG" width="100%" height="auto" alt="" style="margin: auto;" />
-        <img src="img/3d/3d4.JPG" width="100%" height="auto" alt="" />
+          <img src="img/3d/3d1.JPG" width="100%" height="auto" alt="" />
+          <img
+            src="img/3d/3d2.JPG"
+            width="100%"
+            height="auto"
+            alt=""
+            style="margin: auto"
+          />
+          <img src="img/3d/3d4.JPG" width="100%" height="auto" alt="" />
+        </div>
       </div>
-    </div>
 
-    <!-- <div class="c1">
+      <!-- <div class="c1">
       <p >pixel</p>
       <img src="" width="100%" height="auto" alt="" style="margin: auto;" />
       <img src="" width="100%" height="auto" alt="" />
@@ -199,19 +379,19 @@
 
     </div> -->
 
-    <!-- <div class="c1">
+      <!-- <div class="c1">
       <p >Landscape Box</p>
       <img src="img/sculpture/Lanscape Box.jpg" width="100%" height="auto" alt="" />
     </div> -->
 
-    <!-- <div class="c1">
+      <!-- <div class="c1">
       <p >A Day</p>
       <img src="img/gd/Morning.JPG" width="100%" height="100%" alt="" />
       <img src="img/gd/Cooking.jpg" width="100%" height="100%" alt="" />
       <img src="img/gd/Nap.jpg" width="100%" height="100%" alt="" />
       <img src="img/gd/Night.JPG" width="100%" height="100%" alt="" />
     </div> -->
-    <!-- <div class="c1">
+      <!-- <div class="c1">
       <p >Breakfast</p>
       <img src="img/IMG_1452.jpg" width="100%" height="100%" alt="" />
       <img src="img/IMG_1453.jpg" width="100%" height="100%" alt="" />
@@ -220,30 +400,23 @@
       <img src="img/IMG_1456.jpg" width="100%" height="100%" alt="" />
       <img src="img/IMG_1457.jpg" width="100%" height="100%" alt="" />
     </div> -->
+    </div>
 
+    <script>
+      var coll = document.getElementsByClassName("c1");
+      var i;
 
-
-  </div>
-
-
-  <script>
-    var coll = document.getElementsByClassName("c1");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-
-      });
-    }
-  </script>
-
-</body>
-
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>

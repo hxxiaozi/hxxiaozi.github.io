@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <div id="custom-cursor1"></div>
+    <script src="1.js"></script> -->
+  <style>
+    .image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    .image-secondary {
+      max-width: 100%;
+      height: auto;
+      display: hidden;
+      margin: auto;
+    }
+    .image-secondary :hover{
+      display: block;
+    }
+
+    .proj-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+
+    }
+
+    /* .proj-container div {
+    } */
+  </style>
+</head>
+
+<body>
+  <nav id="navbar"></nav>
+  <script>
+    // 动态加载公共导航栏
+    fetch("../nav.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("navbar").innerHTML = html))
+      .catch((err) => console.error("Navigation load failed:", err));
+  </script>
+  <!-- Header -->
+  <header id="header"></header>
+  <script>
+    // 动态加载公共导航栏
+    fetch("../header.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("header").innerHTML = html))
+      .catch((err) => console.error("Header load failed:", err));
+  </script>
+
+  <div class="margin-l">
+
+
+    <section>
+      Digital Games 3D Animations Computer Vision Physical Games
+    </section>
+
+    <h2>Digital Games</h2>
+
+
+
+    <a href="Projects/garden.html">
+
+      <div class="link-outline unity-content">
+        <img class="image" src="img/Garden/Firework.png" alt="project image 1" />
+        <video class="image-secondary" autoplay loop>
+          <source src="img/Garden/flowers-drawing.mov">
+        </video>
+        <div>
+          <h3>Firework & Garden</h3>
+          <br><br>
+          <p>
+            This project
+          </p>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="Projects/Alien.html">
+      <div class="link-outline unity-content">
+        <div>
+          <h3>Human?Alien? Vegetables!</h3><br><br>
+          <p>
+            This project
+          </p>
+        </div>
+
+        <img class="image" src="/img/game/et/et-cover.png" alt="project image 1"
+          style="width:200%; image-rendering: pixelated;" />
+
+      </div>
+    </a>
+
+    <div>
+
+      <a href="Projects/Alien.html">
+
+        <div class="link-outline unity-content">
+          <img class="image" src="../img/game/unity/unity1.jpg" alt="project image 1" />
+          <div class="unity-text">
+            <h3 class="link-underline">The Alley</h3>
+            <br /><br />
+          </div>
+        </div>
+      </a>
+
+      <a href="../Projects/SheepCity.html">
+        <div class="link-outline unity-content">
+          <div class="unity-text">
+            <h3>Sheepcity</h3>
+            <br /><br />
+            <p>
+              A surreal management game set in a sleepless town where falling
+              asleep turns citizens into sheep. A playful exploration of labor,
+              transformation, and rest.
+            </p>
+          </div>
+          <img class="image" src="img/game/unity/sheepcity.png" alt="Sheepcity" />
+        </div>
+      </a>
+
+
+      <h2>3D Animations</h2>
+      <div>Light Ocean</div>
+
+      <a href="../Projects/Forest.html">
+        <div class="link-outline unity-content">
+          <div class="unity-text">
+            <h3>Forest Illusion</h3>
+            <br /><br />
+            <p>
+              Exploring light, reflection, and spatial illusion through
+              interactive scene design.
+            </p>
+          </div>
+          <img class="image" src="img/game/vfx/forest.jpg" alt="Forest img" />
+        </div>
+      </a>
+
+      <div>Sleep,less,ness</div>
+
+      <h2>Computer Vision</h2>
+      <div>Happy Face</div>
+      <div>Virtual Toilet</div>
+      <div>Face</div>
+
+      <h2>Physical Games</h2>
+
+      <div>My Happy Healthy Rich and Windy Chicago Game</div>
+      <div>Vampire</div>
+
+      <button onclick="history.back()">Go Back</button>
+      <footer>
+        <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
+      </footer>
+    </div>
+</body>
+
+</html>

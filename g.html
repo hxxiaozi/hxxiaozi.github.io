@@ -1,124 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>cabbage</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <div id="custom-cursor3"></div>
   <script src="3.js"></script>
 </head>
 
-<body style=" background-color:rgba(177, 237, 57, 0.35);">
+<body style="background-color: rgba(177, 237, 57, 0.35)">
   <div id="navbar"></div>
   <script>
     // 动态加载公共导航栏
-    fetch('../nav.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('navbar').innerHTML = html)
-      .catch(err => console.error('Navigation load failed:', err));
+    fetch("../nav.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("navbar").innerHTML = html))
+      .catch((err) => console.error("Navigation load failed:", err));
   </script>
 
   <!-- Header -->
-   <div id="header"></div>
+  <div id="header"></div>
   <script>
     // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
+    fetch("../header.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("header").innerHTML = html))
+      .catch((err) => console.error("Header load failed:", err));
   </script>
 
-
-  <div class="i3" >
-    <div class="sections"><a href="#unity">
+  <div class="i3">
+    <div class="sections">
+      <a href="#unity">
         <h3 class="p2">Unity Projects</h3>
-      </a></div>
-    <div class="sections"><a href="#other games">
+      </a>
+    </div>
+    <div class="sections">
+      <a href="#other games">
         <h3 class="p2">Other Games</h3>
-      </a></div>
-    <div class="sections"><a href="p5.html">
-        <h3 class="p2">P5js </h3>
-      </a></div>
+      </a>
+    </div>
+    <div class="sections">
+      <a href="p5.html">
+        <h3 class="p2">P5js</h3>
+      </a>
+    </div>
   </div>
-
-
-  <!-- Unity Projects Section -->
-  <div class="p5-content" id="unity">
-    <h3>Unity Projects</h3>
-  </div>
-
-  <!-- Project 1: Forest Illusion -->
-  <a href="../Projects/Forest.html">
-    <div class="filelink unity-content">
-      <div class="unity-text">
-        <h4>Forest Illusion</h4><br><br>
-        <p>Exploring light, reflection, and spatial illusion through interactive scene design.</p>
-      </div>
-      <img class="unity-image" src="img/game/vfx/forest.jpg" alt="Forest img">
-    </div>
-  </a>
-  <!-- Project 2: Magic World -->
-  <a href="../Projects/Forest.html">
-
-
-    <div class="filelink unity-content">
-
-
-
-
-      <img class="unity-image" src="img/game/unity/unity1.jpg" />
-
-      <div>
-        <h4> Magic World</h4><br><br>
-
-        <p>Alley</p><br>
-        <p>At the dead end of this alley stood a weathered sign, barricading the path to a
-          desolate hillside. A lone streetlight cast its amber glow across both walls which emphasizes the geometric
-          grafittis in hypnotic neon hues.
-
-          <br> It happened on the day when dusk turned the alley into a liquid dream. The red door stood slightly
-          ajar, emitting a scented warmth. As I reached to knock, the bicycle's bell chimed on its own, a crystalline
-          note shimmering in the air. Suddenly the graffiti patterns began swirling like living constellations, their
-          turquoise and gold lines reforming into glowing runes.
-
-          <br> The door swung wide...That's when I realized - the real magic wasn't the portal, but how ordinary
-          things had been whispering secrets to me all along.
-        </p>
-
-      </div>
+  <div class="margin-l">
+    <!-- Unity Projects Section -->
+    <div class="p5-content" id="unity">
+      <h3>Unity Projects</h3>
     </div>
 
-  </a>
-  <!-- Project 3: Witch's House -->
-  <a href="../Projects/WitchHouse.html">
-    <div class="filelink unity-content">
-      <div class="unity-text">
-        <h4>Witch’s House</h4><br><br>
-        <p>
-          A 3D exploration game inspired by eerie fairy tales and forgotten architecture.
-          Players uncover secrets hidden within a glowing witch’s cottage.
-        </p>
+    <!-- Project 1: Forest Illusion -->
+    <a href="../Projects/Forest.html">
+      <div class="link-outline unity-content">
+        <div class="unity-text">
+          <h4>Forest Illusion</h4>
+          <br /><br />
+          <p>
+            Exploring light, reflection, and spatial illusion through
+            interactive scene design.
+          </p>
+        </div>
+        <img class="image-roundcorner" src="img/game/vfx/forest.jpg" alt="Forest img" />
       </div>
-      <img class="unity-image" src="img/3d/Witch House.jpg" alt="Witch’s House">
-    </div>
-  </a>
+    </a>
+    <!-- Project 2: Magic World -->
+    <a href="../Projects/Forest.html">
+      <div class="link-outline unity-content">
+        <img class="image-roundcorner" src="img/game/unity/unity1.jpg" />
 
-  <!-- Project 4: Pool Party -->
-  <a href="../Projects/PoolParty.html">
-    <div class="filelink unity-content">
-      <img class="unity-image" src="img/game/unity/unity3.jpeg" alt="Pool Party">
-      <div class="unity-text">
-        <h4>Pool Party</h4><br><br>
-        <p>
-          A playful simulation of light and motion—colorful reflections, chaotic splashes, and dreamlike physics.
-        </p>
+        <div>
+          <h4>Magic World</h4>
+          <br /><br />
+
+          <p>Alley</p>
+          <br />
+          <p>
+            At the dead end of this alley stood a weathered sign, barricading
+            the path to a desolate hillside. A lone streetlight cast its amber
+            glow across both walls which emphasizes the geometric grafittis in
+            hypnotic neon hues.
+
+            <br />
+            It happened on the day when dusk turned the alley into a liquid
+            dream. The red door stood slightly ajar, emitting a scented warmth.
+            As I reached to knock, the bicycle's bell chimed on its own, a
+            crystalline note shimmering in the air. Suddenly the graffiti
+            patterns began swirling like living constellations, their turquoise
+            and gold lines reforming into glowing runes.
+
+            <br />
+            The door swung wide...That's when I realized - the real magic wasn't
+            the portal, but how ordinary things had been whispering secrets to
+            me all along.
+          </p>
+        </div>
       </div>
+    </a>
+    <!-- Project 3: Witch's House -->
+    <a href="../Projects/WitchHouse.html">
+      <div class="link-outline unity-content">
+        <div class="unity-text">
+          <h4>Witch’s House</h4>
+          <br /><br />
+          <p>
+            A 3D exploration game inspired by eerie fairy tales and forgotten
+            architecture. Players uncover secrets hidden within a glowing
+            witch’s cottage.
+          </p>
+        </div>
+        <img class="image-roundcorner" src="img/3d/Witch House.jpg" alt="Witch’s House" />
+      </div>
+    </a>
 
-    </div>
-  </a>
+    <!-- Project 4: Pool Party -->
+    <a href="../Projects/PoolParty.html">
+      <div class="link-outline unity-content">
+        <img class="image-roundcorner" src="img/game/unity/unity3.jpeg" alt="Pool Party" />
+        <div class="unity-text">
+          <h4>Pool Party</h4>
+          <br /><br />
+          <p>
+            A playful simulation of light and motion—colorful reflections,
+            chaotic splashes, and dreamlike physics.
+          </p>
+        </div>
+      </div>
+    </a>
 
-  <!-- <div class="unity-content">
+    <!-- <div class="unity-content">
         <p >Neon Dash</p>
         
       </div>
@@ -127,8 +139,8 @@
      
       <div class="unity-content">
           
-        <img class="unity-image" src="img/game/vfx/neonDash.png" />
-        <img class="unity-image" src="img/game/vfx/neonDash3.png" />
+        <img class="image-roundcorner" src="img/game/vfx/neonDash.png" />
+        <img class="image-roundcorner" src="img/game/vfx/neonDash3.png" />
        
       </div> 
 
@@ -139,22 +151,23 @@
         </video>
       </div> -->
 
-  <!-- Project 5: Sheepcity -->
-  <a href="../Projects/SheepCity.html">
-    <div class="filelink unity-content">
-      <div class="unity-text">
-        <h4>Sheepcity</h4><br><br>
-        <p>
-          A surreal management game set in a sleepless town where falling asleep turns citizens into sheep.
-          A playful exploration of labor, transformation, and rest.
-        </p>
+    <!-- Project 5: Sheepcity -->
+    <a href="../Projects/SheepCity.html">
+      <div class="link-outline unity-content">
+        <div class="unity-text">
+          <h4>Sheepcity</h4>
+          <br /><br />
+          <p>
+            A surreal management game set in a sleepless town where falling
+            asleep turns citizens into sheep. A playful exploration of labor,
+            transformation, and rest.
+          </p>
+        </div>
+        <img class="image-roundcorner" src="img/game/unity/sheepcity.png" alt="Sheepcity" />
       </div>
-      <img class="unity-image" src="img/game/unity/sheepcity.png" alt="Sheepcity">
-    </div>
-  </a>
+    </a>
 
-
-  <!-- <div class="unity-content">
+    <!-- <div class="unity-content">
         <p >Mushroom RainForest</p> 
       </div>
       <div class="video-container">
@@ -164,52 +177,48 @@
         </video>
       </div> -->
 
-
-  <!-- <div class="content">
+    <!-- <div class="content">
         <iframe class="iframe" frameborder="0" src="https://itch.io/embed-upload/9023306?color=333333" allowfullscreen="" width="1000" height="620"><a href="https://hxxiaozi.itch.io/magic-pool">YUIOP</a></iframe>
         <p  style="text-align: center">(Y/U/I/O/P)</p>
         <iframe frameborder="0" src="https://itch.io/embed/2346398"> <a href="https://hxxiaozi.itch.io/magic-pool">/a></iframe>
           
       </div> -->
 
-
-  <div class="g" id="other games">
-    <div class="p5-content">
-      <div>
-        <p>Happy, Healthy, Rich & Windy Chicago Life</p>
+    <div class="g" id="other games">
+      <div class="p5-content">
+        <div>
+          <p>Happy, Healthy, Rich & Windy Chicago Life</p>
+        </div>
+        <img width="90%" src="img/game/cardgame/Han,Xiaoxuan_01.jpg" />
+        <p>
+          <a href="https://docs.google.com/document/d/1s0WXg3XaZtpwWAVj5creYGz6yeM8G89OL4SbFcZm3rM/edit?usp=sharing"
+            target="_blank">Document</a>
+        </p>
+        <br />
       </div>
-      <img width="90%" src="img/game/cardgame/Han,Xiaoxuan_01.jpg" />
-      <p>
-        <a href="https://docs.google.com/document/d/1s0WXg3XaZtpwWAVj5creYGz6yeM8G89OL4SbFcZm3rM/edit?usp=sharing"
-          target="_blank">Document</a>
-      </p>
-      <br>
     </div>
-  </div>
 
-  <div class="g">
-    <div class="p5-content">
-      <p>DeadLine: A Murder Mystery</p>
-      <!-- <img src="img/game/ddl/screenshot1.png" /> -->
+    <div class="g">
+      <div class="p5-content">
+        <p>DeadLine: A Murder Mystery</p>
+        <!-- <img src="img/game/ddl/screenshot1.png" /> -->
 
-      <iframe class="iframe" frameborder="0" src="DeadLine.html" allowfullscreen=""></iframe>
+        <iframe class="iframe" frameborder="0" src="DeadLine.html" allowfullscreen=""></iframe>
 
-
-      <div class="sections">
-        <a href="DeadLine.html" target="_blank">
-          <h3 class="p2">Play DeadLine: A Murder Mystery(new tab)</h3>
-        </a>
+        <div class="sections">
+          <a href="DeadLine.html" target="_blank">
+            <h3 class="p2">Play DeadLine: A Murder Mystery(new tab)</h3>
+          </a>
+        </div>
+        <div class="sections">
+          <a href="p5.html">
+            <h3 class="p2">More P5.js sketches</h3>
+          </a>
+        </div>
       </div>
-      <div class="sections">
-        <a href="p5.html">
-          <h3 class="p2">More P5.js sketches</h3>
-        </a>
-      </div>
-
     </div>
   </div>
   <!-- p5.js Iframes Section -->
-
 </body>
 
 </html>

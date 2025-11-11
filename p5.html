@@ -1,118 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cabbage</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <div id="custom-cursor3"></div>
+    <script src="3.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cabbage</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <div id="custom-cursor3"></div>
-  <script src="3.js"></script>
-</head>
+  <body>
+    <!-- navbar -->
+    <div id="navbar"></div>
+    <script>
+      // 动态加载公共导航栏
+      fetch("../nav.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("navbar").innerHTML = html))
+        .catch((err) => console.error("Navigation load failed:", err));
+    </script>
+    <!-- ^navbar -->
 
-<body>
-  <!-- navbar -->
-  <div id="navbar"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../nav.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('navbar').innerHTML = html)
-      .catch(err => console.error('Navigation load failed:', err));
-  </script>
-  <!-- ^navbar -->
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+      // 动态加载公共导航栏
+      fetch("../header.html")
+        .then((res) => res.text())
+        .then((html) => (document.getElementById("header").innerHTML = html))
+        .catch((err) => console.error("Header load failed:", err));
+    </script>
 
-   <!-- Header -->
-   <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-
-
-  <div class="i3">
-    <a href="../g.html#unity">
-      <div class="sections">
-        <h3 class="p2">Unity Projects</h3>
-
-      </div>
-    </a>
-    <a href="../g.html#other%20games">
-      <div class="sections">
-        <h3 class="p2">Other Games</h3>
-
-      </div>
-    </a>
-    <a href="../p5.html">
-    <div class="sections">
-      <h3 class="p2">P5js</h3>
-    </div>
-    </a>
-    <!-- <div class="sections"><a href="3.i.html">
+    <div class="i3">
+      <a href="../g.html#unity">
+        <div class="sections">
+          <h3 class="p2">Unity Projects</h3>
+        </div>
+      </a>
+      <a href="../g.html#other%20games">
+        <div class="sections">
+          <h3 class="p2">Other Games</h3>
+        </div>
+      </a>
+      <a href="../p5.html">
+        <div class="sections">
+          <h3 class="p2">P5js</h3>
+        </div>
+      </a>
+      <!-- <div class="sections"><a href="3.i.html">
         <h3 class="p2">(Google Slide)Life Game</h3>
       </a></div> -->
-  </div>
-
-
-  <!-- p5.js Iframes Section -->
-
-  <a href="../Projects/garden.html">
-    <div class="p p5-content files">
-      <h3>Garden: Flowers & Fireworks</h3>
     </div>
 
-    <div class="image-container">
-      <div class="row full">
-        <img src="../img/garden/Firework.png" alt="project image 1" />
+    <!-- p5.js Iframes Section -->
+
+    <a href="../Projects/garden.html">
+      <div class="p p5-content link-underline">
+        <h3>Garden: Flowers & Fireworks</h3>
       </div>
+
+      <div class="image-container">
+        <div class="row full">
+          <img src="../img/garden/Firework.png" alt="project image 1" />
+        </div>
+      </div>
+    </a>
+
+    <div class="p5-content">
+      <a href="https://editor.p5js.org/xhan12/full/MRsioxKDE">
+        <p class="p link-underline">Human?Alien?Vegetable! Game（intro）</p>
+      </a>
     </div>
-  </a>
 
+    <div class="video-container">
+      <video class="video-player" controls>
+        <source src="vid/Alien Game Demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-  <div class="p5-content">
-    <a href="https://editor.p5js.org/xhan12/full/MRsioxKDE">
-      <p class="p files">Human?Alien?Vegetable! Game（intro）</p>
-    </a>
-  </div>
+    <div class="p5-content">
+      <a href="https://editor.p5js.org/xhan12/full/02lj1rKBp">
+        <p class="p link-underline">:) Mirror</p>
+      </a>
+    </div>
 
-  <div class="video-container">
-    <video class="video-player" controls>
-      <source src="vid/Alien Game Demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
+    <div class="p5-content">
+      <a href="https://editor.p5js.org/xhan12/full/xx6m_t6S_">
+        <p class="p link-underline">Sound Visualizer</p>
+      </a>
+    </div>
 
-
-  <div class="p5-content">
-
-    <a href="https://editor.p5js.org/xhan12/full/02lj1rKBp">
-      <p class="p files">:) Mirror</p>
-    </a>
-  </div>
-
-  <div class="p5-content">
-
-    <a href="https://editor.p5js.org/xhan12/full/xx6m_t6S_">
-      <p class="p files">Sound Visualizer</p>
-    </a>
-  </div>
-
-
-
-
-
-  <!-- smile rating
+    <!-- smile rating
 
     <iframe class="iframe" src="https://editor.p5js.org/xhan12/full/DBvAiSf9b" loading="lazy"></iframe> -->
-
-
-
-
-
-</body>
-
+  </body>
 </html>

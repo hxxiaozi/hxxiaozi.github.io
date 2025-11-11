@@ -1,269 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>garlic</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="4.js" defer></script>
-  <style>
-  
-    .face {
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 250px;
-      width: 270px;
-      height: 280px;
-      background-color: peachpuff;
-      border: 2px solid orange;
-      border-radius: 75px 75px 120px 120px;
-      transform: rotate(10deg);
-      box-shadow: inset 0px 0px 25px orangered;
-      position: absolute;
-    }
-
-    .face:hover {
-      background-color: #FFB6C0;
-      width: 200px;
-    }
-
-    .hair:hover {
-      background-color: #FFB6C0;
-      width: 300px;
-      height: 350px;
-    }
-
-    .face:hover .hide {
-      display: block;
-    }
-
-    .hide {
-      display: none;
-      text-align: center;
-      font-size: 2em;
-      color: red;
-    }
-
-    .brow {
-      width: 50px;
-      height: 10px;
-      background-color: brown;
-      margin-top: 20px;
-    }
-
-    .leftbrow {
-      position: absolute;
-      left: 35px;
-      top: 40px;
-      animation: brow1 4s infinite;
-      transform: rotate(-5deg);
-    }
-
-    .rightbrow {
-      position: absolute;
-      right: 35px;
-      top: 40px;
-      transform: rotate(5deg);
-      animation: brow2 4s infinite;
-    }
-
-    .eye {
-      width: 70px;
-      height: 70px;
-      background: radial-gradient(circle at top left, rgba(255, 255, 255, 1) 0%, rgba(47, 45, 253, 1) 100%);
-      border-radius: 50px;
-      box-shadow: 0px 0px 10px #bd9f85;
-      animation: test 4s infinite;
-      position: relative;
-    }
-
-    .lefteye {
-      position: absolute;
-      left: 25px;
-      top: 78px;
-    }
-
-    .righteye {
-      position: absolute;
-      right: 25px;
-      top: 78px;
-    }
-
-    .pupil {
-      width: 30px;
-      height: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: -100%;
-      background: radial-gradient(circle at top left, brown 0%, black 100%);
-      border-radius: 20px;
-    }
-
-    .nose {
-      width: 30px;
-      height: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 140px;
-      border-radius: 20px;
-      background-color: red;
-      box-shadow: inset 0px 0px 20px darkred;
-    }
-
-    .mouth {
-      width: 60px;
-      height: 30px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 35px;
-      background-color: deeppink;
-      border-radius: 15px;
-      box-shadow: inset 0px 0px 20px green;
-      animation: mouth 2s infinite;
-    }
-
-    .hair {
-      width: 400px;
-      height: 350px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 100px;
-      background-color: deeppink;
-      border-radius: 180px;
-      border: transparent;
-      animation: hair 4s infinite;
-    }
-
-    @keyframes hair {
-      0% {}
-
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes test {
-      0% {}
-
-      10% {}
-
-      20% {
-        transform: translateY(20px);
-      }
-
-      40% {
-        transform: translateX(-15px);
-      }
-
-      60% {
-        transform: translateX(20px);
-      }
-
-      80% {
-        transform: translateY(-10px);
-      }
-
-      90% {
-        transform: scaleY(.1);
-      }
-
-      100% {}
-    }
-
-    @keyframes brow1 {
-      0% {
-        transform: none;
-      }
-
-      20% {
-        transform: rotate(-20deg);
-      }
-
-      80% {}
-    }
-
-    @keyframes brow2 {
-      0% {}
-
-      20% {
-        transform: rotate(25deg);
-      }
-
-      80% {}
-    }
-
-    @keyframes mouth {
-      0% {
-        transform: scaleY(1.2)
-      }
-
-      100% {
-        transform: scale(1.8);
-      }
-    }
-
-    #stressed-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-    }
-  </style>
+ 
 </head>
 
 <body>
   <div id="custom-cursor4"></div>
 
-   <div id="navbar"></div>
+  <div id="navbar"></div>
   <script>
     // 动态加载公共导航栏
-    fetch('../nav.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('navbar').innerHTML = html)
-      .catch(err => console.error('Navigation load failed:', err));
+    fetch("../nav.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("navbar").innerHTML = html))
+      .catch((err) => console.error("Navigation load failed:", err));
   </script>
- <!-- Header -->
-   <div id="header"></div>
+  <!-- Header -->
+  <div id="header"></div>
   <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
+    fetch("../header.html")
       .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+        // ✅ 在这里插入该页面独有的内容
+        const pageSpecific = document.getElementById("page-specific-content");
+        if (pageSpecific) {
+          pageSpecific.innerHTML = `
+          
+            <h3 class="page">Xiaoxuan's Random Stuff:</h3>
+            <p class="page">&nbsp;Work In Progress&nbsp;<progress></progress></p>
+          
+        `;
+        }
+      })
+      .catch(err => console.error("Header load failed:", err));
   </script>
+<div id="stressed"></div>
+<script>
+  // 动态加载公共导航栏
+  fetch("../stressed.html")
+    .then((res) => res.text())
+    .then((html) => (document.getElementById("stressed").innerHTML = html))
+    .catch((err) => console.error("Navigation load failed:", err));
+</script>
 
-  <div class="header">
-    <h3 class="title"><a href="index.html">Xiaoxuan's Website :)</a></h3>
-    <div class=" page">
-      <h3 class=" page">Xiaoxuan's Random Stuff:</h3>
-      <p class=" page">&nbsp;Work In Progress&nbsp;<progress></progress></p>
-    </div>
-    <div class="title-right">
-      <a href="about.html" class=" header-btn">About</a>
-      <a href="about.html" class=" header-btn">Contact</a>
-      <a href="about.html"><img class="profile" src="img/icon/cabbage.png" width="50%" height="50%" alt=""></a>
-    </div>
-  </div>
+<div id="stressed2"></div>
+<script>
+  // 动态加载公共导航栏
+  fetch("../stressed copy.html")
+    .then((res) => res.text())
+    .then((html) => (document.getElementById("stressed2").innerHTML = html))
+    .catch((err) => console.error("Navigation load failed:", err));
+</script>
 
-  <!-- 新增：直接嵌入动画 -->
-  <div id="stressed-container">
-    <div class="hair"></div>
-    <div class="face">
-      <div class="leftbrow brow"></div>
-      <div class="rightbrow brow"></div>
-      <div class="lefteye eye">
-        <div class="pupil lefteye eye"></div>
-      </div>
-      <div class="righteye eye">
-        <div class="pupil righteye eye"></div>
-      </div>
-      <div class="nose"></div>
-      <div class="mouth"></div>
-      <div class="hide">
-        <h1>AHHHHHHHHHHH</h1>
-      </div>
-    </div>
-  </div>
+
 </body>
 
 </html>
