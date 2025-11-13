@@ -8,177 +8,227 @@
   <!-- <div id="custom-cursor1"></div>
     <script src="1.js"></script> -->
   <style>
-    .image {
-      max-width: 100%;
+    .image,
+    .image-secondary,
+    .image-secondary img,
+    .image-secondary video {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      image-rendering: pixelated;
       height: auto;
+      object-fit: cover;
       display: block;
-      margin: auto;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    #projects-container section {
+      margin-top: 1rem;
     }
 
     .image-secondary {
-      max-width: 100%;
-      height: auto;
-      margin: auto;
       display: none;
+
     }
 
-
-    .image-secondary :hover {
-
-      border-radius: 5px;
-    }
-
-    .unity-content:hover .image {
+    .link-outline.proj-content:hover .image {
       display: none;
+
     }
 
-    .unity-content:hover .image-secondary {
+    .link-outline.proj-content:hover .image-secondary {
       display: block;
-    }
-
-    .proj-container {
-      display: grid;
-      grid-template-columns: auto auto auto;
 
     }
 
-    /* .proj-container div {
-    } */
+    /* 响应式：窄屏时把图片放在上方 */
+    @media (max-width: 800px) {
+      .link-outline.proj-content {
+        display: block;
+      }
+
+      .image,
+      .image-secondary {
+        max-height: 300px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <nav id="navbar"></nav>
   <script>
-    // 动态加载公共导航栏
     fetch("nav.html")
       .then((res) => res.text())
       .then((html) => (document.getElementById("navbar").innerHTML = html))
       .catch((err) => console.error("Navigation load failed:", err));
   </script>
-  <!-- Header -->
+
   <header id="header"></header>
   <script>
-    // 动态加载公共导航栏
     fetch("header.html")
       .then((res) => res.text())
       .then((html) => (document.getElementById("header").innerHTML = html))
       .catch((err) => console.error("Header load failed:", err));
   </script>
-
   <div class="margin-l">
+  <div id="section-buttons" class="i3 "></div>
+  <div id="projects-container"></div>
+  <script>
+    fetch("projects.json")
+      .then(res => res.json())
+      .then(data => {
+        const btnContainer = document.getElementById("section-buttons");
+        btnContainer.innerHTML = "";
+
+        for (const category in data) {
+          const btn = document.createElement("div");
+          btn.className = "sections";
+
+          const a = document.createElement("a");
+          a.href = "#" + category.replace(/\s+/g, "");
+
+          const h3 = document.createElement("h3");
+          h3.className = "p2";
+          h3.textContent = category;
+
+          a.appendChild(h3);
+          btn.appendChild(a);
+          btnContainer.appendChild(btn);
+        }
+
+        const container = document.getElementById("projects-container");
+        container.innerHTML = ""; // 清空
+
+        for (const category in data) {
+          // 分类标题（保留原结构）
+          const section = document.createElement("section");
+          section.id = category.replace(/\s+/g, "");
+          const h2 = document.createElement("h2");
+          h2.textContent = category;
+          section.appendChild(h2);
 
 
-    <section>
-      Digital Games 3D Animations Computer Vision Physical Games
-    </section>
+          data[category].forEach((p, idx) => {
+            // <a href="..."><div class="link-outline proj-content"> ... </div></a>
+            const a = document.createElement("a");
+            a.href = p.link || "#";
 
-    <h2>Digital Games</h2>
+            const itemDiv = document.createElement("div");
+            itemDiv.className = "link-outline proj-content";
 
-
-
-    <a href="Projects/garden.html">
-
-      <div class="link-outline unity-content">
-        <img class="image" src="img/garden/Firework.png" alt="project image 1" />
-        <div class="image-secondary">
-          <video autoplay loop muted playsinline style="max-width: 100%;">
-            <source src="img/garden/flowers-drawing.mov">
-          </video>
-        </div>
-        <div>
-          <h3>Firework & Garden</h3>
-          <br><br>
-          <p>
-            This project
-          </p>
-        </div>
-      </div>
-    </a>
+            // imgs
+            const coverImg = document.createElement("img");
+            coverImg.className = "image";
+            coverImg.src = p.cover || "";
+            coverImg.alt = p.title || "";
 
 
-    <a href="Projects/Alien.html">
-      <div class="link-outline unity-content">
-        <div>
-          <h3>Human?Alien? Vegetables!</h3><br><br>
-          <p>
-            This project
-          </p>
-        </div>
-
-        <img class="image" src="img/game/et/et-cover.png" alt="project image 1"
-          style="width:200%; image-rendering: pixelated;" />
-        <img class="image-secondary" src="img/game/et/gg.gif" alt="project image 1"
-          style="width:200%; image-rendering: pixelated;" />
-
-      </div>
-    </a>
-
-    <div>
-
-      <a href="Projects/Alley.html">
-
-        <div class="link-outline unity-content">
-          <img class="image" src="img/game/unity/unity1.jpg" alt="project image 1" />
-          <img class="image-secondary" src="img/game/unity/unity2.jpg" alt="project image 1" />
-          <div class="unity-text">
-            <h3 class="link-underline">The Alley</h3>
-            <br /><br />
-            <p>
-          </div>
-        </div>
-      </a>
-
-      <a href="Projects/SheepCity.html">
-        <div class="link-outline unity-content">
-          <div class="unity-text">
-            <h3>Sheepcity</h3>
-            <br /><br />
-            <p>
-              A surreal management game set in a sleepless town where falling
-              asleep turns citizens into sheep. A playful exploration of labor,
-              transformation, and rest.
-            </p>
-          </div>
-          <img class="image" src="img/game/unity/sheepcity.png" alt="Sheepcity" />
-        </div>
-      </a>
+            // 构建 hover 媒体（img or video），class 名保持 image-secondary
+            let hoverNode = null;
+            if (p.hover) {
+              if (p.hoverType === "video") {
+                const wrapper = document.createElement("div");
+                wrapper.className = "image-secondary";
+                const video = document.createElement("video");
+                video.autoplay = true;
+                video.loop = true;
+                video.muted = true;
+                video.playsInline = true;
+                video.style.width = "100%";
+                video.style.height = "100%";
+                video.style.objectFit = "cover";
+                const source = document.createElement("source");
+                source.src = p.hover;
+                video.appendChild(source);
+                wrapper.appendChild(video);
+                hoverNode = wrapper;
+              } else {
+                const hoverImg = document.createElement("img");
+                hoverImg.className = "image-secondary";
+                hoverImg.src = p.hover;
+                hoverImg.alt = (p.title || "") + " hover";
+                hoverImg.style.width = "100%";
+                hoverImg.style.maxHeight = "500px";
+                hoverImg.style.objectFit = "cover";
+                hoverNode = hoverImg;
+              }
+            }
 
 
-      <h2>3D Animations</h2>
-      <div>Light Ocean</div>
+            const textDiv = document.createElement("div");
+            textDiv.className = "unity-text";
 
-      <a href="Projects/Forest.html">
-        <div class="link-outline unity-content">
-          <div class="unity-text">
-            <h3>Forest Illusion</h3>
-            <br /><br />
-            <p>
-              Exploring light, reflection, and spatial illusion through
-              interactive scene design.
-            </p>
-          </div>
-          <img class="image" src="img/game/vfx/forest.jpg" alt="Forest img" />
-        </div>
-      </a>
+            const titleH3 = document.createElement("h3");
+            titleH3.textContent = p.title || "";
 
-      <div>Sleep,less,ness</div>
 
-      <h2>Computer Vision</h2>
-      <div>Happy Face</div>
-      <div>Virtual Toilet</div>
-      <div>Face</div>
+            const metaP = document.createElement("p");
+            const safeDate = p.date ? p.date : "";
+            const safeTools = p.tools ? p.tools : "";
+            const safeRole = p.role ? p.role : "";
+            metaP.innerHTML = `${safeDate}<br>${safeTools}<br>${safeRole}`;
 
-      <h2>Physical Games</h2>
+            // description（可选）
 
-      <div>My Happy Healthy Rich and Windy Chicago Game</div>
-      <div>Vampire</div>
 
-      <button onclick="history.back()">Go Back</button>
-      <footer>
-        <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
-      </footer>
-    </div>
+
+            textDiv.appendChild(titleH3);
+
+            textDiv.appendChild(document.createElement("br"));
+            textDiv.appendChild(document.createElement("br"));
+            textDiv.appendChild(metaP);
+
+            if (p.description) {
+              textDiv.appendChild(document.createElement("br"));
+              textDiv.appendChild(document.createElement("br"));
+              const descP = document.createElement("p");
+              descP.textContent = p.description;
+
+              descP.style.marginTop = "0.6rem";
+              textDiv.appendChild(descP);
+            }
+
+            // 根据 idx 交替：偶数项（0,2,..）
+            // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
+            // 如果你想反过来，把判断改为 idx%2===0 时先 append image
+            if (idx % 2 === 0) {
+              // text 左，图片 右 -> append text THEN media
+              itemDiv.appendChild(textDiv);
+
+              // media container：把 cover + hover 放在同一个容器里，保持你原来结构（image 然后 image-secondary）
+              const mediaContainer = document.createElement("div");
+              // 若你希望旧样式用到某个 class 名，可加 class（你原来直接用了 img.image / img.image-secondary）
+              mediaContainer.appendChild(coverImg);
+              if (hoverNode) mediaContainer.appendChild(hoverNode);
+              itemDiv.appendChild(mediaContainer);
+            } else {
+              // 图片左，text右 -> append media THEN text
+              const mediaContainer = document.createElement("div");
+              mediaContainer.appendChild(coverImg);
+              if (hoverNode) mediaContainer.appendChild(hoverNode);
+              itemDiv.appendChild(mediaContainer);
+              itemDiv.appendChild(textDiv);
+            }
+
+            // 把 itemDiv 包在 <a> 里（保持原来点击跳转行为）
+            a.appendChild(itemDiv);
+            section.appendChild(a);
+          });
+
+          container.appendChild(section);
+        }
+
+
+      })
+      .catch(err => console.error("Project load failed:", err));
+  </script>
+</div>
+  <button onclick="history.back()">Go Back</button>
+  <footer>
+    <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
+  </footer>
+
 </body>
 
 </html>

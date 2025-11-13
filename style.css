@@ -285,7 +285,7 @@ p, h1, h2, h3, h4 {
 
 .img {
   margin: auto;
-  
+
 }
 
 img.icon {
@@ -293,7 +293,6 @@ img.icon {
   width: 32px;
   height: auto;
   justify-content: center;
-
 }
 
 
@@ -669,35 +668,31 @@ img.icon {
   border-width: 5px;
 }
 
-
-
-.i3 {
-  display: flex;
-  margin-top: 20px;
-  padding: 0px var(--spacel);
-
-
-  justify-content: space-between;
-  /* 保证两边留空，中间均匀分布 */
-  flex-wrap: wrap;
-  gap: var(--spacel);
-  padding: 0 var(--spacel);
-
-}
-
 .page {
   justify-content: center;
   display: flex;
   margin: auto;
 }
 
+.i3 {
+  display: flex;
+  margin: 10px;
+  padding: 0px var(--spacel);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacel);
+  padding: 0 var(--spacel);
+}
+
 .sections {
   /* background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%); */
-  background-color: floralwhite;
-  border-radius: 30px;
-  border-bottom: 5px solid rosybrown;
-  padding-left: 30px;
-  padding-right: 30px;
+  background-color: corn;
+  border-bottom: 3px solid yellowgreen;
+
+
+  border-top: 3px solid transparent;
+  padding: 5px 30px 0px 30px;
+
   /* padding: 1px; */
   font-size: small;
 }
@@ -705,25 +700,27 @@ img.icon {
 
 
 .sections:hover {
-  /* background-color: #6ee0e6ec; */
-  /* background:linear-gradient(to top right ,lightpink 0%, #6ee0e6ec 100%); */
-  color: cornsilk;
+
+  padding: 0px 27px;
+  margin-bottom: 5px;
+  border: 3px solid transparent;
+  border-radius: 15px;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(cornsilk), linear-gradient(to right, thistle 0%, lightpink 60%, yellowgreen 100%);
+  outline: floralwhite 3px solid;
+  outline-offset: -6px;
+
+
+
+  /* color: cornsilk;
   background: linear-gradient(to right, thistle 0%, lightpink 60%, yellowgreen 100%);
   border: none;
-  margin-top: 5px;
-
+  margin-top: 5px; */
 
 }
 
-.sections a {
 
-  color: var(--dark);
-  ;
-}
-
-.sections:hover a {
-  color: white;
-}
 
 .p5-content {
   margin-top: 20px;
@@ -734,7 +731,7 @@ img.icon {
 }
 
 
-.unity-content {
+.proj-content {
   margin-top: 20px;
   border-radius: 5px;
   /* border-top: 5px dashed lightpink; */
