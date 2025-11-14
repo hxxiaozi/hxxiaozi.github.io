@@ -5,11 +5,18 @@
   <meta charset="UTF-8" />
   <title>cabbage</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <div id="custom-cursor3"></div>
-  <script src="3.js"></script>
+  
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35)">
+  <div class="cursor cabbage"></div>
+  <script>
+    document.addEventListener("mousemove", (e) => {
+      const cursor = document.querySelector(".cursor.cabbage");
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
+  </script>
   <div id="navbar"></div>
   <script>
     // 动态加载公共导航栏
@@ -32,17 +39,17 @@
   <div class="i3">
     <div class="sections">
       <a href="#unity">
-        <h3 class="p2">Unity Projects</h3>
+        <h3 class="p2 block-display">Unity Projects</h3>
       </a>
     </div>
     <div class="sections">
       <a href="#other games">
-        <h3 class="p2">Other Games</h3>
+        <h3 class="p2 block-display">Other Games</h3>
       </a>
     </div>
     <div class="sections">
       <a href="p5.html">
-        <h3 class="p2">P5js</h3>
+        <h3 class="p2 block-display">P5js</h3>
       </a>
     </div>
   </div>

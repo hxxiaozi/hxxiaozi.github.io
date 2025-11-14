@@ -9,14 +9,16 @@
 </head>
 
 <body>
-  <div id="custom-cursor0"></div>
+  <div class="cursor me"></div>
+
   <script>
     document.addEventListener("mousemove", (e) => {
-      const cursor = document.getElementById("custom-cursor0");
+      const cursor = document.querySelector(".cursor.me");
       cursor.style.left = e.clientX + "px";
       cursor.style.top = e.clientY + "px";
     });
   </script>
+
   <div id="navbar"></div>
   <script>
     // 动态加载公共导航栏

@@ -5,54 +5,6 @@
   <meta charset="UTF-8" />
   <title>Projects</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <!-- <div id="custom-cursor1"></div>
-    <script src="1.js"></script> -->
-  <style>
-    .image,
-    .image-secondary,
-    .image-secondary img,
-    .image-secondary video {
-      width: 100%;
-      aspect-ratio: 3 / 2;
-      image-rendering: pixelated;
-      height: auto;
-      object-fit: cover;
-      display: block;
-      border-radius: 5px;
-      overflow: hidden;
-    }
-
-    #projects-container section {
-      margin-top: 1rem;
-    }
-
-    .image-secondary {
-      display: none;
-
-    }
-
-    .link-outline.proj-content:hover .image {
-      display: none;
-
-    }
-
-    .link-outline.proj-content:hover .image-secondary {
-      display: block;
-
-    }
-
-    /* 响应式：窄屏时把图片放在上方 */
-    @media (max-width: 800px) {
-      .link-outline.proj-content {
-        display: block;
-      }
-
-      .image,
-      .image-secondary {
-        max-height: 300px;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -72,160 +24,166 @@
       .catch((err) => console.error("Header load failed:", err));
   </script>
   <div class="margin-l">
-  <div id="section-buttons" class="i3 "></div>
-  <div id="projects-container"></div>
-  <script>
-    fetch("projects.json")
-      .then(res => res.json())
-      .then(data => {
-        const btnContainer = document.getElementById("section-buttons");
-        btnContainer.innerHTML = "";
+    <div id="section-buttons" class="i3 "></div>
+    <div id="projects-container"></div>
+    <script>
+      fetch("projects.json")
+        .then(res => res.json())
+        .then(data => {
+          const btnContainer = document.getElementById("section-buttons");
+          btnContainer.innerHTML = "";
 
-        for (const category in data) {
-          const btn = document.createElement("div");
-          btn.className = "sections";
+          for (const category in data) {
+            const btn = document.createElement("div");
+            btn.className = "sections";
 
-          const a = document.createElement("a");
-          a.href = "#" + category.replace(/\s+/g, "");
-
-          const h3 = document.createElement("h3");
-          h3.className = "p2";
-          h3.textContent = category;
-
-          a.appendChild(h3);
-          btn.appendChild(a);
-          btnContainer.appendChild(btn);
-        }
-
-        const container = document.getElementById("projects-container");
-        container.innerHTML = ""; // 清空
-
-        for (const category in data) {
-          // 分类标题（保留原结构）
-          const section = document.createElement("section");
-          section.id = category.replace(/\s+/g, "");
-          const h2 = document.createElement("h2");
-          h2.textContent = category;
-          section.appendChild(h2);
-
-
-          data[category].forEach((p, idx) => {
-            // <a href="..."><div class="link-outline proj-content"> ... </div></a>
             const a = document.createElement("a");
-            a.href = p.link || "#";
+            a.href = "#" + category.replace(/\s+/g, "");
 
-            const itemDiv = document.createElement("div");
-            itemDiv.className = "link-outline proj-content";
+            const h3 = document.createElement("h3");
+            h3.className = "p2 block-display";
+            h3.textContent = category;
 
-            // imgs
-            const coverImg = document.createElement("img");
-            coverImg.className = "image";
-            coverImg.src = p.cover || "";
-            coverImg.alt = p.title || "";
+            a.appendChild(h3);
+            btn.appendChild(a);
+            btnContainer.appendChild(btn);
+          }
+
+          const container = document.getElementById("projects-container");
+          container.innerHTML = ""; // 清空
+
+          for (const category in data) {
+            // 分类标题
+            const section = document.createElement("section");
+            section.id = category.replace(/\s+/g, "");
+            const h3 = document.createElement("h3");
+            h3.textContent = category;
+            section.appendChild(h3);
 
 
-            // 构建 hover 媒体（img or video），class 名保持 image-secondary
-            let hoverNode = null;
-            if (p.hover) {
-              if (p.hoverType === "video") {
-                const wrapper = document.createElement("div");
-                wrapper.className = "image-secondary";
-                const video = document.createElement("video");
-                video.autoplay = true;
-                video.loop = true;
-                video.muted = true;
-                video.playsInline = true;
-                video.style.width = "100%";
-                video.style.height = "100%";
-                video.style.objectFit = "cover";
-                const source = document.createElement("source");
-                source.src = p.hover;
-                video.appendChild(source);
-                wrapper.appendChild(video);
-                hoverNode = wrapper;
-              } else {
-                const hoverImg = document.createElement("img");
-                hoverImg.className = "image-secondary";
-                hoverImg.src = p.hover;
-                hoverImg.alt = (p.title || "") + " hover";
-                hoverImg.style.width = "100%";
-                hoverImg.style.maxHeight = "500px";
-                hoverImg.style.objectFit = "cover";
-                hoverNode = hoverImg;
+            data[category].forEach((p, idx) => {
+
+              const a = document.createElement("a");
+              a.href = p.link || "#";
+
+              const itemDiv = document.createElement("div");
+              itemDiv.className = "link-outline proj-content";
+
+              // imgs
+              const coverImg = document.createElement("img");
+              coverImg.className = "image";
+              coverImg.src = p.cover || "";
+              coverImg.alt = p.title || "";
+
+
+              // 构建 hover 媒体（img or video）
+              let hoverNode = null;
+              if (p.hover) {
+                if (p.hoverType === "video") {
+                  const wrapper = document.createElement("div");
+                  wrapper.className = "image-secondary";
+                  const video = document.createElement("video");
+                  video.autoplay = true;
+                  video.loop = true;
+                  video.muted = true;
+                  video.playsInline = true;
+                  video.style.width = "100%";
+                  video.style.height = "100%";
+                  video.style.objectFit = "cover";
+                  const source = document.createElement("source");
+                  source.src = p.hover;
+                  video.appendChild(source);
+                  wrapper.appendChild(video);
+                  hoverNode = wrapper;
+                } else {
+                  const hoverImg = document.createElement("img");
+                  hoverImg.className = "image-secondary";
+                  hoverImg.src = p.hover;
+                  hoverImg.alt = (p.title || "") + " hover";
+                  hoverImg.style.width = "100%";
+                  hoverImg.style.maxHeight = "500px";
+                  hoverImg.style.objectFit = "cover";
+                  hoverNode = hoverImg;
+                }
               }
-            }
 
 
-            const textDiv = document.createElement("div");
-            textDiv.className = "unity-text";
+              if (p.pixel) {
+                coverImg.classList.add("pixel");
+              }
 
-            const titleH3 = document.createElement("h3");
-            titleH3.textContent = p.title || "";
+              // hover 图同理
+              if (hoverNode && p.pixel) {
+                hoverNode.classList.add("pixel");
+              }
+              const textDiv = document.createElement("div");
+              textDiv.className = "proj-text";
 
-
-            const metaP = document.createElement("p");
-            const safeDate = p.date ? p.date : "";
-            const safeTools = p.tools ? p.tools : "";
-            const safeRole = p.role ? p.role : "";
-            metaP.innerHTML = `${safeDate}<br>${safeTools}<br>${safeRole}`;
-
-            // description（可选）
-
+              const titleH3 = document.createElement("h3");
+              titleH3.textContent = p.title || "";
 
 
-            textDiv.appendChild(titleH3);
+              const metaP = document.createElement("p");
+              const safeDate = p.date ? p.date : "";
+              const safeTools = p.tools ? p.tools : "";
+              const safeRole = p.role ? p.role : "";
+              metaP.innerHTML = `${safeDate}<br>${safeTools}<br>${safeRole}`;
 
-            textDiv.appendChild(document.createElement("br"));
-            textDiv.appendChild(document.createElement("br"));
-            textDiv.appendChild(metaP);
+              // description
 
-            if (p.description) {
+              textDiv.appendChild(titleH3);
+
               textDiv.appendChild(document.createElement("br"));
               textDiv.appendChild(document.createElement("br"));
-              const descP = document.createElement("p");
-              descP.textContent = p.description;
+              textDiv.appendChild(metaP);
 
-              descP.style.marginTop = "0.6rem";
-              textDiv.appendChild(descP);
-            }
+              if (p.description) {
+                textDiv.appendChild(document.createElement("br"));
+                textDiv.appendChild(document.createElement("br"));
+                const descP = document.createElement("p");
+                descP.textContent = p.description;
+                textDiv.appendChild(descP);
+              }
 
-            // 根据 idx 交替：偶数项（0,2,..）
-            // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
-            // 如果你想反过来，把判断改为 idx%2===0 时先 append image
-            if (idx % 2 === 0) {
-              // text 左，图片 右 -> append text THEN media
-              itemDiv.appendChild(textDiv);
+              // 根据 idx 交替：偶数项（0,2,..）
+              // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
+              // 如果你想反过来，把判断改为 idx%2===0 时先 append image
+              if (idx % 2 === 0) {
+                // text 左，图片 右 -> append text THEN media
+                itemDiv.appendChild(textDiv);
 
-              // media container：把 cover + hover 放在同一个容器里，保持你原来结构（image 然后 image-secondary）
-              const mediaContainer = document.createElement("div");
-              // 若你希望旧样式用到某个 class 名，可加 class（你原来直接用了 img.image / img.image-secondary）
-              mediaContainer.appendChild(coverImg);
-              if (hoverNode) mediaContainer.appendChild(hoverNode);
-              itemDiv.appendChild(mediaContainer);
-            } else {
-              // 图片左，text右 -> append media THEN text
-              const mediaContainer = document.createElement("div");
-              mediaContainer.appendChild(coverImg);
-              if (hoverNode) mediaContainer.appendChild(hoverNode);
-              itemDiv.appendChild(mediaContainer);
-              itemDiv.appendChild(textDiv);
-            }
+                const mediaContainer = document.createElement("div");
+                mediaContainer.appendChild(coverImg);
+                if (hoverNode) mediaContainer.appendChild(hoverNode);
+                itemDiv.appendChild(mediaContainer);
+              } else {
+                // 图片左，text右 -> append media THEN text
+                const mediaContainer = document.createElement("div");
+                mediaContainer.appendChild(coverImg);
+                if (hoverNode) mediaContainer.appendChild(hoverNode);
+                itemDiv.appendChild(mediaContainer);
+                itemDiv.appendChild(textDiv);
+              }
+              a.appendChild(itemDiv);
+              section.appendChild(a);
+            });
 
-            // 把 itemDiv 包在 <a> 里（保持原来点击跳转行为）
-            a.appendChild(itemDiv);
-            section.appendChild(a);
-          });
+            container.appendChild(section);
+          }
 
-          container.appendChild(section);
-        }
+        })
+        .catch(err => console.error("Project load failed:", err));
+    </script>
+  </div>
+  <div id="back">
+    <div class="sections" onclick="history.back()">
+      <h4 class="block-display">Go Back</h4>
+    </div>
+  </div>
 
 
-      })
-      .catch(err => console.error("Project load failed:", err));
-  </script>
-</div>
-  <button onclick="history.back()">Go Back</button>
-  <footer>
+
+  <footer class="footer">
     <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
   </footer>
 

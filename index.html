@@ -7,140 +7,297 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>xiaoxuan is 笑萱</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
-  <!-- custom cursor -->
-  <div id="custom-cursor0"></div>
 
-  <!-- Header -->
-  <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
+  <div class="scroll-container">
+  <section class="sec-1">
+    <!-- custom cursor -->
+    <div class="cursor me"></div>
+    <script>
+    const cursor = document.querySelector(".cursor.me");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+      });
+
+    </script>
+
+    <!-- Header -->
+    <div id="header"></div>
+    <script>
+      // 动态加载公共导航栏
+      fetch('../header.html')
+        .then(res => res.text())
+        .then(html => document.getElementById('header').innerHTML = html)
+        .catch(err => console.error('Header load failed:', err));
+    </script>
 
 
-  <!-- Description -->
-  <div id="descript">
-    <p>
-      I am Xiaoxuan Han (韩笑萱), a multimedia artist, graduated from the School of the Art Institute of Chicago with a
-      BFA,
-      emphasis in Art & Technology and New Media.
-      <br>
-      Through my work, I try to have fun, make it enjoyable while offering fresh perspectives of life and express my
-      view of the world. I create interactive and playful experiences across game design, animation, video, 3D, and
-      graphic design.
-    </p>
-  </div>
+    <div class="margin-l">
+      <!-- Description -->
+      <div id="descript">
+        <p>
+          I am Xiaoxuan Han (韩笑萱), a multimedia artist, graduated from the School of the Art Institute of Chicago with
+          a BFA, emphasis in Art & Technology and New Media.
+          <br><br>
+          Through my work, I try to have fun, make it enjoyable while offering fresh perspectives of life and express
+          my view of the world. I create interactive and playful experiences across game design, animation, video, 3D,
+          and graphic design.
+        </p>
+      </div>
 
-  <!-- Explore Section -->
-  <section id="explore">
-    <h3>What do you want to explore now?</h3>
+      <!-- Explore Section -->
+      <div id="explore">
+        <h3>What do you want to explore now?</h3>
+      </div>
+
+    </div>
+
+    <div class="i3" style="background-color: cornsilk;">
+      <h4 style="margin: 0 4.25%;"><br>Files (PDFs)</h4>
+
+
+      <!-- Resume -->
+      <p class="link-underline ">
+        <a href="cv/XiaoxuanHan_Resume2025.8.pdf" target="_blank">Resume 2025&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/XiaoxuanHan_Resume2025.8.pdf" download>
+          <img class="icon" src="img/pixel/handshake.png" alt="">⬇
+        </a>
+      </p>
+
+      <!-- Graphic Design Portfolio -->
+      <p class="link-underline">
+        <a href="cv/Xiaoxuan_PortfolioGD25.9.pdf" target="_blank">Graphic Design Portfolio&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/Xiaoxuan_PortfolioGD25.9.pdf" download>
+          <img class="icon" src="img/pixel/artwork.png" alt="">⬇
+        </a>
+      </p>
+
+      <!-- Game Portfolio -->
+      <p class="link-underline">
+        <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/GamePortfolio25.9.pdf" download>
+          <img class="icon" src="img/pixel/button.png" alt="">⬇
+        </a>
+      </p>
+
+    </div>
+
+    <!-- Gallery Section -->
+
+    <div class="gallery-container">
+
+
+      <div class=" link-outline galleries">
+        <a href="g.html">
+          <h3 class="p2 block-display">Games</h3>
+
+          <img class="coverimg" src="img/game/unity/unity4.png" alt="">
+          <img class="cov" src="img/game/vfx/forestS.jpg" alt="">
+
+        </a>
+      </div>
+
+
+      <div class=" link-outline galleries g1">
+        <a href="v.html">
+          <h3 class="p2 block-display">Moving Images</h3>
+
+          <img class="coverimg" src="img/game/et/gg.gif" alt="">
+          <img class="cov" src="img/game/et/gg1.png" alt="">
+
+        </a>
+      </div>
+
+
+      <div class=" link-outline galleries">
+        <a href="i.html">
+          <h3 class=" p2 block-display">Visual Archive</h3>
+
+          <img class="coverimg" src="img/3d/wave.jpg" alt="">
+          <img class="cov" src="img/3d/Witch House.jpg" alt="">
+
+        </a>
+      </div>
+
+
+      <div class=" link-outline galleries g1">
+        <a href="p.html">
+          <h3 class="p2 block-display">In Progress</h3>
+
+          <img class="coverimg" src="img/3d/toilet.gif" alt="">
+          <img class="cov" src="img/3d/toilet.png" style="background-color: cornsilk;" alt="">
+
+        </a>
+      </div>
+
+    </div>
+
   </section>
+  <h3 class="text-centre">Featured Projects</h3>
+  <section class="margin-l margin-r">
 
 
+    <div id="section-buttons" class="i3 "></div>
+    <div id="projects-container"></div>
+    <script>
+      fetch("projects.json")
+        .then(res => res.json())
+        .then(data => {
+          const btnContainer = document.getElementById("section-buttons");
+          btnContainer.innerHTML = "";
 
-  <section class="i3" style="background-color: cornsilk;">
-    <h4 style="margin: 0 4.25%;"><br>Files (PDFs)</h4>
+          for (const category in data) {
+            const btn = document.createElement("div");
+            btn.className = "sections";
+
+            const a = document.createElement("a");
+            a.href = "#" + category.replace(/\s+/g, "");
+
+            const h3 = document.createElement("h3");
+            h3.className = "p2 block-display";
+            h3.textContent = category;
+
+            a.appendChild(h3);
+            btn.appendChild(a);
+            btnContainer.appendChild(btn);
+          }
+
+          const container = document.getElementById("projects-container");
+          container.innerHTML = ""; // 清空
+
+          for (const category in data) {
+            // 分类标题
+            const section = document.createElement("section");
+            section.id = category.replace(/\s+/g, "");
+            const h2 = document.createElement("h2");
+            h2.textContent = category;
+            section.appendChild(h2);
 
 
-    <!-- Resume -->
-    <p class="link-underline ">
-      <a href="cv/XiaoxuanHan_Resume2025.8.pdf" target="_blank">Resume 2025&#8599;&nbsp;</a>
-      <a class="link-outline" href="cv/XiaoxuanHan_Resume2025.8.pdf" download>
-        <img class="icon" src="img/pixel/handshake.png" alt="">⬇
-      </a>
-    </p>
+            data[category].forEach((p, idx) => {
 
-    <!-- Graphic Design Portfolio -->
-    <p class="link-underline">
-      <a href="cv/Xiaoxuan_PortfolioGD25.9.pdf" target="_blank">Graphic Design Portfolio&#8599;&nbsp;</a>
-      <a class="link-outline" href="cv/Xiaoxuan_PortfolioGD25.9.pdf" download>
-        <img class="icon" src="img/pixel/artwork.png" alt="">⬇
-      </a>
-    </p>
+              const a = document.createElement("a");
+              a.href = p.link || "#";
 
-    <!-- Game Portfolio -->
-    <p class="link-underline">
-      <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
-      <a class="link-outline" href="cv/GamePortfolio25.9.pdf" download>
-        <img class="icon" src="img/pixel/button.png" alt="">⬇
-      </a>
-    </p>
+              const itemDiv = document.createElement("div");
+              itemDiv.className = "link-outline proj-content";
+
+              // imgs
+              const coverImg = document.createElement("img");
+              coverImg.className = "image";
+              coverImg.src = p.cover || "";
+              coverImg.alt = p.title || "";
+
+
+              // 构建 hover 媒体（img or video）
+              let hoverNode = null;
+              if (p.hover) {
+                if (p.hoverType === "video") {
+                  const wrapper = document.createElement("div");
+                  wrapper.className = "image-secondary";
+                  const video = document.createElement("video");
+                  video.autoplay = true;
+                  video.loop = true;
+                  video.muted = true;
+                  video.playsInline = true;
+                  video.style.width = "100%";
+                  video.style.height = "100%";
+                  video.style.objectFit = "cover";
+                  const source = document.createElement("source");
+                  source.src = p.hover;
+                  video.appendChild(source);
+                  wrapper.appendChild(video);
+                  hoverNode = wrapper;
+                } else {
+                  const hoverImg = document.createElement("img");
+                  hoverImg.className = "image-secondary";
+                  hoverImg.src = p.hover;
+                  hoverImg.alt = (p.title || "") + " hover";
+                  hoverImg.style.width = "100%";
+                  hoverImg.style.maxHeight = "500px";
+                  hoverImg.style.objectFit = "cover";
+                  hoverNode = hoverImg;
+                }
+              }
+
+
+              if (p.pixel) {
+                coverImg.classList.add("pixel");
+              }
+
+              // hover 图同理
+              if (hoverNode && p.pixel) {
+                hoverNode.classList.add("pixel");
+              }
+              const textDiv = document.createElement("div");
+              textDiv.className = "proj-text";
+
+              const titleH3 = document.createElement("h3");
+              titleH3.textContent = p.title || "";
+
+
+              const metaP = document.createElement("p");
+              const safeDate = p.date ? p.date : "";
+              const safeTools = p.tools ? p.tools : "";
+              const safeRole = p.role ? p.role : "";
+              metaP.innerHTML = `${safeDate}<br>${safeTools}<br>${safeRole}`;
+
+              // description
+
+              textDiv.appendChild(titleH3);
+
+              textDiv.appendChild(document.createElement("br"));
+              textDiv.appendChild(document.createElement("br"));
+              textDiv.appendChild(metaP);
+
+              if (p.description) {
+                textDiv.appendChild(document.createElement("br"));
+                textDiv.appendChild(document.createElement("br"));
+                const descP = document.createElement("p");
+                descP.textContent = p.description;
+                textDiv.appendChild(descP);
+              }
+
+              // 根据 idx 交替：偶数项（0,2,..）
+              // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
+              // 如果你想反过来，把判断改为 idx%2===0 时先 append image
+              if (idx % 2 === 0) {
+                // text 左，图片 右 -> append text THEN media
+                itemDiv.appendChild(textDiv);
+
+                const mediaContainer = document.createElement("div");
+                mediaContainer.appendChild(coverImg);
+                if (hoverNode) mediaContainer.appendChild(hoverNode);
+                itemDiv.appendChild(mediaContainer);
+              } else {
+                // 图片左，text右 -> append media THEN text
+                const mediaContainer = document.createElement("div");
+                mediaContainer.appendChild(coverImg);
+                if (hoverNode) mediaContainer.appendChild(hoverNode);
+                itemDiv.appendChild(mediaContainer);
+                itemDiv.appendChild(textDiv);
+              }
+              a.appendChild(itemDiv);
+              section.appendChild(a);
+            });
+
+            container.appendChild(section);
+          }
+
+        })
+        .catch(err => console.error("Project load failed:", err));
+    </script>
 
   </section>
-
-  <!-- Gallery Section -->
-  <section class="gallery-container">
-
-    <!-- Games -->
-    <div class=" link-outline galleries">
-      <a href="g.html">
-        <h3 class="p2 ">Games</h3>
-
-        <img class="coverimg" src="img/game/unity/unity4.png" alt="">
-        <img class="cov" src="img/game/vfx/forestS.jpg" alt="">
-
-      </a>
-    </div>
-
-    <!-- Moving Images -->
-    <div class=" link-outline galleries g1">
-      <a href="v.html">
-        <h3 class="p2">Moving Images</h3>
-
-        <img class="coverimg" src="img/game/et/gg.gif" alt="">
-        <img class="cov" src="img/game/et/gg1.png" alt="">
-
-      </a>
-    </div>
-
-    <!-- Visual Archive -->
-    <div class=" link-outline galleries">
-      <a href="i.html">
-        <h3 class=" p2">Visual Archive</h3>
-
-        <img class="coverimg" src="img/3d/wave.jpg" alt="">
-        <img class="cov" src="img/3d/Witch House.jpg" alt="">
-
-      </a>
-    </div>
-
-    <!-- In Progress -->
-    <div class=" link-outline galleries g1">
-      <a href="p.html">
-        <h3 class="p2 ">In Progress</h3>
-
-        <img class="coverimg" src="img/3d/toilet.gif" alt="">
-        <img class="cov" src="img/3d/toilet.png" style="background-color: cornsilk;" alt="">
-
-      </a>
-    </div>
-
-  </section>
-
-  <div class="image-container">
-
-    <h4>Featured Work</h4>
-    <div class="row full">
-      <a href="Projects/garden.html">
-        <img src="img/garden/Firework.png" alt="project image 1" />
-      </a>
-    </div>
-
-  </div>
   <!-- Footer -->
   <footer class="footer">
     <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
   </footer>
 
-  <!-- Scripts (最好放在 body 最后，确保 DOM 已加载) -->
-  <script src="2.js"></script>
-  <script src="index.js"></script>
+
 
 </body>
 

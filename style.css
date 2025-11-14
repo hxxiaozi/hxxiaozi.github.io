@@ -22,111 +22,57 @@
   background: linear-gradient(to bottom, #92e66e 0%, #e6c66e 50%, lightpink 100%);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   overflow-y: auto;
-  overscroll-behavior: none;
-  cursor: none;
   background-color: floralwhite;
-
-
-  /* background-image: url("img/gd/sheep.png");
-  background-blend-mode: multiply;
-  background-size: 35%; */
   margin: 0;
   padding: 0;
 }
 
-h2 {
-  font-weight: 600;
-}
 
-h3 {
-  font-weight: 550;
-}
 
-h4 {
+h1,h2 {
   font-weight: 500;
 }
 
-#custom-cursor0 {
+h3,h4 {
+  font-weight: 400;
+}
+
+
+.cursor {
   position: fixed;
   width: 32px;
-  /* Adjust the width of your cursor image */
   height: 32px;
-  /* Adjust the height of your cursor image */
   pointer-events: none;
-  /* Ensure the cursor does not interfere with interactions */
+  background-size: cover;
+  z-index: 9999;
+}
+
+/* 单独指定图片 */
+.cursor.me {
   background-image: url('img/icon/me.png');
-  /* Set the path to your custom cursor image */
-  background-size: cover;
-  z-index: 9999;
-  /* Ensure the cursor is above other elements */
 }
 
-#custom-cursor1 {
-  position: fixed;
-  width: 32px;
-  /* Adjust the width of your cursor image */
-  height: 32px;
-  /* Adjust the height of your cursor image */
-  pointer-events: none;
-  /* Ensure the cursor does not interfere with interactions */
+.cursor.tomato {
   background-image: url('img/icon/tomato.png');
-  /* Set the path to your custom cursor image */
-  background-size: cover;
-  z-index: 9999;
-  /* Ensure the cursor is above other elements */
+
 }
 
-
-#custom-cursor2 {
-  position: fixed;
-  width: 32px;
-  /* Adjust the width of your cursor image */
-  height: 32px;
-  /* Adjust the height of your cursor image */
-  pointer-events: none;
-  /* Ensure the cursor does not interfere with interactions */
+.cursor.pumpkin {
   background-image: url('img/icon/pumpkin.png');
-  /* Set the path to your custom cursor image */
-  background-size: cover;
-  z-index: 9999;
-  /* Ensure the cursor is above other elements */
 }
 
-#custom-cursor3 {
-  position: fixed;
-  width: 32px;
-  /* Adjust the width of your cursor image */
-  height: 32px;
-  /* Adjust the height of your cursor image */
-  pointer-events: none;
-  /* Ensure the cursor does not interfere with interactions */
+.cursor.cabbage {
   background-image: url('img/icon/cabbage.png');
-  /* Set the path to your custom cursor image */
-  background-size: cover;
-  z-index: 9999;
-  /* Ensure the cursor is above other elements */
 }
 
-#custom-cursor4 {
-  position: fixed;
-  width: 32px;
-  /* Adjust the width of your cursor image */
-  height: 32px;
-  /* Adjust the height of your cursor image */
-  pointer-events: none;
-  /* Ensure the cursor does not interfere with interactions */
+.cursor.garlic {
   background-image: url('img/icon/garlic.png');
-  /* Set the path to your custom cursor image */
-  background-size: cover;
-  z-index: 9999;
-  /* Ensure the cursor is above other elements */
 }
+
 
 
 a:link {
@@ -140,7 +86,6 @@ a:hover {
 }
 
 
-
 :root {
   --spacel: 4.5%;
   --spacexl: 10%;
@@ -149,6 +94,9 @@ a:hover {
   --fontp: "Maven Pro", Work Sans, Avenir, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", sans-serif, serif;
   --fontp2: "ZCOOL XiaoWei", monospace, sans-serif;
   --dark: #265400ec;
+  --line3: 3px solid lightpink;
+  --roundcorner: 5px;
+
 
 }
 
@@ -161,12 +109,10 @@ a:hover {
   justify-content: space-between;
   padding-left: var(--spacel);
   padding-right: var(--spacel);
-  padding-top: 5px;
   padding-bottom: 5px;
 
   border-top: pink 5px solid;
   padding-top: 0px;
-
 }
 
 .header:hover {
@@ -178,7 +124,7 @@ a:hover {
 }
 
 .title {
-  font-size: x-large;
+  font-size: xx-large;
   font-family: var(--fontp);
 }
 
@@ -191,7 +137,7 @@ a:hover {
 
 
 .header-btn {
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: medium;
 }
 
@@ -202,7 +148,6 @@ a:hover {
 
 .profile {
   background-color: floralwhite;
-  border: 5px none black;
   width: 60px;
   height: 60px;
   border-radius: 50px;
@@ -221,19 +166,23 @@ a:hover {
   margin-right: 0.5%;
 }
 
+.margin-r {
+  margin-right: var(--spacel);
+}
+
 .link-underline {
   padding-bottom: 3px;
 }
 
 .link-underline:hover {
-  border-bottom: lightpink 3px solid;
+  border-bottom: var(--line3);
   padding: 0px;
 
 }
 
 .link-underline img:hover {
   background-color: lightpink;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
 }
 
 
@@ -250,20 +199,21 @@ a:hover {
 .link-outline h2:hover,
 .link-outline h3:hover,
 .link-outline h4:hover {
-  border-bottom: lightpink 3px solid;
+  border-bottom: var(--line3);
   padding: 0px;
 
 }
 
 .link-outline:hover {
-  outline: lightpink 3px solid;
+  outline: var(--line3);
   outline-offset: 2px;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
+
 }
 
 .link-outline img:hover {
   background-color: lightpink;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
   opacity: 0.9;
 }
 
@@ -279,13 +229,12 @@ p, h1, h2, h3, h4 {
 
 .p2 {
   font-family: var(--fontp2);
-  display: inline-block;
-
 }
+
+
 
 .img {
   margin: auto;
-
 }
 
 img.icon {
@@ -295,8 +244,9 @@ img.icon {
   justify-content: center;
 }
 
-
-
+.pixel {
+  image-rendering: pixelated;
+}
 
 
 
@@ -307,7 +257,7 @@ img.icon {
   padding: 10px 0px;
   width: 100%;
   box-sizing: border-box;
-  /* ✅ 确保包含内边距 */
+  padding-right: 1%;
   font-size: small;
   text-align: right;
 }
@@ -326,29 +276,6 @@ img.icon {
 
 }
 
-.galleries {
-  flex: 1 0 calc(21.5% - 0%);
-  min-width: 150px;
-  text-align: center;
-
-  background: linear-gradient(to top left, var(--gradient-colors));
-  animation: gradientAnimation 10s linear infinite reverse;
-  background-size: 600% 600%;
-  margin: 40px 0px 40px;
-  border-radius: 10px;
-
-}
-
-
-.g1 {
-
-  background: linear-gradient(to bottom right, var(--gradient-colors));
-  animation: gradientAnimation 10s linear infinite;
-  background-size: 600% 600%;
-
-
-}
-
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -364,10 +291,52 @@ img.icon {
 }
 
 
+.text-centre {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.galleries {
+  flex: 1 0 calc(21% - 0%);
+  min-width: 150px;
+  text-align: center;
+  border: 3px solid transparent;
+
+  will-change: background-position;
+  background-image: linear-gradient(cornsilk), linear-gradient(to top left, var(--gradient-colors));
+  animation: gradientAnimation 10s linear infinite reverse;
+  background-size: 600% 600%;
+
+  margin: 40px 0px 40px;
+  border-radius: 10px;
+
+
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+
+}
+
+.galleries.g1 {
+
+  background-image: linear-gradient(cornsilk), linear-gradient(to bottom right, var(--gradient-colors));
+  animation: gradientAnimation 10s linear infinite;
+  background-size: 600% 600%;
+}
+
+
+.galleries:hover {
+  background-image: linear-gradient(to top left, var(--gradient-colors)), linear-gradient(to top left, var(--gradient-colors));
+  animation: gradientAnimation 10s linear infinite reverse;
+  background-size: 600% 600%;
+}
+
+
 .galleries :hover {
   color: white;
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+
 }
 
 .galleries:hover .coverimg {
@@ -381,7 +350,6 @@ img.icon {
 .galleries:hover .cov {
   display: none;
 }
-
 
 
 
@@ -449,13 +417,14 @@ img.icon {
   display: none;
   margin-left: 0px;
   opacity: 1;
+  font-size: large;
 }
 
 .c {
   background: linear-gradient(to bottom right, yellowgreen 0%, lightsalmon 100%);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: var(--spacel);
+
   /* height: auto; */
   text-indent: 1em;
   border-top: 10px solid lightpink;
@@ -477,14 +446,14 @@ img.icon {
   /* gap: 15px; */
   padding: 20px;
   display: block;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
 
 }
 
 
 .c1 img {
   height: auto;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
 }
 
 
@@ -513,8 +482,7 @@ img.icon {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 5px;
-
+  border-radius: var(--roundcorner);
 
 }
 
@@ -522,7 +490,8 @@ img.icon {
 /* Iframe styles */
 .iframe {
   width: 100%;
-  height: 650px;
+
+  aspect-ratio: 16 / 10;
 
   border-width: 5px;
   border-color: lightpink #6ee0e6ec yellowgreen;
@@ -553,8 +522,7 @@ img.icon {
 
   padding: 1em;
   margin-top: 2.5%;
-  margin-left: var(--spacel);
-  margin-right: 30%;
+  max-width: 50rem;
   border-radius: 10px;
 
   font-size: medium;
@@ -563,7 +531,6 @@ img.icon {
 
 .image-container {
   margin-top: 20px;
-  image-rendering: pixelated;
   width: 95%;
   height: auto;
   padding-top: 2.5%;
@@ -685,22 +652,18 @@ img.icon {
 }
 
 .sections {
-  /* background: linear-gradient(to bottom right, floralwhite 0%, thistle 35%, lightpink 100%); */
-  background-color: corn;
+  background-color: none;
   border-bottom: 3px solid yellowgreen;
-
-
+  display: inline-block;
+  margin: auto;
   border-top: 3px solid transparent;
   padding: 5px 30px 0px 30px;
 
-  /* padding: 1px; */
-  font-size: small;
 }
 
 
 
 .sections:hover {
-
   padding: 0px 27px;
   margin-bottom: 5px;
   border: 3px solid transparent;
@@ -711,15 +674,65 @@ img.icon {
   outline: floralwhite 3px solid;
   outline-offset: -6px;
 
+}
 
+.block-display {
+  display: inline-block;
+}
 
-  /* color: cornsilk;
-  background: linear-gradient(to right, thistle 0%, lightpink 60%, yellowgreen 100%);
-  border: none;
-  margin-top: 5px; */
+#back {
+  margin: 10px 2.5%;
 
 }
 
+#back:hover {
+  color: lightpink;
+
+}
+
+.image,
+.image-secondary,
+.image-secondary img,
+.image-secondary video {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--roundcorner);
+  overflow: hidden;
+}
+
+#projects-container section {
+  margin-top: 1rem;
+}
+
+.image-secondary {
+  display: none;
+
+}
+
+.link-outline.proj-content:hover .image {
+  display: none;
+
+}
+
+.link-outline.proj-content:hover .image-secondary {
+  display: block;
+
+}
+
+@media (max-width: 800px) {
+  .link-outline.proj-content {
+    display: block;
+  }
+
+  .image,
+  .image-secondary {
+    max-height: 300px;
+  }
+}
 
 
 .p5-content {
@@ -733,18 +746,28 @@ img.icon {
 
 .proj-content {
   margin-top: 20px;
-  border-radius: 5px;
-  /* border-top: 5px dashed lightpink; */
+  border-radius: var(--roundcorner);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
+.proj-content:hover .proj-text {
+  border: none;
+  padding: 30px 25px;
+}
+
+.proj-text {
+  padding: 25px;
+  border-top: thistle solid 5px;
+
+
+}
 
 .image-roundcorner {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: var(--roundcorner);
 }
 
 
@@ -775,6 +798,7 @@ img.icon {
   .unity-content {
     grid-template-columns: repeat(1, 1fr)
   }
+
 
   .c1 {
     grid-template-columns: repeat(1, 1fr);

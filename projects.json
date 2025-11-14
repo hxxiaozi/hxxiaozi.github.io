@@ -1,4 +1,25 @@
 {
+  "Physical Games": [
+    {
+      "title": "My Happy Healthy Rich and Windy Chicago Game",
+      "date": "2022 May",
+      "tools": "Aseprite | Illustrator",
+      "role": "Solo Project",
+      "cover": "img/game/cardgame/3.png",
+      "hover": "img/game/cardgame/2.png",
+      "link": "Projects/Chicago.tml"
+    },
+    
+    {
+      "title": "Vampire",
+      "date": "2025 May",
+      "tools": "InDesign | Photoshop",
+      "role": "Game Design, Illustrations, Production, Playtesting",
+      "cover": "img/game/vampire/10.png",
+      "hover": "img/game/vampire/IMG_8377.jpg",
+      "link": "Projects/Forest.html"
+    }
+  ],
   "Digital Games": [
     {
       "title": "Human? Alien? Vegetables!",
@@ -7,7 +28,8 @@
       "role": "Game Design, all art & animation",
       "cover": "img/game/et/et-cover.png",
       "hover": "img/game/et/gg.gif",
-      "link": "Projects/Alien.html"
+      "link": "Projects/Alien.html",
+      "pixel": true
     },
     {
       "title": "The Alley",
@@ -18,15 +40,7 @@
       "hover": "img/game/unity/unity3.jpeg",
       "link": "Projects/Alley.html"
     },
-    {
-      "title": "Sheepcity",
-      "date": "2024 December",
-      "tools": "Unity",
-      "role": "Solo Project",
-      "cover": "img/game/unity/sheepcity.png",
-      "hover": "img/game/unity/unity3.jpeg",
-      "link": "Projects/SheepCity.html"
-    },
+
     {
       "title": "Go! Groundshel",
       "date": "2025 (Ongoing)",
@@ -93,33 +107,13 @@
       "link": "Projects/Toilet.html"
     },
     {
-      "title": "Face",
+      "title": "Mirror",
       "date": "2024 April",
       "tools": "P5.js | ml5",
       "role": "Solo Project",
       "cover": "img/3d/toilet.png",
-      "link": "Projects/Face.html"
-    }
-  ],
-
-  "Physical Games": [
-    {
-      "title": "My Happy Healthy Rich and Windy Chicago Game",
-      "date": "2022 May",
-      "tools": "Aseprite | Illustrator",
-      "role": "Solo Project",
-      "cover": "img/game/cardgame/card1.JPG",
-      "hover": "img/game/cardgame/card2.JPG",
-      "link": "Projects/Chicago.tml"
-    },
-    {
-      "title": "Vampire",
-      "date": "2025 May",
-      "tools": "InDesign | Photoshop",
-      "role": "Game Design, Illustrations, Production, Playtesting",
-      "cover": "img/game/vampire",
       "hover": "img/3d/toilet.png",
-      "link": "Projects/Forest.html"
+      "link": "Projects/Face.html"
     }
   ]
 }
