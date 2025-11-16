@@ -3,31 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Garden: Flowers & Fireworks | H-XX</title>
+  <title>Chicago Life Card Game</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
-  <style>
-    body {
-      overflow-y: hidden;
-    }
-
-    .scroll-container {
-      scroll-snap-type: y proximity;
-      /* Reserve space for header plus some extra space for sneak peeking. */
-
-      overflow-y: scroll;
-      height: 100vh;
-    }
-
-    .scroll-container section {
-
-      scroll-snap-align: start;
-    }
-  </style>
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35);">
-
-
 
   <div id="navbar"></div>
   <script>
@@ -37,11 +17,10 @@
       .then(html => document.getElementById('navbar').innerHTML = html)
       .catch(err => console.error('Navigation load failed:', err));
   </script>
+
   <div class="scroll-container">
     <!-- Header -->
-    <section>
-      <div id="header"></div>
-
+    <section id="header">
       <script>
         // 动态加载公共导航栏
         fetch('../header.html')
@@ -54,39 +33,29 @@
     <div class=" margin-l margin-r">
       <section>
 
-        <h2>Garden: Flowers & Fireworks</h2>
+        <h2>My Happy Healthy Rich & Windy Chicago Life Game</h2>
         <br><br>
         <p class="p">
-          An interactive digital garden where users can plant and nurture virtual flowers that bloom into fireworks.
+          My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.
         </p>
-
-
         <!-- 🌼 4. Project Media Section -->
-
 
         <!-- 🌺 Gallery Part 1 -->
         <div class="image-container">
           <div class="row full">
-            <img src="../img/garden/Firework.png" alt="project image 1" />
+            <img src="../img/game/cardgame/2.png" alt="project image 1" />
           </div>
         </div>
       </section>
 
-
-      <section class="p5-content">
-        <p class="p">Firework</p>
-        <iframe class="iframe" src="https://editor.p5js.org/q1976862147/full/HfZsrJGX2"></iframe>
-        <p class="p p5-title">
-          <a href="https://editor.p5js.org/q1976862147/full/HfZsrJGX2" target="_blank">Open in p5.js →</a>
-        </p>
-      </section>
+     
       <!-- 🌸 Gallery Part 2 + p5 embed -->
       <section class="image-container">
         <div class="row two">
-          <img src="../img/garden/Firework1.png" alt="project image 2" />
-          <img src="../img/garden/Firework2.png" alt="project image 3" />
-          <img src="../img/garden/Firework3.png" alt="project image 4" />
-          <img src="../img/garden/Firework4.png" alt="project image 5" />
+          <img src="../img/game/cardgame/card4.JPG" alt="project image 2" />
+          <img src="../img/game/cardgame/dice1.JPG" alt="project image 3" />
+          <img src="../img/game/cardgame/IMG_6230.JPG" alt="project image 4" />
+          <img src="../img/game/cardgame/3.png" alt="project image 5" />
         </div>
       </section>
       <section class="image-container">
@@ -166,5 +135,4 @@
     </div>
   </div>
 </body>
-
-</html>
+<html>
