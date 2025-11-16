@@ -45,7 +45,7 @@
                         if (!data[category]) return; // 忽略不存在的
 
                         const btn = document.createElement("div");
-                        btn.className = "sections";
+                        btn.className = "category_btn";
 
                         const a = document.createElement("a");
                         a.href = "#" + category.replace(/\s+/g, "");
@@ -61,7 +61,7 @@
 
 
                     /* ------------------------
-                        PROJECT SECTIONS
+                        PROJECT category_btn
                     ------------------------- */
                     const container = document.getElementById("projects-container");
                     container.innerHTML = "";
@@ -182,7 +182,7 @@
 
     </div>
     <div id="back">
-        <div class="sections" onclick="history.back()">
+        <div class="category_btn" onclick="history.back()">
             <h4 class="block-display">Go Back</h4>
         </div>
     </div>

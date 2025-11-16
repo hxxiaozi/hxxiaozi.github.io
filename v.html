@@ -36,77 +36,103 @@
   </script>
 
 
-
   <div class="video-container">
-    <p> Animations </p>
+    <h3> Animations </h3>
+
+    <div class="video-grid">
+      <div class="category_btn">
+        <a href="#" data-video="vid/Light Ocean 480p.mov">
+          <p class="block-display">Light Ocean</p>
+        </a>
+      </div>
+
+      <div class="category_btn">
+        <a href="#" data-video="img/game/vfx/forestBubble.mp4">
+          <p class="block-display">Forest Illusion(vfx)
+          </p>
+        </a>
+      </div>
+      <div class="category_btn">
+        <a href="#" data-video="vid/Alien Game Demo.mp4">
+          <p class="block-display">Alien (game intro)</p>
+        </a>
+      </div>
+      <div class="category_btn">
+        <a href="#" data-video="vid/Modern Witches Tutorial.mov" alt="https://youtu.be/6i4ACh4Wh2M">
+          <p class="block-display">Modern Witch Tutorial</p>
+        </a>
+      </div>
+
+
+
+    </div>
     <video class="video-player" controls>
 
       <source src="vid/Light Ocean 480p.mov" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="video-grid">
-      <div class="video-item">
-        <a href="#" data-video="vid/Light Ocean 480p.mov">
-          <p>Light Ocean</p>
-        </a>
-      </div>
-
-      <div class="video-item">
-        <a href="#" data-video="img/game/vfx/forestBubble.mp4">
-          <p>Forest Illusion(vfx)
-          </p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a href="#" data-video="vid/Alien Game Demo.mp4">
-          <p>Alien (game intro)</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a href="#" data-video="vid/Modern Witches Tutorial.mov" alt="https://youtu.be/6i4ACh4Wh2M">
-          <p>Modern Witch Tutorial</p>
-        </a>
-      </div>
-
-
-
-
-    </div>
   </div>
 
   <div class="video-container">
-    <p>Videos</p>
+    <h3>Videos</h3>
+    <div class="video-grid">
+      <div class="category_btn">
+        <a href="#" data-video="vid/16mm.mov"
+          alt="https://drive.google.com/file/d/1_LJa5Cv5OHnab7shY0PlcsUzk2BD4TR6/view?usp=sharing">
+          <p class="block-display">Who
+            Killed My Wife?(silent)</p>
+        </a>
+      </div>
+      <div class="category_btn">
+        <a href="#" data-video="vid/Breakfast Stop Motion.mov" alt="https://vimeo.com/807080487">
+          <p class="block-display">Breakfast(Stop Motion)</p>
+        </a>
+      </div>
+      <div class="category_btn">
+        <a href="#" data-video="vid/Home, Nap, Escape.mov">
+          <p class="block-display">Home, Nap, Escape</p>
+        </a>
+      </div>
+      <div class="category_btn">
+        <a href="#" data-video="vid/sounds like homework.mov">
+          <p class="block-display">Sounds Like Homework</p>
+        </a>
+      </div>
+    </div>
     <video class="video-player" controls>
       <source src="vid/16mm.mov" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="video-grid">
-      <div class="video-item">
-        <a href="#" data-video="vid/16mm.mov"
-          alt="https://drive.google.com/file/d/1_LJa5Cv5OHnab7shY0PlcsUzk2BD4TR6/view?usp=sharing">
-          <p>Who
-            Killed My Wife?(silent)</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a href="#" data-video="vid/Breakfast Stop Motion.mov" alt="https://vimeo.com/807080487">
-          <p>Breakfast(Stop Motion)</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a href="#" data-video="vid/Home, Nap, Escape.mov">
-          <p>Home, Nap, Escape</p>
-        </a>
-      </div>
-      <div class="video-item">
-        <a href="#" data-video="vid/sounds like homework.mov">
-          <p>Sounds Like Homework</p>
-        </a>
-      </div>
-    </div>
   </div>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const videoList = document.querySelectorAll(".category_btn");
 
+      videoList.forEach((videoItem) => {
+        videoItem.addEventListener("click", function (e) {
+          e.preventDefault();
+          const videoSource = this.querySelector("a").getAttribute("data-video");
+          const sanitizedSource = videoSource.replace(/ /g, "%20");
+
+          // 找到与当前点击项同容器内的视频播放器
+          const videoContainer = this.closest(".video-container");
+          const videoPlayer = videoContainer.querySelector(".video-player");
+
+          videoPlayer.src = sanitizedSource;
+          videoPlayer.load();
+          videoPlayer.play();
+
+          // 移除所有视频项的'selected'类
+          videoList.forEach((item) => {
+            item.classList.remove("selected");
+          });
+
+          // 为点击的视频项添加'selected'类
+          this.classList.add("selected");
+        });
+      });
+    });</script>
 </body>
 
 </html>
