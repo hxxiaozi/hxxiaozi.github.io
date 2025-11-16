@@ -20,6 +20,37 @@
       "link": "Projects/vampire.html"
     }
   ],
+
+  "Interactive Sketches": [
+    {
+      "title": "Firework & Garden",
+      "date": "2025 October",
+      "tools": "P5.js",
+      "role": "Solo Project",
+      "cover": "img/garden/Firework.png",
+      "hover": "img/garden/flowers-drawing.mov",
+      "hoverType": "video",
+      "link": "Projects/garden.html"
+    },
+    {
+      "title": "Virtual Toilet",
+      "date": "2024 November",
+      "tools": "P5.js | PoseNet",
+      "role": "Solo Project",
+      "cover": "img/3d/toilet.png",
+      "hover": "img/3d/toilet.gif",
+      "link": "Projects/Toilet.html"
+    },
+    {
+      "title": "Mirror",
+      "date": "2024 April",
+      "tools": "P5.js | ml5",
+      "role": "Solo Project",
+      "cover": "img/3d/toilet.png",
+      "hover": "img/3d/toilet.png",
+      "link": "Projects/Face.html"
+    }
+  ],
   "Digital Games": [
     {
       "title": "Human? Alien? Vegetables!",
@@ -83,37 +114,6 @@
       "hover": "img/game/vfx/forest.mp4",
       "hoverType": "video",
       "link": "Projects/Forest.html"
-    }
-  ],
-
-  "Computer Vision": [
-    {
-      "title": "Firework & Garden",
-      "date": "2025 October",
-      "tools": "P5.js",
-      "role": "Solo Project",
-      "cover": "img/garden/Firework.png",
-      "hover": "img/garden/flowers-drawing.mov",
-      "hoverType": "video",
-      "link": "Projects/garden.html"
-    },
-    {
-      "title": "Virtual Toilet",
-      "date": "2024 November",
-      "tools": "P5.js | PoseNet",
-      "role": "Solo Project",
-      "cover": "img/3d/toilet.png",
-      "hover": "img/3d/toilet.gif",
-      "link": "Projects/Toilet.html"
-    },
-    {
-      "title": "Mirror",
-      "date": "2024 April",
-      "tools": "P5.js | ml5",
-      "role": "Solo Project",
-      "cover": "img/3d/toilet.png",
-      "hover": "img/3d/toilet.png",
-      "link": "Projects/Face.html"
     }
   ]
 }
