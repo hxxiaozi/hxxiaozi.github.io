@@ -5,104 +5,109 @@
   <meta charset="UTF-8">
   <title>Forest Bubble | H-XX</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
+
+  <style>
+    body {
+      overflow-y: hidden;
+    }
+
+    .scroll-container {
+      scroll-snap-type: y proximity;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .scroll-container section {
+      scroll-snap-align: start;
+    }
+  </style>
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35);">
 
-  <!-- Header -->
-  <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-
-
+  <!-- Navigation -->
   <div id="navbar"></div>
-
   <script>
-    // 动态加载公共导航栏
     fetch('../nav.html')
       .then(res => res.text())
       .then(html => document.getElementById('navbar').innerHTML = html)
       .catch(err => console.error('Navigation load failed:', err));
   </script>
 
-  <!-- ===================================================== -->
-  <!-- 🌸 3. Project Header -->
-  <!-- ===================================================== -->
-  <div class="p p5-content link-underline">
-    <h3>Forest Bubble</h3>
-    <p class="p">
-      An animation project created in Unity, depicting a serene forest scene turning into fire scene when the bubble
-      pop.
-    </p>
-  </div>
+  <!-- Scroll Container -->
+  <div class="scroll-container">
 
-  <!-- ===================================================== -->
-  <!-- 🌼 4. Project Media Section -->
-  <!-- ===================================================== -->
+    <!-- Header -->
+    <section>
+      <div id="header"></div>
+      <script>
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+      </script>
+    </section>
 
-  <!-- 🌺 Gallery Part 1 -->
-  <div class="image-container">
-    <div class="row full">
+    <!-- Project Title -->
+    <div class="margin-l margin-r">
+      <section class="p5-content">
+        <h2>Forest Bubble</h2>
+        <br><br>
+        <p class="p">
+          An animation project created in Unity, depicting a serene forest scene turning into a fire scene when the
+          bubble
+          pops.
+        </p>
 
-      <img src="../img/game/vfx/forest.jpg" />
-    </div>
-  </div>
+        <!-- Cover Image -->
+        <div class="image-container">
+          <div class="row full">
+            <img src="../img/game/vfx/forest.jpg" alt="Forest Bubble Image">
+          </div>
+        </div>
+      </section>
 
-  <div class="video-container">
-    <video class="video-player" autoplay muted loop>
-      <source src="../img/game/vfx/forest.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+      <!-- Video -->
+      <section class="video-container">
+        <video class="video-player" autoplay muted loop>
+          <source src="../img/game/vfx/forest.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
 
-  </div>
+      <!-- Gallery (two images) -->
+      <section class="image-container">
+        <div class="row two">
+          <img src="../img/game/vfx/forest1.png" />
+          <img src="../img/game/vfx/forest6.png" />
+        </div>
+      </section>
 
-  <!-- 🌸 Gallery Part 2 + p5 embed -->
-  <div class="image-container">
-    <div class="row two">
-      <img src="../img/game/vfx/forest1.png" />
-      <img src="../img/game/vfx/forest6.png" />
-    </div>
-  </div>
+      <!-- Project Info -->
+      <section class="project-info">
+        <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
+        <p class="p"><strong>Time:</strong> 2025</p>
+      </section>
 
-  <!-- ===================================================== -->
-  <!-- 📋 5. Project Info -->
-  <!-- ===================================================== -->
+      <!-- Concept -->
+      <section class="p5-content">
+        <h3 class="p">Process & Concept</h3>
+        <p class="p">
+          This project explores the intersection between nature and digital play.
+          It uses Unity’s particle and animation system to create a forest environment
+          that suddenly transforms when the bubble bursts—revealing a hidden, fiery layer underneath.
+          The contrast symbolizes fragility within natural systems.
+        </p>
+      </section>
 
-  <div class="p5-content">
-    <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
-    <p class="p"><strong>Time:</strong> 2025</p>
-  </div>
-
-  <!-- ===================================================== -->
-  <!-- ✏️ 6. Process & Concept -->
-  <!-- ===================================================== -->
-  <div class="p5-content"">
-    <h3 class=" p">Process & Concept</h3>
-    <p class="p">
-      This project explores the intersection between nature and digital play.
-      Users cultivate flowers that grow and transform into bursts of color,
-      creating an evolving ecosystem of visual energy.
-      Built using p5.js, the project emphasizes generative interaction and visual rhythm.
-    </p>
-  </div>
-
-  <!-- ===================================================== -->
-  <!-- 🧭 7. Back Navigation -->
-  <!-- ===================================================== -->
-  <div class="section-container" style="margin: auto;">
-    <a href="../games.html">
-      <div class="link-underline" style="padding-left: 2.5%;">
-        <h3 class="p2">← Back to Fun Games</h3>
+      <div id="back">
+        <div class="category_btn" onclick="history.back()">
+          <h4 class="block-display">Go Back</h4>
+        </div>
       </div>
-    </a>
+    </div>
   </div>
 
-  <script src="../3.js"></script>
 </body>
 
 </html>
