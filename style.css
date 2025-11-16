@@ -592,9 +592,12 @@ img.icon {
 
 .category_btn.selected {
   padding-top: 3px;
-  background-color: cornsilk;
   border-bottom: 5px solid thistle;
   border-radius: 15px 15px 0px 0px;
+
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(cornsilk), linear-gradient(to right, var(--gradient2));
 
 }
 
@@ -605,12 +608,6 @@ img.icon {
   max-height: 100%;
   width: 100%;
   height: auto;
-  /* border-radius: 10px;
-  border-style: inset;
-  border-color: lightpink #6ee0e6ec yellowgreen;
-  border-width: 5px;
-
-   */
 
   border: 5px solid transparent;
   border-radius: 15px;
