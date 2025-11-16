@@ -20,6 +20,7 @@
       "link": "Projects/vampire.html"
     }
   ],
+
   "Digital Games": [
     {
       "title": "Human? Alien? Vegetables!",
@@ -49,6 +50,25 @@
       "cover": "img/game/groundshel/minimap1.png",
       "hover": "img/game/groundshel/IMG_4735.PNG",
       "link": "Projects/Groundshel.html"
+    },
+
+    {
+      "title": "Deadline",
+      "date": "2024",
+      "tools": "Twine",
+      "role": "Solo Project",
+      "cover": "img/game/ddl/screenshot1.png",
+      "hover": "img/game/ddl/screenshot1.png",
+      "link": "/DeadLine.html"
+    },
+    {
+      "title": "Sheepcity",
+      "date": "2024 December",
+      "tools": "Unity",
+      "role": "Solo Project",
+      "cover": "img/game/unity/sheepcity.png",
+      "hover": "/SheepCity/sheepcity.mov",
+      "link": "Projects/Sheepcity.html"
     }
   ],
 
