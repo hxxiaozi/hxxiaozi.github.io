@@ -31,6 +31,59 @@
     </section>
     <!-- 🌸 3. Project Header -->
     <div class=" margin-l ">
+
+        <script>
+
+          // 3. 加载 JSON
+          fetch("complete-projects.json")
+            .then(res => res.json())
+            .then(data => {
+              const project = data[projectName];
+              if (!project) {
+                container.innerHTML = "<p>Project not found.</p>";
+                return;
+              }
+
+              // 创建标题
+              const h2 = document.createElement("h2");
+              h2.textContent = project.title;
+              container.appendChild(h2);
+
+              // 空行
+              container.appendChild(document.createElement("br"));
+              container.appendChild(document.createElement("br"));
+
+              // 创建描述
+              const p = document.createElement("p");
+              p.className = "p";
+              p.textContent = project.description;
+              container.appendChild(p);
+
+              // 创建图片容器
+              if (project.images && project.images.length > 0) {
+                const imageContainer = document.createElement("div");
+                imageContainer.className = "image-container";
+
+                const row = document.createElement("div");
+                row.className = "row full";
+
+                project.images.forEach(src => {
+                  const img = document.createElement("img");
+                  img.src = src;
+                  img.alt = project.title;
+                  row.appendChild(img);
+                });
+
+                imageContainer.appendChild(row);
+                container.appendChild(imageContainer);
+              }
+            })
+            .catch(err => {
+              console.error("Load failed:", err);
+              container.innerHTML = "<p>Error loading project.</p>";
+            });
+        </script>
+
       <section>
 
         <h2>My Happy Healthy Rich & Windy Chicago Life Game</h2>
