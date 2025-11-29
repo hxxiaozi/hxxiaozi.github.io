@@ -5,13 +5,15 @@
       "date": "2022 May",
       "tools": "Aseprite | Illustrator",
       "role": "Solo Project",
+      "description": "My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.",
       "cover": "img/game/cardgame/3.png",
       "hover": "img/game/cardgame/2.png",
       "link": "Projects/Chicago.html"
+
     },
 
     {
-      "title": "Vampire",
+      "title": "Fangs: The Eternal Coven",
       "date": "2025 May",
       "tools": "InDesign | Photoshop",
       "role": "Game Design, Illustrations, Production, Playtesting",
