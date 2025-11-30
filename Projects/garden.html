@@ -54,17 +54,71 @@
     <div class=" margin-l margin-r">
       <section>
 
-        <h2>Garden: Flowers & Fireworks</h2>
-        <br><br>
-        <p class="p">
-          An interactive digital garden where users can plant and nurture virtual flowers that bloom into fireworks.
-        </p>
+         <section id="project-info"></section>
+
+      <script>
+        const container = document.getElementById("project-info");
+
+        fetch("/complete-projects.json")
+          .then(res => res.json())
+          .then(data => {
+            let project = null;
+
+            // 🔍 在所有分类中遍历查找
+            for (const category in data) {
+              project = data[category].find(p => p.title === "Garden:Flowers & Fireworks");
+              if (project) break;
+            }
+
+            if (!project) {
+              container.innerHTML = "<p>Project not found.</p>";
+              return;
+            }
+
+            // 动态标题
+            const h2 = document.createElement("h2");
+            h2.textContent = project.title;
+            container.appendChild(h2);
+
+            container.appendChild(document.createElement("br"));
+            container.appendChild(document.createElement("br"));
+
+            // 动态描述（如果 JSON 里有）
+            if (project.description) {
+              const p = document.createElement("p");
+              p.className = "p";
+              p.textContent = project.description;
+              container.appendChild(p);
+              container.appendChild(document.createElement("br"));
+            }
+
+          const fields = [
+              { label: "Tool", key: "tools" },
+              { label: "Time", key: "date" },
+              { label: "Role", key: "role" }
+            ];
+
+            fields.forEach(({ label, key }) => {
+              if (project[key]) {
+                container.appendChild(document.createElement("br"));
+                const p = document.createElement("p");
+                p.className = "p";
+                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                container.appendChild(p);
+              }
+            });
+
+            container.appendChild(document.createElement("br"));
 
 
-        <!-- 🌼 4. Project Media Section -->
 
+          })
+          .catch(err => {
+            console.error("Load failed:", err);
+            container.innerHTML = "<p>Error loading project.</p>";
+          });
 
-        <!-- 🌺 Gallery Part 1 -->
+      </script>
         <div class="image-container">
           <div class="row full">
             <img src="../img/garden/Firework.png" alt="project image 1" />

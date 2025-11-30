@@ -3,24 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Human?Alien?Vegetable!| H-XX</title>
+  <title>Human?Alien?Vegetable!</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35);">
-  <!-- Header -->
-  <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-
 
   <div id="navbar"></div>
-
   <script>
     // 动态加载公共导航栏
     fetch('../nav.html')
@@ -29,77 +18,134 @@
       .catch(err => console.error('Navigation load failed:', err));
   </script>
 
-  <!-- 🌸 3. Project Header -->
+  <div class="scroll-container">
+    <!-- Header -->
+    <section id="header">
+      <script>
+        // 动态加载公共导航栏
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+      </script>
+    </section>
+    <!-- 🌸 3. Project Header -->
+    <div class=" margin-l ">
 
-  <div class="p p5-content link-underline">
-    <h3>Human?Alien?Vegetable</h3>
-    <p>
-      A game project.
-    </p>
-  </div>
+      <section id="project-info"></section>
+
+      <script>
+        const container = document.getElementById("project-info");
+
+        fetch("/complete-projects.json")
+          .then(res => res.json())
+          .then(data => {
+            let project = null;
+
+            // 🔍 在所有分类中遍历查找
+            for (const category in data) {
+              project = data[category].find(p => p.title === "Human? Alien? Vegetables!");
+              if (project) break;
+            }
+
+            if (!project) {
+              container.innerHTML = "<p>Project not found.</p>";
+              return;
+            }
+
+            // 动态标题
+            const h2 = document.createElement("h2");
+            h2.textContent = project.title;
+            container.appendChild(h2);
+
+            container.appendChild(document.createElement("br"));
+            container.appendChild(document.createElement("br"));
+
+            // 动态描述（如果 JSON 里有）
+            if (project.description) {
+              const p = document.createElement("p");
+              p.className = "p";
+              p.textContent = project.description;
+              container.appendChild(p);
+              container.appendChild(document.createElement("br"));
+            }
+
+            const fields = [
+              { label: "Tool", key: "tools" },
+              { label: "Time", key: "date" },
+              { label: "Role", key: "role" }
+            ];
+
+            fields.forEach(({ label, key }) => {
+              if (project[key]) {
+                container.appendChild(document.createElement("br"));
+                const p = document.createElement("p");
+                p.className = "p";
+                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                container.appendChild(p);
+              }
+            });
+
+            container.appendChild(document.createElement("br"));
 
 
-  <!-- 🌼 4. Project Media Section -->
 
+          })
+          .catch(err => {
+            console.error("Load failed:", err);
+            container.innerHTML = "<p>Error loading project.</p>";
+          });
 
-  <!-- 🌺 Gallery Part 1 -->
-  <div class="image-container">
-    <div class="row full">
+      </script>
 
-      <img src="../img/game/et/E.T..png" />
+      <section>
+        <!-- 🌺 Gallery Part 1 -->
+        <div class="image-container">
+          <div class="row two">
+            <img class="pixel" src="../img/game/et/et-cover.png" alt="project image 1" />
+            <img class="pixel" src="../img/game/et/E.T..png" alt="project image 2" />
+          </div>
+        </div>
+      </section>
+      <section class="video-container" style="margin-bottom: 2rem;">
+        <video class="video-player" autoplay loop>
+          <source src="../vid/ET.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="image-container">
+        <div class="row four">
+
+          <img src="../img/game/cardgame/IMG_6230.JPG" alt="project image 7" />
+          <img class="pixel" src="../img/game/cardgame/骰子.png" alt="project image 8" />
+          <img src="../img/game/cardgame/dice2.JPG" alt="project image 9" />
+          <img src="../img/game/cardgame/IMG_6434.JPG" alt="project image 10" />
+        </div>
+
+      </section>
+
+      <!-- ✏️ 6. Process & Concept -->
+      <section class="p5-content">
+        <h3 class="p">Process & Concept</h3>
+        <br><br>
+        <div class="row full">
+          <embed src="../img/game/cardgame/chicago rules.pdf" width="100%" height="auto" style="aspect-ratio: 16/9;" />
+        </div>
+      </section>
+
+      <!-- 🌼 Older versions embeds -->
+      <section class="p5-content">
+        <h3 class="p">Previous Versions</h3> <br>
+
     </div>
-  </div>
-
-  <div class="video-container">
-    <video class="video-player" autoplay muted loop>
-      <source src="../vid/Alien Game Demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-  </div>
-
-  <!-- 🌸 Gallery Part 2 + p5 embed -->
-  <div class="image-container">
-    <div class="row two">
-      <img src="../img/game/vfx/forest1.png" />
-      <img src="../img/game/vfx/forest6.png" />
-    </div>
-  </div>
-
-
-  <!-- 📋 5. Project Info -->
-
-
-  <div class="p5-content">
-    <p><strong>Type:</strong> Game Design / Interactive Media</p>
-    <p><strong>Time:</strong> 2025</p>
-  </div>
-
-
-  <!-- ✏️ 6. Process & Concept -->
-
-  <div class="p5-content"">
-    <h3 >Process & Concept</h3>
-    <p >
-      This project explores the intersection between nature and digital play.
-      Users cultivate flowers that grow and transform into bursts of color,
-      creating an evolving ecosystem of visual energy.
-      Built using p5.js, the project emphasizes generative interaction and visual rhythm.
-    </p>
-  </div>
-
- 
-  <!-- 🧭 7. Back Navigation -->
- 
-  <div class=" section-container" style="margin: auto;">
-    <a href="../games.html">
-      <div class="link-underline" style="padding-left: 2.5%;">
-        <h3 class="p2">← Back to Fun Games</h3>
+    <!-- 🧭 7. Back Navigation -->
+    <div id="back">
+      <div class="category_btn" onclick="history.back()">
+        <h4 class="block-display">Go Back</h4>
       </div>
-    </a>
+    </div>
   </div>
-
-  <script src="../3.js"></script>
 </body>
 
 </html>

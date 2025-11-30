@@ -402,8 +402,10 @@ img.icon {
 }
 
 .navlink:hover {
-  color: #fff;
-  background-color: var(--dark);
+  color: lightpink;
+  background-color: cornsilk;
+  transform: scale(1.1);
+
 }
 
 .icon {
@@ -414,6 +416,8 @@ img.icon {
   display: flex;
   align-items: center;
   height: 5%;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .navlink img {
@@ -433,50 +437,10 @@ img.icon {
   font-size: large;
 }
 
-.c {
-  background: linear-gradient(to bottom right, yellowgreen 0%, lightsalmon 100%);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-
-  /* height: auto; */
-  text-indent: 1em;
-  border-top: 10px solid lightpink;
-
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-
-}
 
 
 
-/* C1 styles */
-.c1 {
 
-  background-color: transparent;
-  border: none;
-  /* gap: 15px; */
-  padding: 20px;
-  display: block;
-  border-radius: var(--roundcorner);
-
-}
-
-
-.c1 img {
-  height: auto;
-  border-radius: var(--roundcorner);
-}
-
-
-.c2 {
-
-  overflow: hidden;
-  display: none;
-  padding: 20px;
-
-}
 
 /* Cover image styles */
 .coverimg {
@@ -584,10 +548,10 @@ img.icon {
 /* Video container styles */
 .video-container {
 
-  width: 95%;
+  width: 100%;
   height: auto;
   padding-top: 2.5%;
-  margin-left: 4%;
+
   border-top: lightpink 5px dashed;
   display: inline-block;
   flex-direction: column;
