@@ -3,25 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Forest Bubble | H-XX</title>
+  <title>Virtual Toilet</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="background-color: rgba(177, 237, 57, 0.35);">
 
-  <!-- Header -->
-  <div id="header"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch('../header.html')
-      .then(res => res.text())
-      .then(html => document.getElementById('header').innerHTML = html)
-      .catch(err => console.error('Header load failed:', err));
-  </script>
-
-
   <div id="navbar"></div>
-
   <script>
     // 动态加载公共导航栏
     fetch('../nav.html')
@@ -31,6 +19,17 @@
   </script>
 
   <div class="scroll-container">
+    <!-- Header -->
+    <section id="header">
+      <script>
+        // 动态加载公共导航栏
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+      </script>
+    </section>
+    <!-- 🌸 3. Project Header -->
     <div class=" margin-l ">
 
       <section id="project-info"></section>
@@ -45,7 +44,7 @@
 
             // 🔍 在所有分类中遍历查找
             for (const category in data) {
-              project = data[category].find(p => p.title === "The Alley");
+              project = data[category].find(p => p.title === "Virtual Toilet");
               if (project) break;
             }
 
@@ -100,49 +99,23 @@
       </script>
       <!-- 🌼 4. Project Media Section -->
 
-
-
-      <div class="image-container">
-        <div class="row full">
-
-          <img src="../img/game/unity/unity1.jpg" />
-        </div>
-      </div>
-
-      <div class="video-container">
-        <video class="video-player" autoplay muted loop>
-          <source src="../vid/hxx_UnityDream.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-
-      </div>
-
-      <!-- 🌸 Gallery Part 2 + p5 embed -->
+      <!-- 🌺 Gallery Part 1 -->
       <div class="image-container">
         <div class="row two">
-          <img src="../img/game/unity/unity2.jpeg" />
-          <img src="../img/game/unity/unity8.jpeg" />
+          <img src="../img/game/" alt="project image 1" />
+
         </div>
       </div>
+      </section>
 
-      <div class="p5-content"">
-    <h3 class=" p">Process & Concept</h3><br><br>
-        <p class="p">
-          This project explores the intersection between nature and digital play.
-          Users cultivate flowers that grow and transform into bursts of color,
-          creating an evolving ecosystem of visual energy.
-          Built using p5.js, the project emphasizes generative interaction and visual rhythm.
-        </p>
-      </div>
+      <section class="p5-content">
+        <iframe class="iframe" src="https://editor.p5js.org/xhan12/full/02lj1rKBp"></iframe>
+      </section>
 
-      <!-- ===================================================== -->
-      <!-- 🧭 7. Back Navigation -->
-      <!-- ===================================================== -->
-      <div id="back">
-        <div class="category_btn" onclick="history.back()">
-          <h4 class="block-display">Go Back</h4>
-        </div>
-      </div>
+      <section class="p5-content">
+        <iframe class="iframe" src="https://editor.p5js.org/xhan12/full/6VehSVvH_"></iframe>
+      </section>
+
 
 
       <!-- ✏️ 6. Process & Concept -->
@@ -158,16 +131,12 @@
         <h3 class="p">Previous Versions</h3>
 
     </div>
-
-    <!-- ===================================================== -->
-    <!-- 🌼 4. Project Media Section -->
-    <!-- ===================================================== -->
-
-    <!-- 🌺 Gallery Part 1 -->
-
-
+    <!-- 🧭 7. Back Navigation -->
+    <div id="back">
+      <div class="category_btn" onclick="history.back()">
+        <h4 class="block-display">Go Back</h4>
+      </div>
+    </div>
   </div>
-  <script src="../3.js"></script>
 </body>
-
-</html>
+<html>

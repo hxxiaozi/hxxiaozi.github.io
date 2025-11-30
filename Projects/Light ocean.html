@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Light Ocean</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      overflow-y: hidden;
+    }
+
+    .scroll-container {
+      scroll-snap-type: y proximity;
+      /* Reserve space for header plus some extra space for sneak peeking. */
+
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    .scroll-container section {
+
+      scroll-snap-align: start;
+    }
+  </style>
+</head>
+
+<body style="background-color: rgba(177, 237, 57, 0.35);">
+
+
+
+  <div id="navbar"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('navbar').innerHTML = html)
+      .catch(err => console.error('Navigation load failed:', err));
+  </script>
+  <div class="scroll-container">
+    <!-- Header -->
+    <section>
+      <div id="header"></div>
+
+      <script>
+        // 动态加载公共导航栏
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+      </script>
+    </section>
+    <!-- 🌸 3. Project Header -->
+    <div class=" margin-l margin-r">
+      <section>
+
+        <section id="project-info"></section>
+
+        <script>
+          const container = document.getElementById("project-info");
+
+          fetch("/complete-projects.json")
+            .then(res => res.json())
+            .then(data => {
+              let project = null;
+
+              // 🔍 在所有分类中遍历查找
+              for (const category in data) {
+                project = data[category].find(p => p.title === "Light Ocean");
+                if (project) break;
+              }
+
+              if (!project) {
+                container.innerHTML = "<p>Project not found.</p>";
+                return;
+              }
+
+              // 动态标题
+              const h2 = document.createElement("h2");
+              h2.textContent = project.title;
+              container.appendChild(h2);
+
+              container.appendChild(document.createElement("br"));
+              container.appendChild(document.createElement("br"));
+
+              // 动态描述（如果 JSON 里有）
+              if (project.description) {
+                const p = document.createElement("p");
+                p.className = "p";
+                p.textContent = project.description;
+                container.appendChild(p);
+                container.appendChild(document.createElement("br"));
+              }
+
+              const fields = [
+                { label: "Tool", key: "tools" },
+                { label: "Time", key: "date" },
+                { label: "Role", key: "role" }
+              ];
+
+              fields.forEach(({ label, key }) => {
+                if (project[key]) {
+                  container.appendChild(document.createElement("br"));
+                  const p = document.createElement("p");
+                  p.className = "p";
+                  p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                  container.appendChild(p);
+                }
+              });
+
+              container.appendChild(document.createElement("br"));
+
+
+
+            })
+            .catch(err => {
+              console.error("Load failed:", err);
+              container.innerHTML = "<p>Error loading project.</p>";
+            });
+
+        </script>
+
+        <!-- 🎞️ Video -->
+        <section class="video-container" style="margin-bottom: 2rem;">
+          <video class="video-player" autoplay loop controls>
+            <source src="../vid/Light Ocean 480p.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
+
+        <div class="image-container">
+          <div class="row full">
+            <img src="../img/lightOcean/lightOcean4.JPEG" alt="project image 1" />
+          </div>
+        </div>
+      </section>
+
+
+      <section class="image-container">
+        <div class="row two">
+          <img src="../img/lightOcean/lightOcean2.JPEG" alt="project image 3" />
+          <img src="../img/lightOcean/lightOcean3.JPEG" alt="project image 4" />
+          <img src="../img/lightOcean/lightOcean5.JPEG" alt="project image 5" />
+
+          <img src="../img/lightOcean/lightOcean8.JPEG" alt="project image 2" />
+
+        </div>
+      </section>
+      <section class="image-container">
+        <div class="row four">
+
+          <img src="../img/lightOcean/lightOcean7.JPEG" alt="project image 5" />
+          <img src="../img/lightOcean/lightOcean9.PNG" alt="project image 2" />
+          <img src="../img/lightOcean/lightOcean10.PNG" alt="project image 2" />
+          <img src="../img/lightOcean/lightOcean11.PNG" alt="project image 2" />
+        </div>
+      </section>
+      <!-- 🌸 Gallery Part 2 + p5 embed -->
+
+
+
+
+
+
+
+    </div>
+    <!-- 🧭 7. Back Navigation -->
+    <div id="back">
+      <div class="category_btn" onclick="history.back()">
+        <h4 class="block-display">Go Back</h4>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
