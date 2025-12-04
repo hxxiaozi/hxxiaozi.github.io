@@ -71,23 +71,25 @@
               container.appendChild(document.createElement("br"));
             }
 
-            const fields = [
-              { label: "Tool", key: "tools" },
-              { label: "Time", key: "date" },
-              { label: "Role", key: "role" }
+           const fields = [
+
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
+
             ];
 
-            fields.forEach(({ label, key }) => {
+            fields.forEach(({ key }) => {
               if (project[key]) {
                 container.appendChild(document.createElement("br"));
                 const p = document.createElement("p");
                 p.className = "p";
-                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                p.innerHTML = ` ${project[key]}`;
                 container.appendChild(p);
               }
             });
-
             container.appendChild(document.createElement("br"));
+
 
 
 
@@ -102,7 +104,7 @@
 
 
 
-      <div class="image-container">
+      <div class="dash-divide">
         <div class="row full">
 
           <img src="../img/game/unity/unity1.jpg" />
@@ -110,7 +112,7 @@
       </div>
 
       <div class="video-container">
-        <video class="video-player" autoplay muted loop>
+        <video class="video-player" autoplay muted loop controls>
           <source src="../vid/hxx_UnityDream.mov" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -118,7 +120,7 @@
       </div>
 
       <!-- 🌸 Gallery Part 2 + p5 embed -->
-      <div class="image-container">
+      <div class="dash-divide">
         <div class="row two">
           <img src="../img/game/unity/unity2.jpeg" />
           <img src="../img/game/unity/unity8.jpeg" />

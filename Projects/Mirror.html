@@ -59,10 +59,11 @@
             container.appendChild(h2);
 
             container.appendChild(document.createElement("br"));
-            container.appendChild(document.createElement("br"));
+            
 
             // 动态描述（如果 JSON 里有）
             if (project.description) {
+              container.appendChild(document.createElement("br"));
               const p = document.createElement("p");
               p.className = "p";
               p.textContent = project.description;
@@ -71,22 +72,24 @@
             }
 
             const fields = [
-              { label: "Tool", key: "tools" },
-              { label: "Time", key: "date" },
-              { label: "Role", key: "role" }
+
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
+
             ];
 
-            fields.forEach(({ label, key }) => {
+            fields.forEach(({ key }) => {
               if (project[key]) {
                 container.appendChild(document.createElement("br"));
                 const p = document.createElement("p");
                 p.className = "p";
-                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                p.innerHTML = ` ${project[key]}`;
                 container.appendChild(p);
               }
             });
-
             container.appendChild(document.createElement("br"));
+
 
 
 
@@ -100,7 +103,7 @@
       <!-- 🌼 4. Project Media Section -->
 
       <!-- 🌺 Gallery Part 1 -->
-      <div class="image-container">
+      <div class="dash-divide">
         <div class="row two">
           <img src="../img/game/" alt="project image 1" />
 

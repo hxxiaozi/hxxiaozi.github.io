@@ -59,10 +59,11 @@
             container.appendChild(h2);
 
             container.appendChild(document.createElement("br"));
-            container.appendChild(document.createElement("br"));
 
             // 动态描述（如果 JSON 里有）
             if (project.description) {
+
+              container.appendChild(document.createElement("br"));
               const p = document.createElement("p");
               p.className = "p";
               p.textContent = project.description;
@@ -71,22 +72,24 @@
             }
 
             const fields = [
-              { label: "Tool", key: "tools" },
-              { label: "Time", key: "date" },
-              { label: "Role", key: "role" }
+
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
+
             ];
 
-            fields.forEach(({ label, key }) => {
+            fields.forEach(({ key }) => {
               if (project[key]) {
                 container.appendChild(document.createElement("br"));
                 const p = document.createElement("p");
                 p.className = "p";
-                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                p.innerHTML = ` ${project[key]}`;
                 container.appendChild(p);
               }
             });
-
             container.appendChild(document.createElement("br"));
+
 
 
 
@@ -98,18 +101,18 @@
 
       </script>
 
-      <section>
+      <section class="dash-divide">
         <!-- 🌺 Gallery Part 1 -->
-        <div class="image-container">
-          <div class="row two">
-            <img src="../img/game/cardgame/2.png" alt="project image 1" />
-            <img src="../img/game/cardgame/3.png" alt="project image 1" />
-          </div>
+
+        <div class="row two">
+          <img src="../img/game/cardgame/2.png" alt="project image 1" />
+          <img src="../img/game/cardgame/3.png" alt="project image 1" />
         </div>
+
       </section>
 
 
-      <section class="image-container">
+      <section>
         <div class="row four">
           <img src="../img/game/cardgame/IMG_6230.JPG" alt="project image 7" />
           <img class="pixel" src="../img/game/cardgame/骰子.png" alt="project image 8" />
@@ -120,18 +123,18 @@
       </section>
 
       <!-- ✏️ 6. Process & Concept -->
-      <section class="p5-content">
+      <section class="dash-divide">
         <h3 class="p">Process & Concept</h3>
         <br><br>
-          <div class="row full">
-            <embed src="../img/game/cardgame/chicago rules.pdf" width="100%" height="auto" style="aspect-ratio: 16/9;" />
-          </div>
+        <div class="row full">
+          <embed src="../img/game/cardgame/chicago rules.pdf" width="100%" height="auto" style="aspect-ratio: 16/9;" />
+        </div>
       </section>
 
       <!-- 🌼 Older versions embeds -->
       <section class="p5-content">
         <h3 class="p">Previous Versions</h3> <br>
-      
+
     </div>
     <!-- 🧭 7. Back Navigation -->
     <div id="back">

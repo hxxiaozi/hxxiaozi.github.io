@@ -71,23 +71,23 @@
             }
 
             const fields = [
-              { label: "Tool", key: "tools" },
-              { label: "Time", key: "date" },
-              { label: "Role", key: "role" }
+
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
+
             ];
 
-            fields.forEach(({ label, key }) => {
+            fields.forEach(({ key }) => {
               if (project[key]) {
                 container.appendChild(document.createElement("br"));
                 const p = document.createElement("p");
                 p.className = "p";
-                p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
+                p.innerHTML = ` ${project[key]}`;
                 container.appendChild(p);
               }
             });
-
             container.appendChild(document.createElement("br"));
-
 
 
           })
@@ -100,7 +100,7 @@
 
       <section>
         <!-- 🌺 Gallery Part 1 -->
-        <div class="image-container">
+        <div class="dash-divide">
           <div class="row two">
             <img class="pixel" src="../img/game/et/et-cover.png" alt="project image 1" />
             <img class="pixel" src="../img/game/et/E.T..png" alt="project image 2" />
@@ -108,13 +108,13 @@
         </div>
       </section>
       <section class="video-container" style="margin-bottom: 2rem;">
-        <video class="video-player" autoplay loop>
+        <video class="video-player" autoplay loop controls>
           <source src="../vid/ET.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </section>
 
-      <section class="image-container">
+      <section class="dash-divide">
         <div class="row four">
 
           <img src="../img/game/cardgame/IMG_6230.JPG" alt="project image 7" />

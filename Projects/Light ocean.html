@@ -93,22 +93,24 @@
               }
 
               const fields = [
-                { label: "Tool", key: "tools" },
-                { label: "Time", key: "date" },
-                { label: "Role", key: "role" }
-              ];
 
-              fields.forEach(({ label, key }) => {
-                if (project[key]) {
-                  container.appendChild(document.createElement("br"));
-                  const p = document.createElement("p");
-                  p.className = "p";
-                  p.innerHTML = `<strong>${label}:</strong> ${project[key]}`;
-                  container.appendChild(p);
-                }
-              });
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
 
-              container.appendChild(document.createElement("br"));
+            ];
+
+            fields.forEach(({ key }) => {
+              if (project[key]) {
+                container.appendChild(document.createElement("br"));
+                const p = document.createElement("p");
+                p.className = "p";
+                p.innerHTML = ` ${project[key]}`;
+                container.appendChild(p);
+              }
+            });
+            container.appendChild(document.createElement("br"));
+
 
 
 
@@ -120,6 +122,7 @@
 
         </script>
 
+
         <!-- 🎞️ Video -->
         <section class="video-container" style="margin-bottom: 2rem;">
           <video class="video-player" autoplay loop controls>
@@ -128,7 +131,7 @@
           </video>
         </section>
 
-        <div class="image-container">
+        <div class="dash-divide">
           <div class="row full">
             <img src="../img/lightOcean/lightOcean4.JPEG" alt="project image 1" />
           </div>
@@ -136,7 +139,7 @@
       </section>
 
 
-      <section class="image-container">
+      <section class="dash-divide">
         <div class="row two">
           <img src="../img/lightOcean/lightOcean2.JPEG" alt="project image 3" />
           <img src="../img/lightOcean/lightOcean3.JPEG" alt="project image 4" />
@@ -146,7 +149,7 @@
 
         </div>
       </section>
-      <section class="image-container">
+      <section class="dash-divide">
         <div class="row four">
 
           <img src="../img/lightOcean/lightOcean7.JPEG" alt="project image 5" />

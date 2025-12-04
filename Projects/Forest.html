@@ -50,17 +50,73 @@
 
     <!-- Project Title -->
     <div class="margin-l margin-r">
-      <section class="p5-content">
-        <h2>Forest Bubble</h2>
-        <br><br>
-        <p class="p">
-          An animation project created in Unity, depicting a serene forest scene turning into a fire scene when the
-          bubble
-          pops.
-        </p>
+      <section id="project-info">
+         <script>
+          const container = document.getElementById("project-info");
+
+          fetch("/complete-projects.json")
+            .then(res => res.json())
+            .then(data => {
+              let project = null;
+
+              // 🔍 在所有分类中遍历查找
+              for (const category in data) {
+                project = data[category].find(p => p.title === "Forest Illusion");
+                if (project) break;
+              }
+
+              if (!project) {
+                container.innerHTML = "<p>Project not found.</p>";
+                return;
+              }
+
+              // 动态标题
+              const h2 = document.createElement("h2");
+              h2.textContent = project.title;
+              container.appendChild(h2);
+
+              container.appendChild(document.createElement("br"));
+
+
+              // 动态描述（如果 JSON 里有）
+              if (project.description) {
+                container.appendChild(document.createElement("br"));
+                const p = document.createElement("p");
+                p.className = "p";
+                p.textContent = project.description;
+                container.appendChild(p);
+                container.appendChild(document.createElement("br"));
+              }
+
+              const fields = [
+
+                { key: "role" },
+                { key: "date" },
+                { key: "tools" }
+
+              ];
+
+              fields.forEach(({ key }) => {
+                if (project[key]) {
+                  container.appendChild(document.createElement("br"));
+                  const p = document.createElement("p");
+                  p.className = "p";
+                  p.innerHTML = ` ${project[key]}`;
+                  container.appendChild(p);
+                }
+              });
+              container.appendChild(document.createElement("br"));
+
+            })
+            .catch(err => {
+              console.error("Load failed:", err);
+              container.innerHTML = "<p>Error loading project.</p>";
+            });
+
+        </script>
 
         <!-- Cover Image -->
-        <div class="image-container">
+        <div class="dash-divide">
           <div class="row full">
             <img src="../img/game/vfx/forest.jpg" alt="Forest Bubble Image">
           </div>
@@ -76,18 +132,14 @@
       </section>
 
       <!-- Gallery (two images) -->
-      <section class="image-container">
+      <section class="dash-divide">
         <div class="row two">
           <img src="../img/game/vfx/forest1.png" />
           <img src="../img/game/vfx/forest6.png" />
         </div>
       </section>
 
-      <!-- Project Info -->
-      <section class="project-info">
-        <p class="p"><strong>Type:</strong> Game Design / Interactive Media</p>
-        <p class="p"><strong>Time:</strong> 2025</p>
-      </section>
+    
 
       <!-- Concept -->
       <section class="p5-content">
