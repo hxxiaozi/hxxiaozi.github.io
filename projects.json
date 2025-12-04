@@ -10,7 +10,6 @@
       "hover": "img/game/cardgame/2.png",
       "link": "Projects/Chicago.html"
     },
-
     {
       "title": "Fangs: The Eternal Coven",
       "date": "2025 May",
@@ -22,7 +21,6 @@
       "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
     }
   ],
-
   "Interactive Sketches": [
     {
       "title": "Garden:Flowers & Fireworks",
@@ -48,8 +46,8 @@
       "date": "2024 April",
       "tools": "P5.js | ml5",
       "role": "Solo Project",
-      "cover": "img/3d/toilet.png",
-      "hover": "img/3d/toilet.png",
+      "cover": "img/noface/noface1.png",
+      "hover": "img/noface/noface2.png",
       "link": "Projects/Mirror.html"
     }
   ],
@@ -73,7 +71,6 @@
       "hover": "img/game/unity/unity3.jpeg",
       "link": "Projects/Alley.html"
     },
-
     {
       "title": "Go! Groundshel",
       "date": "2025 (Ongoing)",
@@ -84,7 +81,6 @@
       "link": "Projects/Groundshel.html"
     }
   ],
-
   "3D Animations": [
     {
       "title": "Light Ocean",
@@ -96,7 +92,6 @@
       "hover": "img/lightOcean/lightOcean10.PNG",
       "link": "Projects/Light Ocean.html"
     },
-
     {
       "title": "Sleep less ness",
       "date": "2025 March",
@@ -106,7 +101,6 @@
       "hover": "img/sleep/sleep2.png",
       "link": "Projects/Sleep.html"
     },
-
     {
       "title": "Forest Illusion",
       "date": "2024 June",

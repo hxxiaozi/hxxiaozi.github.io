@@ -48,8 +48,8 @@
       "date": "2024 April",
       "tools": "P5.js | Posenet",
       "role": "Solo Project",
-      "cover": "img/3d/toilet.png",
-      "hover": "img/3d/toilet.png",
+      "cover": "img/noface/noface1.png",
+      "hover": "img/noface/noface2.png",
       "link": "Projects/Face.html"
     },
     {
@@ -103,7 +103,7 @@
       "hover": "img/game/ddl/screenshot1.png",
       "link": "/DeadLine.html"
     },
-    
+
     {
       "title": "Sheepcity",
       "date": "2024 December",
