@@ -44,11 +44,12 @@
     {
       "title": "Mirror",
       "date": "2024 April",
-      "tools": "P5.js | ml5",
+      "tools": "P5.js | Posenet",
       "role": "Solo Project",
       "cover": "img/noface/noface1.png",
-      "hover": "img/noface/noface2.png",
-      "link": "Projects/Mirror.html"
+      "hover": "vid/mirror1.mov",
+      "hoverType": "video",
+      "link": "Projects/Face.html"
     }
   ],
   "Digital Games": [
