@@ -1,4 +1,5 @@
 - Deadline link should be target_blank
 - iframe and video style区分
 - iframe lazy loading
-- 
+- 加载超时就重新载入视频
+- garden iframe 嵌入
