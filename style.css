@@ -35,11 +35,13 @@ body {
 
 
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 500;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-weight: 400;
 }
 
@@ -232,7 +234,11 @@ a:hover {
 /* Paragraph styles */
 
 
-p, h1, h2, h3, h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--fontp);
   display: inline;
   box-decoration-break: clone;
@@ -467,7 +473,7 @@ img.icon {
 /* Iframe styles */
 .iframe {
   width: max-content;
-
+ 
   aspect-ratio: 16 / 9;
 
   border-width: 5px;
