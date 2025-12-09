@@ -101,16 +101,6 @@
       "cover": "img/3d/toilet.png",
       "hover": "img/3d/toilet.gif",
       "link": "Projects/Toilet.html"
-    },
-    {
-      "title": "Mirror",
-      "date": "2024 April",
-      "tools": "P5.js | Posenet",
-      "role": "Solo Project",
-      "cover": "img/noface/mirror1.png",
-      "hover": "vid/mirror1.mov",
-      "hoverType": "video",
-      "link": "Projects/Mirror.html"
     }
   ]
 }

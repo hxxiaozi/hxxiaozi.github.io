@@ -1,17 +1,35 @@
-/* Container panel */
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  transform: scaleX(-1);
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 #ui-container {
   position: fixed;
   left: 12px;
   top: 50px;
   padding: 10px 15px;
   border-radius: 12px;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(5px);
   color: #fff;
   font-family: sans-serif;
   font-size: 14px;
   line-height: 1.6em;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   z-index: 999;
 }
 
@@ -24,14 +42,14 @@
   padding: 6px 12px;
   border-radius: 8px;
   border: none;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   cursor: pointer;
   font-family: sans-serif;
 }
 
 #toggle-button:hover {
-  background: rgba(0,0,0,0.85);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 /* Labels */
@@ -46,11 +64,10 @@
 
 /* Sliders */
 .ui-slider {
-  width: 100px；
-  -webkit-appearance: none;
+  width: 100px; -webkit-appearance: none;
   appearance: none;
   border-radius: 5px;
   outline: none;
   opacity: 0.8;
-  
+
 }
