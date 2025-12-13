@@ -3,3 +3,4 @@
 - iframe lazy loading
 - 加载超时就重新载入视频
 - garden iframe 嵌入
+- toilet 嵌入
