@@ -526,6 +526,9 @@ img.icon {
   display: grid;
   gap: 10px;
   margin-bottom: 20px;
+  align-items: stretch;
+  overflow: hidden;    
+
 }
 
 .row.full {
@@ -544,6 +547,7 @@ img.icon {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: contain;
 }
 
 
@@ -661,7 +665,6 @@ img.icon {
 .image-secondary video {
   width: 100%;
   aspect-ratio: 3 / 2;
-
   height: auto;
   object-fit: cover;
   display: block;
@@ -731,8 +734,46 @@ img.icon {
   width: 100%;
   height: auto;
   border-radius: var(--roundcorner);
+
 }
 
+.image-2-3 {
+  aspect-ratio: 3 / 2;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.image-3-4 {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+
+.image-5-7 {
+  aspect-ratio: 7 / 5;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+
+}
+
+.image-9-16 {
+
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
 
 
 /* Media Query for small screens */
