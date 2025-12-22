@@ -30,7 +30,9 @@
       "cover": "img/game/et/et-cover.png",
       "hover": "img/game/et/gg.gif",
       "link": "Projects/Alien.html",
-      "pixel": true
+      "pixel": true,
+      "description": "Human? Alien? Vegetables! is an interactive sci-fi game about the displacement of the human body and its environment. The character is abducted by aliens and taken aboard their UFO for experimental purposes. Ultimately, the game challenges players to consider the true nature of humanity and identity."
+      
     },
     {
       "title": "The Alley",
@@ -39,7 +41,8 @@
       "role": "Solo Project",
       "cover": "img/game/unity/unity1.jpg",
       "hover": "img/game/unity/unity3.jpeg",
-      "link": "Projects/Alley.html"
+      "link": "Projects/Alley.html",
+      "description": "The Alley is a first-person exploration game where players navigate through a mysterious alley filled with surreal and dreamlike environments. It transports players into a whimsical realm filled with various scenes that highlight a unique sense of playfulness.  A hidden doorway leads into a world where everyday objects reveal their enchanting nature — a fish tank becomes a portal, a disco ball hovers, and mystical creatures dance. This magical space celebrates fantasy. "
     },
     {
       "title": "Go! Groundshel",
@@ -48,7 +51,9 @@
       "role": "Game Artist (environment, UI & implementation)",
       "cover": "img/game/groundshel/minimap1.png",
       "hover": "img/game/groundshel/IMG_4735.jpg",
-      "link": "Projects/Groundshel.html"
+      "link": "Projects/Groundshel.html",
+      "description": "Go Groundshel! is a puzzle adventure game. In this project I am responsible for designing and creating the updated game environment, user interface, and implementing the art assets into the Unity engine. The game features a cute charming art style and engaging gameplay mechanics that challenge players to navigate through various levels while solving puzzles and overcoming obstacles."
+
     }
   ],
   "3D Animations": [
@@ -57,7 +62,7 @@
       "date": "2025 May",
       "tools": "3D Animation | Unreal Engine | Motion Capture",
       "role": "Solo Project, Motion Capture Actor",
-      "description": "Animations are motion captured and acted by myself. The blue represents the liberated mind dancing through open space; the orange is the physical body that needs rest and safety.",
+      "description": "This animation aims to illustrate the sensation and feeling of being at the state between dreaming and waking. The blue represents the liberated mind dancing through open space; the orange is the physical body that needs rest and safety. Animations are motion captured and acted by myself; background music is also composed by me.",
       "cover": "img/lightOcean/lightOcean8.JPEG",
       "hover": "img/lightOcean/lightOcean10.PNG",
       "link": "Projects/light_ocean.html"
@@ -69,7 +74,8 @@
       "role": "Solo Project",
       "cover": "img/sleep/sleep1.png",
       "hover": "img/sleep/sleep2.png",
-      "link": "Projects/Sleep.html"
+      "link": "Projects/Sleep.html",
+     "description": "This animation explores the journey of the protagonist confined within the physical and emotional boundaries of their room/ home/comfort zone. Set in a small dimly lit space, it symbolizes emotional isolation and the mechanical daily life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. Through surreal phenomena of floating and falling—the sensation of losing control—or the essence of a nightmare. In the end, the protagonist lands in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
     },
     {
       "title": "Forest Illusion",
@@ -79,7 +85,8 @@
       "cover": "img/game/vfx/forest.jpg",
       "hover": "img/game/vfx/forest.mp4",
       "hoverType": "video",
-      "link": "Projects/Forest.html"
+      "link": "Projects/Forest.html",
+      "description":"In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
     }
   ],
   "Interactive Sketches": [
@@ -92,6 +99,8 @@
       "hover": "img/garden/flowers-drawing.mov",
       "hoverType": "video",
       "link": "Projects/garden.html"
+      
+
     },
     {
       "title": "Virtual Toilet",
