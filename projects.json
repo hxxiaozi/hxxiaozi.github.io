@@ -98,7 +98,8 @@
       "cover": "img/garden/Firework.png",
       "hover": "img/garden/flowers-drawing.mov",
       "hoverType": "video",
-      "link": "Projects/garden.html"
+      "link": "Projects/garden.html",
+      "description": "An interactive digital garden where users can plant flowers or create fireworksby clicking . Created using P5.js, creating a visual experience that celebrates creativity and nature."
       
 
     },
@@ -109,7 +110,8 @@
       "role": "Solo Project",
       "cover": "img/3d/toilet.png",
       "hover": "img/3d/toilet.gif",
-      "link": "Projects/Toilet.html"
+      "link": "Projects/Toilet.html",
+      "description": "An interactive digital art piece where users can interact with a toilet model using their body movements detected by PoseNet. Created using P5.js and PoseNet, this project explores the intersection of technology, humor, and everyday objects."
     },
      {
         "title": "Mirrors",
@@ -119,7 +121,8 @@
       "cover": "img/noface/mirror1.png",
       "hover": "vid/mirror1.mov",
       "hoverType": "video",
-      "link": "Projects/Mirror.html"
+      "link": "Projects/Mirror.html",
+      "description": "An interactive digital art project allowing audiences to view their reflections creatively. Created using P5.js and PoseNet, this project explores identity and self-perception."
     }
   ]
 }
