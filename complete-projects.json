@@ -23,8 +23,7 @@
       "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
     }
   ],
-
-  "Interactive Sketches": [
+ "Interactive Sketches": [
     {
       "title": "Garden:Flowers & Fireworks",
       "date": "2025 October",
@@ -33,7 +32,10 @@
       "cover": "img/garden/Firework.png",
       "hover": "img/garden/flowers-drawing.mov",
       "hoverType": "video",
-      "link": "Projects/garden.html"
+      "link": "Projects/garden.html",
+      "description": "An interactive digital garden where users can plant flowers or create fireworksby clicking . Created using P5.js, creating a visual experience that celebrates creativity and nature."
+      
+
     },
     {
       "title": "Virtual Toilet",
@@ -42,9 +44,10 @@
       "role": "Solo Project",
       "cover": "img/3d/toilet.png",
       "hover": "img/3d/toilet.gif",
-      "link": "Projects/Toilet.html"
+      "link": "Projects/Toilet.html",
+      "description": "An interactive digital art piece where users can interact with a toilet model using their body movements detected by PoseNet. Created using P5.js and PoseNet, this project explores the intersection of technology, humor, and everyday objects."
     },
-    {
+     {
         "title": "Mirrors",
       "date": "2024 April",
       "tools": "P5.js | Posenet",
@@ -52,7 +55,8 @@
       "cover": "img/noface/mirror1.png",
       "hover": "vid/mirror1.mov",
       "hoverType": "video",
-      "link": "Projects/Mirror.html"
+      "link": "Projects/Mirror.html",
+      "description": "An interactive digital art project allowing audiences to view their reflections creatively. Created using P5.js and PoseNet, this project explores identity and self-perception."
     },
     {
       "title": "Stressed.html",
@@ -64,6 +68,7 @@
       "link": "/p.html"
     }
   ],
+
 
   "Digital Games": [
     {
