@@ -35,8 +35,8 @@
       .catch(err => console.error('Header load failed:', err));
   </script>
 
-  <div class="margin-l">
-    <section class="video-container">
+<div class=" margin-l ">
+    <section class="video-container ">
       <h3> Animations </h3>
 
       <div class="video-grid">
@@ -57,7 +57,7 @@
             <p class="block-display">Alien (game intro)</p>
           </a>
         </div>
- <div class="category_btn">
+        <div class="category_btn">
           <a href="#" data-video="img/sleep/Sleep.mp4">
             <p class="block-display">Sleep less ness</p>
           </a>
@@ -72,7 +72,161 @@
         Your browser does not support the video tag.
       </video>
     </section>
+  <section>
+    <div id="section-buttons"></div>
+    <div id="projects-container"></div>
+    <script>
+      // 你想要显示的分类名称（随意改）
+      const targetCategories = ["3D Animations"];
 
+      fetch("complete-projects.json")
+        .then(res => res.json())
+        .then(data => {
+
+          /* ------------------------
+               SECTION BUTTONS
+             （只显示 targetCategories）
+          ------------------------- */
+          const btnContainer = document.getElementById("section-buttons");
+          btnContainer.innerHTML = "";
+
+          targetCategories.forEach(category => {
+            if (!data[category]) return; // 忽略不存在的
+
+            const btn = document.createElement("div");
+            btn.className = "category_btn";
+
+            const a = document.createElement("a");
+            a.href = "#" + category.replace(/\s+/g, "");
+
+            const h3 = document.createElement("h3");
+            h3.className = "p2 block-display";
+            h3.textContent = category;
+
+            a.appendChild(h3);
+            btn.appendChild(a);
+            btnContainer.appendChild(btn);
+          });
+
+
+          /* ------------------------
+              PROJECT category_btn
+          ------------------------- */
+          const container = document.getElementById("projects-container");
+          container.innerHTML = "";
+
+          targetCategories.forEach(category => {
+            const projects = data[category];
+            if (!projects) return;
+
+            // 每个分类一个 section
+            const section = document.createElement("section");
+            section.id = category.replace(/\s+/g, "");
+
+            const h3 = document.createElement("h3");
+            h3.textContent = category;
+            section.appendChild(h3);
+
+            projects.forEach((p, idx) => {
+
+              const a = document.createElement("a");
+              a.href = p.link || "#";
+
+              const itemDiv = document.createElement("div");
+              itemDiv.className = "link-outline proj-content";
+
+              // ------- 封面图 -------
+              const coverImg = document.createElement("img");
+              coverImg.className = "image";
+              coverImg.src = p.cover || "";
+              coverImg.alt = p.title || "";
+
+              // ------- hover 媒体 -------
+              let hoverNode = null;
+              if (p.hover) {
+                if (p.hoverType === "video") {
+                  const wrapper = document.createElement("div");
+                  wrapper.className = "image-secondary";
+
+                  const video = document.createElement("video");
+                  video.autoplay = true;
+                  video.loop = true;
+                  video.muted = true;
+                  video.playsInline = true;
+                  video.style.width = "100%";
+                  video.style.height = "100%";
+                  video.style.objectFit = "cover";
+
+                  const source = document.createElement("source");
+                  source.src = p.hover;
+                  video.appendChild(source);
+
+                  wrapper.appendChild(video);
+                  hoverNode = wrapper;
+                } else {
+                  const hoverImg = document.createElement("img");
+                  hoverImg.className = "image-secondary";
+                  hoverImg.src = p.hover;
+                  hoverImg.alt = p.title + " hover";
+                  hoverImg.style.width = "100%";
+                  hoverImg.style.maxHeight = "500px";
+                  hoverImg.style.objectFit = "cover";
+                  hoverNode = hoverImg;
+                }
+              }
+
+              if (p.pixel) {
+                coverImg.classList.add("pixel");
+                if (hoverNode) hoverNode.classList.add("pixel");
+              }
+
+              // ------- 文本内容 -------
+              const textDiv = document.createElement("div");
+              textDiv.className = "proj-text";
+
+              const titleH3 = document.createElement("h3");
+              titleH3.textContent = p.title || "";
+
+              const metaP = document.createElement("p");
+              metaP.innerHTML = `${p.date || ""}<br>${p.tools || ""}<br>${p.role || ""}`;
+
+              textDiv.appendChild(titleH3);
+              textDiv.appendChild(document.createElement("br"));
+              textDiv.appendChild(document.createElement("br"));
+              textDiv.appendChild(metaP);
+
+              if (p.description) {
+                textDiv.appendChild(document.createElement("br"));
+                textDiv.appendChild(document.createElement("br"));
+                const descP = document.createElement("p");
+                descP.textContent = p.description;
+                textDiv.appendChild(descP);
+              }
+
+              // ------- 交替布局 -------
+              const mediaContainer = document.createElement("div");
+              mediaContainer.appendChild(coverImg);
+              if (hoverNode) mediaContainer.appendChild(hoverNode);
+
+              if (idx % 2 === 0) {
+                itemDiv.appendChild(textDiv);
+                itemDiv.appendChild(mediaContainer);
+              } else {
+                itemDiv.appendChild(mediaContainer);
+                itemDiv.appendChild(textDiv);
+              }
+
+              a.appendChild(itemDiv);
+              section.appendChild(a);
+            });
+
+            container.appendChild(section);
+          });
+
+        })
+        .catch(err => console.error("Project load failed:", err));
+    </script>
+  </section>
     <section class="video-container">
       <h3>Videos</h3>
       <div class="video-grid">
@@ -111,7 +265,7 @@
         Your browser does not support the video tag.
       </video>
     </section>
-  </div>
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const videoList = document.querySelectorAll(".category_btn");
@@ -140,161 +294,7 @@
         });
       });
     });</script>
-<section class="margin-l margin-r">
-  <div id="section-buttons"></div>
-<div id="projects-container"></div>
-      <script>
-            // 你想要显示的分类名称（随意改）
-            const targetCategories = ["3D Animations"];
-
-            fetch("complete-projects.json")
-                .then(res => res.json())
-                .then(data => {
-
-                    /* ------------------------
-                         SECTION BUTTONS
-                       （只显示 targetCategories）
-                    ------------------------- */
-                    const btnContainer = document.getElementById("section-buttons");
-                    btnContainer.innerHTML = "";
-
-                    targetCategories.forEach(category => {
-                        if (!data[category]) return; // 忽略不存在的
-
-                        const btn = document.createElement("div");
-                        btn.className = "category_btn";
-
-                        const a = document.createElement("a");
-                        a.href = "#" + category.replace(/\s+/g, "");
-
-                        const h3 = document.createElement("h3");
-                        h3.className = "p2 block-display";
-                        h3.textContent = category;
-
-                        a.appendChild(h3);
-                        btn.appendChild(a);
-                        btnContainer.appendChild(btn);
-                    });
-
-
-                    /* ------------------------
-                        PROJECT category_btn
-                    ------------------------- */
-                    const container = document.getElementById("projects-container");
-                    container.innerHTML = "";
-
-                    targetCategories.forEach(category => {
-                        const projects = data[category];
-                        if (!projects) return;
-
-                        // 每个分类一个 section
-                        const section = document.createElement("section");
-                        section.id = category.replace(/\s+/g, "");
-
-                        const h3 = document.createElement("h3");
-                        h3.textContent = category;
-                        section.appendChild(h3);
-
-                        projects.forEach((p, idx) => {
-
-                            const a = document.createElement("a");
-                            a.href = p.link || "#";
-
-                            const itemDiv = document.createElement("div");
-                            itemDiv.className = "link-outline proj-content";
-
-                            // ------- 封面图 -------
-                            const coverImg = document.createElement("img");
-                            coverImg.className = "image";
-                            coverImg.src = p.cover || "";
-                            coverImg.alt = p.title || "";
-
-                            // ------- hover 媒体 -------
-                            let hoverNode = null;
-                            if (p.hover) {
-                                if (p.hoverType === "video") {
-                                    const wrapper = document.createElement("div");
-                                    wrapper.className = "image-secondary";
-
-                                    const video = document.createElement("video");
-                                    video.autoplay = true;
-                                    video.loop = true;
-                                    video.muted = true;
-                                    video.playsInline = true;
-                                    video.style.width = "100%";
-                                    video.style.height = "100%";
-                                    video.style.objectFit = "cover";
-
-                                    const source = document.createElement("source");
-                                    source.src = p.hover;
-                                    video.appendChild(source);
-
-                                    wrapper.appendChild(video);
-                                    hoverNode = wrapper;
-                                } else {
-                                    const hoverImg = document.createElement("img");
-                                    hoverImg.className = "image-secondary";
-                                    hoverImg.src = p.hover;
-                                    hoverImg.alt = p.title + " hover";
-                                    hoverImg.style.width = "100%";
-                                    hoverImg.style.maxHeight = "500px";
-                                    hoverImg.style.objectFit = "cover";
-                                    hoverNode = hoverImg;
-                                }
-                            }
-
-                            if (p.pixel) {
-                                coverImg.classList.add("pixel");
-                                if (hoverNode) hoverNode.classList.add("pixel");
-                            }
-
-                            // ------- 文本内容 -------
-                            const textDiv = document.createElement("div");
-                            textDiv.className = "proj-text";
-
-                            const titleH3 = document.createElement("h3");
-                            titleH3.textContent = p.title || "";
-
-                            const metaP = document.createElement("p");
-                            metaP.innerHTML = `${p.date || ""}<br>${p.tools || ""}<br>${p.role || ""}`;
-
-                            textDiv.appendChild(titleH3);
-                            textDiv.appendChild(document.createElement("br"));
-                            textDiv.appendChild(document.createElement("br"));
-                            textDiv.appendChild(metaP);
-
-                            if (p.description) {
-                                textDiv.appendChild(document.createElement("br"));
-                                textDiv.appendChild(document.createElement("br"));
-                                const descP = document.createElement("p");
-                                descP.textContent = p.description;
-                                textDiv.appendChild(descP);
-                            }
-
-                            // ------- 交替布局 -------
-                            const mediaContainer = document.createElement("div");
-                            mediaContainer.appendChild(coverImg);
-                            if (hoverNode) mediaContainer.appendChild(hoverNode);
-
-                            if (idx % 2 === 0) {
-                                itemDiv.appendChild(textDiv);
-                                itemDiv.appendChild(mediaContainer);
-                            } else {
-                                itemDiv.appendChild(mediaContainer);
-                                itemDiv.appendChild(textDiv);
-                            }
-
-                            a.appendChild(itemDiv);
-                            section.appendChild(a);
-                        });
-
-                        container.appendChild(section);
-                    });
-
-                })
-                .catch(err => console.error("Project load failed:", err));
-        </script>
-</section>
+</div>
 </body>
 
 </html>
