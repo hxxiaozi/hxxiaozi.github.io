@@ -687,7 +687,7 @@ img.icon {
 }
 
 /* 大屏幕变两列 */
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   #projects-container section {
     grid-template-columns: 1fr 1fr;
   }
