@@ -675,7 +675,7 @@ img.icon {
 #projects-container section {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1fr; /* 默认单列（移动端） */
+  grid-template-columns: 1fr; 
   gap: 40px;
 }
 
@@ -687,7 +687,7 @@ img.icon {
 }
 
 /* 大屏幕变两列 */
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   #projects-container section {
     grid-template-columns: 1fr 1fr;
   }
@@ -715,7 +715,7 @@ img.icon {
 
   .image,
   .image-secondary {
-    max-height: 300px;
+    max-height: 600px;
   }
 }
 
@@ -731,7 +731,7 @@ img.icon {
   /* margin-top: 20px; */
   border-radius: var(--roundcorner);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
  gap: 20px;
 }
 
