@@ -12,7 +12,7 @@
 
 <body>
 
-  <section class="sec-1">
+  <section class="">
     <!-- custom cursor -->
     <div class="cursor me"></div>
     <script>
@@ -50,39 +50,7 @@
       </div>
 
     </div>
-
-    <div class="i3" style="background-color: cornsilk;">
-
-      <h4><br>Files (PDFs)-></h4>
-
-
-      <!-- Resume -->
-      <p class="link-underline ">
-        <a href="cv/XiaoxuanHan_Resume2026.pdf" target="_blank">Resume 2026&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/XiaoxuanHan_Resume2026.pdf" download>
-          <img class="icon" src="img/pixel/handshake.png" alt="">⬇
-        </a>
-      </p>
-
-      <!-- Graphic Design Portfolio -->
-      <p class="link-underline">
-        <a href="cv/Portfolio 2025.11-compressed.pdf" target="_blank">Graphic Design Portfolio&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/Portfolio 2025.11-compressed.pdf" download>
-          <img class="icon" src="img/pixel/artwork.png" alt="">⬇
-        </a>
-      </p>
-
-      <!-- Game Portfolio -->
-      <p class="link-underline">
-        <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/GamePortfolio25.9.pdf" download>
-          <img class="icon" src="img/pixel/button.png" alt="">⬇
-        </a>
-      </p>
-
-    </div>
-
-    <!-- Gallery Section -->
+<!-- Gallery Section -->
 
     <div class="gallery-container">
 
@@ -132,10 +100,12 @@
 
     </div>
 
-  </section>
-  <h3 class="text-centre">Featured Projects</h3>
-  <section class="margin-l margin-r">
+    
 
+  </section>
+ 
+  <section class="margin-l margin-r">
+ <h2 class="text-centre"> Featured Projects </h2>
 
     <div id="section-buttons" class="i3 "></div>
     <div id="projects-container"></div>
@@ -250,33 +220,34 @@
               textDiv.appendChild(document.createElement("br"));
               textDiv.appendChild(metaP);
 
-              if (p.description) {
-                textDiv.appendChild(document.createElement("br"));
-                textDiv.appendChild(document.createElement("br"));
-                const descP = document.createElement("p");
-                descP.textContent = p.description;
-                textDiv.appendChild(descP);
-              }
+              // if (p.description) {
+              //   textDiv.appendChild(document.createElement("br"));
+              //   textDiv.appendChild(document.createElement("br"));
+              //   const descP = document.createElement("p");
+              //   descP.textContent = p.description;
+              //   textDiv.appendChild(descP);
+              // }
 
               // 根据 idx 交替：偶数项（0,2,..）
               // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
               // 如果你想反过来，把判断改为 idx%2===0 时先 append image
-              if (idx % 2 === 0) {
-                // text 左，图片 右 -> append text THEN media
-                itemDiv.appendChild(textDiv);
+              
+              // if (idx % 2 === 0) {
+              
 
                 const mediaContainer = document.createElement("div");
                 mediaContainer.appendChild(coverImg);
                 if (hoverNode) mediaContainer.appendChild(hoverNode);
                 itemDiv.appendChild(mediaContainer);
-              } else {
-                // 图片左，text右 -> append media THEN text
-                const mediaContainer = document.createElement("div");
-                mediaContainer.appendChild(coverImg);
-                if (hoverNode) mediaContainer.appendChild(hoverNode);
-                itemDiv.appendChild(mediaContainer);
-                itemDiv.appendChild(textDiv);
-              }
+                  itemDiv.appendChild(textDiv);
+              // } else {
+              //  itemDiv.appendChild(textDiv);
+              //   const mediaContainer = document.createElement("div");
+              //   mediaContainer.appendChild(coverImg);
+              //   if (hoverNode) mediaContainer.appendChild(hoverNode);
+              //   itemDiv.appendChild(mediaContainer);
+                
+              // }
               a.appendChild(itemDiv);
               section.appendChild(a);
             });
@@ -289,6 +260,37 @@
     </script>
 
   </section>
+
+     <div class="i3" style="background-color: cornsilk; ">
+
+      <h4>Files (PDFs)-></h4>
+
+
+      <!-- Resume -->
+      <p class="link-underline ">
+        <a href="cv/XiaoxuanHan_Resume2026.pdf" target="_blank">Resume 2026&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/XiaoxuanHan_Resume2026.pdf" download>
+          <img class="icon" src="img/pixel/handshake.png" alt="">⬇
+        </a>
+      </p>
+
+      <!-- Graphic Design Portfolio -->
+      <p class="link-underline">
+        <a href="cv/Portfolio 2025.11-compressed.pdf" target="_blank">Graphic Design Portfolio&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/Portfolio 2025.11-compressed.pdf" download>
+          <img class="icon" src="img/pixel/artwork.png" alt="">⬇
+        </a>
+      </p>
+
+      <!-- Game Portfolio -->
+      <p class="link-underline">
+        <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
+        <a class="link-outline" href="cv/GamePortfolio25.9.pdf" download>
+          <img class="icon" src="img/pixel/button.png" alt="">⬇
+        </a>
+      </p>
+
+    </div>
   <!-- Footer -->
   <footer class="footer">
     <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>

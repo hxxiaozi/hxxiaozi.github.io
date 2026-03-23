@@ -74,7 +74,7 @@
                         const section = document.createElement("section");
                         section.id = category.replace(/\s+/g, "");
 
-                        const h3 = document.createElement("h3");
+                        const h3 = document.createElement("h2");
                         h3.textContent = category;
                         section.appendChild(h3);
 
@@ -146,26 +146,26 @@
                             textDiv.appendChild(document.createElement("br"));
                             textDiv.appendChild(metaP);
 
-                            if (p.description) {
-                                textDiv.appendChild(document.createElement("br"));
-                                textDiv.appendChild(document.createElement("br"));
-                                const descP = document.createElement("p");
-                                descP.textContent = p.description;
-                                textDiv.appendChild(descP);
-                            }
+                            // if (p.description) {
+                            //     textDiv.appendChild(document.createElement("br"));
+                            //     textDiv.appendChild(document.createElement("br"));
+                            //     const descP = document.createElement("p");
+                            //     descP.textContent = p.description;
+                            //     textDiv.appendChild(descP);
+                            // }
 
                             // ------- 交替布局 -------
                             const mediaContainer = document.createElement("div");
                             mediaContainer.appendChild(coverImg);
                             if (hoverNode) mediaContainer.appendChild(hoverNode);
 
-                            if (idx % 2 === 0) {
-                                itemDiv.appendChild(textDiv);
+                            // if (idx % 2 === 0) {
+                            //     itemDiv.appendChild(textDiv);
+                            //     itemDiv.appendChild(mediaContainer);
+                            // } else {
                                 itemDiv.appendChild(mediaContainer);
-                            } else {
-                                itemDiv.appendChild(mediaContainer);
                                 itemDiv.appendChild(textDiv);
-                            }
+                            // }
 
                             a.appendChild(itemDiv);
                             section.appendChild(a);
