@@ -627,13 +627,13 @@ img.icon {
   display: inline-block;
   margin: auto;
   border-top: 3px solid transparent;
-  padding: 5px 30px 0px 30px;
+  padding: 5px 25px 0px 25px;
 }
 
 
 
 .category_btn:hover {
-  padding: 0px 27px;
+  padding: 0px 22px;
   margin-bottom: 5px;
   border: 3px solid transparent;
   border-radius: 15px;
