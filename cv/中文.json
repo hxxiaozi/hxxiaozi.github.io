@@ -1,0 +1,268 @@
+{
+  "title": "中文",
+  "basic": {
+    "name": "韩笑萱",
+    "title": "",
+    "employementStatus": "",
+    "email": "hxx031222@gmail.com",
+    "phone": "13605296226",
+    "location": "",
+    "birthDate": "2003/12",
+    "fieldOrder": [
+      {
+        "id": "1",
+        "key": "name",
+        "label": "姓名",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "2",
+        "key": "title",
+        "label": "职位",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "3",
+        "key": "employementStatus",
+        "label": "状态",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "4",
+        "key": "birthDate",
+        "label": "生日",
+        "type": "date",
+        "visible": true
+      },
+      {
+        "id": "5",
+        "key": "email",
+        "label": "邮箱",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "6",
+        "key": "phone",
+        "label": "电话",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "7",
+        "key": "location",
+        "label": "所在地",
+        "type": "text",
+        "visible": true
+      }
+    ],
+    "icons": {
+      "email": "Mail",
+      "phone": "Phone",
+      "birthDate": "CalendarRange",
+      "employementStatus": "Briefcase",
+      "location": "MapPin"
+    },
+    "photoConfig": {
+      "width": 90,
+      "height": 120,
+      "aspectRatio": "1:1",
+      "borderRadius": "none",
+      "customBorderRadius": 0,
+      "visible": true
+    },
+    "customFields": [
+      {
+        "id": "f3de6743-3c8a-4634-853b-806bf9cec972",
+        "label": "website",
+        "value": "h-xx.website",
+        "icon": "Globe",
+        "visible": true
+      }
+    ],
+    "photo": "",
+    "githubKey": "",
+    "githubUseName": "",
+    "githubContributionsVisible": false,
+    "layout": "center"
+  },
+  "education": [
+    {
+      "id": "3760455d-2adf-488c-ab4c-ecf3d5a5f775",
+      "school": "芝加哥艺术学院",
+      "major": "美术（艺术与科技）",
+      "degree": "本科",
+      "startDate": "2021/08",
+      "endDate": "2025/05",
+      "description": "<p>相关课程：<span style=\"color: rgba(102,102,102,var(--O42jJQ,1))\"> 艺术游戏，实验3D，计算机视觉，UI/UX设计，新媒体艺术，插画技术实验室</span></p>",
+      "visible": true,
+      "gpa": ""
+    }
+  ],
+  "skillContent": "<p><span style=\"color: #666666\">设计与交互: </span><strong>Photoshop, Illustrator, InDesign</strong> (数字图像处理、矢量图设计、排版), <strong>Figma</strong> (组件库构建、响应式交互原型)</p><p><span style=\"color: #666666\">游戏开发: </span><strong>Unity</strong> (Shader Graph着色器开发、Timeline 序列动画、UI Canvas、Tilemap 关卡构建), <strong>Unreal Engine</strong> (蓝图、材质编辑器), <strong>Spine</strong> (2D 骨骼动画、状态机配置), <strong>Houdini</strong> (正在学习)</p><p><span style=\"color: #666666\">3D 建模与制造: </span><strong>Maya, Blender</strong> (高低模、UV 拆分 、纹理贴图), <strong>3D Printing</strong> (切片、支撑结构优化)</p><p><span style=\"color: #666666\">Web开发: </span><strong>HTML5, CSS3</strong> (响应式架构、交互式前端开发), <strong>P5.js</strong> (基于javascript的创意编程), <strong>GitHub</strong> (Git 版本控制、协同开发)</p><p><span style=\"color: #666666\">影视后期与动效: </span><strong>After Effects</strong> (图形动效、特效合成、粒子系统), <strong>Premiere Pro</strong> (剪辑、调色等)</p>",
+  "selfEvaluationContent": "<p><span style=\"color: rgb(0, 0, 0)\">热爱游戏，熟练掌握各种设计软件；善于主动学习，积极尝试探索新的领域；擅长团队协作。</span></p>",
+  "experience": [
+    {
+      "id": "72893230-7234-4a4c-b994-0af52f3d95da",
+      "company": "Curaxuan",
+      "position": "技术美术 实习",
+      "date": "2025/04 - 至今",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">制作并在 Unity 中实现美术资产（道具、环境、UI、特效等）</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">参与设计并优化操作教学与关卡提示，提升新手引导体验</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">参与测试流程，与程序和策划协作，协助定位美术表现问题，基于反馈优化视觉体验与交互表现</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "12c09866-294f-4427-be0e-2c8576fd7ca2",
+      "company": "Narrow Bridge Arts Club",
+      "position": "Design & Production 实习",
+      "date": "2024/09 - 2024/12",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">设计环境视觉导引系统，使用激光切割制作了20+个空间标识</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">管理激光切割工作站制作流程的规范，编写并维护流程文档</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">负责工作坊教学，向参与者讲解设备操作流程与注意事项</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "0129c8e3-58c8-4230-951e-871fc0f8c2b1",
+      "company": "SAIC Continuing Studies",
+      "position": "助教",
+      "date": "2024/10 - 2024/12",
+      "details": "<p><span style=\"color: rgb(102, 102, 102)\">课程: 品牌识别系统 Brand Identity System</span></p><ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">指导学生完成设计项目，拆解作业要求，并提供个性化的反馈</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "e3579ac2-200c-45f9-867c-4ff2b1dc5411",
+      "company": "280 Digital Fabrication Studio",
+      "position": "管理员 兼职",
+      "date": "2022/10 - 2024/05",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">监管激光切割机与3D打印机的日常运行与维护</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">协助学生完成文件设置、设备操作与登记</span></p></li></ul>",
+      "visible": true
+    }
+  ],
+  "draggingProjectId": null,
+  "projects": [
+    {
+      "id": "f1bacbbf-3284-4137-9b7a-48bae0a4cd56",
+      "name": "冲啊！小土璇",
+      "role": "技术美术",
+      "date": "2025/04 - 2026/03",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">2D 解谜冒险 RPG; Demo 现已上架 Steam</span></p><p><span style=\"color: rgb(102, 102, 102)\">创作并整合各种 2D 资源（角色、场景、道具、UI 和 VFX）；与程序员和策划紧密合作，并参与了游戏测试和迭代过程。</span></p>",
+      "visible": true
+    },
+    {
+      "id": "0e7852ac-8bd5-4882-8b85-1cdf8fae64fa",
+      "name": "3D动画《Light Ocean》",
+      "role": "个人项目",
+      "date": "2025/01 - 2025/05",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Prevailing Winds</span><span style=\"color: rgb(102, 102, 102)\">, SAIC, 2025.5</span></p><p><span style=\"color: #666666\">动画使用Unreal Engine+动作捕捉技术制作</span></p>",
+      "visible": true,
+      "link": ""
+    },
+    {
+      "id": "1dd204af-7935-478c-b62b-615f8410f050",
+      "name": "交互装置《Virtual Toilet》",
+      "role": "个人项目",
+      "date": "2024/05 - 2024/08",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Computer Vision, </span><span style=\"color: rgb(102, 102, 102)\">SAIC</span></p><p><span style=\"color: rgb(102, 102, 102)\">结合计算机视觉（PoseNet）实现触发式互动, 基于 p5.js 构建交互系统与视觉反馈机制</span></p>",
+      "visible": true
+    },
+    {
+      "id": "96b34130-9d9e-4f99-b9b4-eff992790598",
+      "name": "吸血鬼主题桌游《Fangs：The Eternal Coven》",
+      "role": "合作项目",
+      "date": "2023/01 - 2023/05",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Polyplay 2023, SAIC</span></p><p><span style=\"color: rgb(102, 102, 102)\">参与设定游戏机制与世界观，制作规则书，道具，创作卡面视觉效果与图标系统，通过测试优化信息呈现与游戏体验</span></p>",
+      "visible": true
+    },
+    {
+      "id": "6baa6085-9db1-4827-a3f1-09a441ddc640",
+      "name": "",
+      "role": "",
+      "date": "2023.01 - 2023.06",
+      "description": "<p></p>",
+      "visible": false
+    }
+  ],
+  "menuSections": [
+    {
+      "id": "basic",
+      "title": "基本信息",
+      "icon": "👤",
+      "enabled": true,
+      "order": 0
+    },
+    {
+      "id": "education",
+      "title": "教育经历",
+      "icon": "🎓",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "experience",
+      "title": "工作经验",
+      "icon": "💼",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "skills",
+      "title": "专业技能",
+      "icon": "⚡",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "projects",
+      "title": "项目经历",
+      "icon": "🚀",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "selfEvaluation",
+      "title": "自我评价",
+      "icon": "💬",
+      "enabled": false,
+      "order": 5
+    },
+    {
+      "id": "certificates",
+      "title": "证书作品",
+      "icon": "🏆",
+      "enabled": false,
+      "order": 6
+    }
+  ],
+  "certificates": [],
+  "customData": {
+    "custom-1": [
+      {
+        "id": "b8981238-4a51-427a-be3d-65348dfff430",
+        "title": "未命名模块",
+        "subtitle": "",
+        "dateRange": "",
+        "description": "",
+        "visible": true
+      }
+    ]
+  },
+  "activeSection": "experience",
+  "globalSettings": {
+    "baseFontSize": 12,
+    "pagePadding": 40,
+    "paragraphSpacing": 10,
+    "lineHeight": 1.5,
+    "sectionSpacing": 18,
+    "headerSize": 15,
+    "subheaderSize": 15,
+    "useIconMode": true,
+    "themeColor": "#0047AB",
+    "centerSubtitle": true,
+    "fontFamily": "\"MiSans\", sans-serif",
+    "flexibleHeaderLayout": true
+  },
+  "id": "84ef7472-79d3-4955-864e-617a15ad7e56",
+  "createdAt": "2026-03-16T19:48:52.787Z",
+  "updatedAt": "2026-03-16T19:48:52.787Z",
+  "templateId": "minimalist"
+}

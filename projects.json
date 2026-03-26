@@ -1,26 +1,4 @@
 {
-  "Physical Games": [
-    {
-      "title": "My Happy Healthy Rich and Windy Chicago Game",
-      "date": "2022 May",
-      "tools": "Aseprite | Illustrator",
-      "role": "Solo Project",
-      "description": "My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.",
-      "cover": "img/game/cardgame/3.png",
-      "hover": "img/game/cardgame/2.png",
-      "link": "Projects/Chicago.html"
-    },
-    {
-      "title": "Fangs: The Eternal Coven",
-      "date": "2025 May",
-      "tools": "InDesign | Photoshop",
-      "role": "Game Design, Illustrations, Production, Playtesting",
-      "cover": "img/game/vampire/IMG_8377.jpg",
-      "hover": "img/game/vampire/10.png",
-      "link": "Projects/Vampire.html",
-      "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
-    }
-  ],
   "Digital Games": [
     {
       "title": "Human? Alien? Vegetables!",
@@ -32,7 +10,6 @@
       "link": "Projects/Alien.html",
       "pixel": true,
       "description": "Human? Alien? Vegetables! is an interactive sci-fi game about the displacement of the human body and its environment. The character is abducted by aliens and taken aboard their UFO for experimental purposes. Ultimately, the game challenges players to consider the true nature of humanity and identity."
-      
     },
     {
       "title": "The Alley",
@@ -53,7 +30,16 @@
       "hover": "img/game/groundshel/IMG_4735.jpg",
       "link": "Projects/Groundshel.html",
       "description": "Go Groundshel! is a puzzle adventure game. In this project I am responsible for designing and creating the updated game environment, user interface, and implementing the art assets into the Unity engine. The game features a cute charming art style and engaging gameplay mechanics that challenge players to navigate through various levels while solving puzzles and overcoming obstacles."
-
+    },
+    {
+      "title": "Sheepcity",
+      "date": "2024 December",
+      "tools": "Unity",
+      "role": "Solo Project",
+      "cover": "img/game/unity/sheepcity.png",
+      "hover": "/SheepCity/sheepcity.mov",
+      "hoverType": "video",
+      "link": "Projects/Sheepcity.html"
     }
   ],
   "3D Animations": [
@@ -75,7 +61,7 @@
       "cover": "img/sleep/sleep1.png",
       "hover": "img/sleep/sleep2.png",
       "link": "Projects/Sleep.html",
-     "description": "This animation explores the journey of the protagonist who feels trapped in the physical and emotional boundaries of their room/ home/comfort zone. The dim light in this small space reflects their sense of isolation and the routine nature of their life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. They experience surreal moments of floating and falling, feelings like losing control, and giving the sensation of nightmares. In the end, they land in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
+      "description": "This animation explores the journey of the protagonist who feels trapped in the physical and emotional boundaries of their room/ home/comfort zone. The dim light in this small space reflects their sense of isolation and the routine nature of their life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. They experience surreal moments of floating and falling, feelings like losing control, and giving the sensation of nightmares. In the end, they land in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
     },
     {
       "title": "Forest Illusion",
@@ -86,7 +72,7 @@
       "hover": "img/game/vfx/forest.mp4",
       "hoverType": "video",
       "link": "Projects/Forest.html",
-      "description":"In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
+      "description": "In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
     }
   ],
   "Interactive Sketches": [
@@ -100,8 +86,6 @@
       "hoverType": "video",
       "link": "Projects/garden.html",
       "description": "An interactive digital garden where users can plant flowers or create fireworksby clicking . Created using P5.js, creating a visual experience that celebrates creativity and nature."
-      
-
     },
     {
       "title": "Virtual Toilet",
@@ -113,8 +97,8 @@
       "link": "Projects/Toilet.html",
       "description": "An interactive digital art piece where users can interact with a toilet model using their body movements detected by PoseNet. Created using P5.js and PoseNet, this project explores the intersection of technology, humor, and everyday objects."
     },
-     {
-        "title": "Mirrors",
+    {
+      "title": "Mirrors",
       "date": "2024 April",
       "tools": "P5.js | Posenet",
       "role": "Solo Project",
@@ -123,6 +107,37 @@
       "hoverType": "video",
       "link": "Projects/Mirror.html",
       "description": "An interactive digital art project allowing audiences to view their reflections creatively. Created using P5.js and PoseNet, this project explores identity and self-perception."
+    },
+    {
+      "title": "Stressed.html",
+      "date": "2023 March",
+      "tools": "VS Code | HTML CSS JavaScript",
+      "role": "Solo Project",
+      "cover": "img/stressed/stressed.png",
+      "hover": "img/stressed/stressed2.png",
+      "link": "/p.html"
+    }
+  ],
+  "Physical Games": [
+    {
+      "title": "My Happy Healthy Rich and Windy Chicago Game",
+      "date": "2022 May",
+      "tools": "Aseprite | Illustrator",
+      "role": "Solo Project",
+      "description": "My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.",
+      "cover": "img/game/cardgame/3.png",
+      "hover": "img/game/cardgame/2.png",
+      "link": "Projects/Chicago.html"
+    },
+    {
+      "title": "Fangs: The Eternal Coven",
+      "date": "2025 May",
+      "tools": "InDesign | Photoshop",
+      "role": "Game Design, Illustrations, Production, Playtesting",
+      "cover": "img/game/vampire/IMG_8377.jpg",
+      "hover": "img/game/vampire/10.png",
+      "link": "Projects/Vampire.html",
+      "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
     }
   ]
 }

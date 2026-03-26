@@ -1,0 +1,277 @@
+{
+  "title": "中文 (复制)",
+  "basic": {
+    "name": "韩笑萱",
+    "title": "",
+    "employementStatus": "",
+    "email": "hxx031222@gmail.com",
+    "phone": "13605296226",
+    "location": "",
+    "birthDate": "2003/12",
+    "fieldOrder": [
+      {
+        "id": "1",
+        "key": "name",
+        "label": "姓名",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "2",
+        "key": "title",
+        "label": "职位",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "3",
+        "key": "employementStatus",
+        "label": "状态",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "4",
+        "key": "birthDate",
+        "label": "生日",
+        "type": "date",
+        "visible": true
+      },
+      {
+        "id": "5",
+        "key": "email",
+        "label": "邮箱",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "6",
+        "key": "phone",
+        "label": "电话",
+        "type": "text",
+        "visible": true
+      },
+      {
+        "id": "7",
+        "key": "location",
+        "label": "所在地",
+        "type": "text",
+        "visible": true
+      }
+    ],
+    "icons": {
+      "email": "Mail",
+      "phone": "Phone",
+      "birthDate": "CalendarRange",
+      "employementStatus": "Briefcase",
+      "location": "MapPin"
+    },
+    "photoConfig": {
+      "width": 90,
+      "height": 120,
+      "aspectRatio": "1:1",
+      "borderRadius": "none",
+      "customBorderRadius": 0,
+      "visible": true
+    },
+    "customFields": [
+      {
+        "id": "f3de6743-3c8a-4634-853b-806bf9cec972",
+        "label": "网站",
+        "value": "https://h-xx.website/",
+        "icon": "Globe",
+        "visible": true,
+        "displayLabel": false
+      }
+    ],
+    "photo": "",
+    "githubKey": "",
+    "githubUseName": "",
+    "githubContributionsVisible": false,
+    "layout": "left"
+  },
+  "education": [
+    {
+      "id": "3760455d-2adf-488c-ab4c-ecf3d5a5f775",
+      "school": "芝加哥艺术学院",
+      "major": "美术（艺术与科技）",
+      "degree": "本科",
+      "startDate": "2021/08",
+      "endDate": "2025/05",
+      "description": "<p>相关课程：<span style=\"color: rgba(102,102,102,var(--O42jJQ,1))\"> 艺术游戏，实验3D，实验动画，计算机视觉，UI/UX设计，新媒体艺术，插画技术实验室</span></p>",
+      "visible": true,
+      "gpa": ""
+    }
+  ],
+  "skillContent": "<p><span style=\"color: rgb(0, 0, 0)\">设计与交互:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Photoshop, Illustrator</strong> <span style=\"color: rgb(102, 102, 102)\">(图像处理、矢量设计),<strong> </strong></span><strong>Figma</strong><span style=\"color: rgb(102, 102, 102)\"> (组件库构建、响应式交互原型),</span> <strong>Aseprite </strong><span style=\"color: rgb(102, 102, 102)\">(spritesheet 像素动画）</span></p><p><span style=\"color: rgb(0, 0, 0)\">游戏开发:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Unity</strong> <span style=\"color: rgb(102, 102, 102)\">(关卡构建、Tilemap、Timeline 动画、UI Canvas、粒子系统),</span> <strong>Unreal Engine</strong> <span style=\"color: rgb(102, 102, 102)\">(场景搭建、Blueprint、材质编辑器、 Sequencer),</span> <strong>Spine</strong> <span style=\"color: rgb(102, 102, 102)\">(2D骨骼动画)</span></p><p><span style=\"color: rgb(0, 0, 0)\">3D 建模与制造:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Maya, Blender</strong> <span style=\"color: rgb(102, 102, 102)\">(高低模、UV、贴图),</span> <strong>3D Printing</strong> <span style=\"color: rgb(102, 102, 102)\">(切片、支撑结构优化)</span></p><p><span style=\"color: rgb(0, 0, 0)\">Web开发</span><span style=\"color: rgb(102, 102, 102)\">: </span><strong>HTML5, CSS3</strong>, <strong>P5.js</strong><span style=\"color: rgb(102, 102, 102)\">(响应式架构、前端交互),</span> <strong>GitHub</strong> <span style=\"color: rgb(102, 102, 102)\">(版本控制、协同开发)</span></p><p><span style=\"color: rgb(0, 0, 0)\">后期与动效: </span><strong>After Effects</strong> <span style=\"color: rgb(102, 102, 102)\">(图形动效、特效、粒子系统), </span><strong>Premiere Pro</strong><span style=\"color: rgb(102, 102, 102)\"> (剪辑、调色等)</span></p>",
+  "selfEvaluationContent": "<p>精通多种主流设计软件及游戏引擎<span style=\"color: rgb(0, 0, 0)\">；拥有游戏与艺术领域实习经验，熟悉开发流程；</span>兼具扎实的美术素养与技术思维；<span style=\"color: rgb(0, 0, 0)\">善于主动学习，</span>持续关注行业前沿动态，具备快速学习与适应新技术的能力<span style=\"color: rgb(0, 0, 0)\">；擅长团队协作，</span>有良好的项目协作与执行能力。</p><p></p>",
+  "experience": [
+    {
+      "id": "72893230-7234-4a4c-b994-0af52f3d95da",
+      "company": "Curaxuan",
+      "position": "Technical Artist （Environment Focus)",
+      "date": "2025/04 - 至今",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: #666666\">在 Unity 中负责游戏场景与关卡内容的搭建与整合（包括环境资产、UI、动画及特效）</span></p></li><li><p><span style=\"color: #666666\">与策划协作优化新手教程与关卡提示系统，提升视觉引导与交互信息的清晰度</span></p></li><li><p><span style=\"color: #666666\">与程序及美术团队协作参与关卡测试与迭代流程，定位并修复美术与表现问题，优化关卡节奏与体验</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "12c09866-294f-4427-be0e-2c8576fd7ca2",
+      "company": "Narrow Bridge Arts Club",
+      "position": "Design & Production Intern",
+      "date": "2024/09 - 2024/12",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">设计环境视觉导引系统，使用激光切割制作了20+个空间标识</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">管理激光切割工作站制作流程的规范，编写并维护流程文档</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">负责工作坊教学，向参与者讲解设备操作流程与注意事项</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "0129c8e3-58c8-4230-951e-871fc0f8c2b1",
+      "company": "SAIC Continuing Studies",
+      "position": "Teaching Assistant",
+      "date": "2024/10 - 2024/12",
+      "details": "<p><span style=\"color: rgb(102, 102, 102)\">课程: 品牌识别系统 Brand Identity System</span></p><ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">指导学生完成设计项目，拆解作业要求，并提供个性化的反馈</span></p></li></ul>",
+      "visible": false
+    },
+    {
+      "id": "e3579ac2-200c-45f9-867c-4ff2b1dc5411",
+      "company": "280 Digital Fabrication Studio",
+      "position": "Studio Monitor",
+      "date": "2022/10 - 2024/05",
+      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">监管激光切割机与3D打印机的日常运行与维护</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">协助用户完成文件设置、设备操作与登记</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">讲解并演示3d打印与激光切割流程，熟练掌握相关软件: Illustrator+Job Control; 3D建模+slicing软件</span></p></li></ul>",
+      "visible": true
+    },
+    {
+      "id": "d7650184-f979-45a6-9060-a1a9a2d9cc16",
+      "company": "Signarama",
+      "position": "Intern",
+      "date": "2020/02 - 2021/07",
+      "details": "<ul class=\"custom-list\"><li><p>协助生产海报，灯箱，亚克力招牌，vinyl，车贴等宣传材料</p></li></ul>",
+      "visible": false
+    }
+  ],
+  "draggingProjectId": null,
+  "projects": [
+    {
+      "id": "f1bacbbf-3284-4137-9b7a-48bae0a4cd56",
+      "name": "冲啊！小土璇",
+      "role": "关卡美术",
+      "date": "2025/04 - 2026/03",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">2D 解谜冒险 RPG; Demo 现已上架 Steam</span></p><p><span style=\"color: rgb(102, 102, 102)\">搭建游戏关卡，创作并整合各种美术资源（角色、场景、道具、UI 和 VFX）；与程序员和策划紧密合作优化美术表现与游戏体验。</span></p>",
+      "visible": true
+    },
+    {
+      "id": "0e7852ac-8bd5-4882-8b85-1cdf8fae64fa",
+      "name": "3D动画《Light Ocean》",
+      "role": "个人项目",
+      "date": "2025/01 - 2025/05",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Prevailing Winds</span><span style=\"color: rgb(102, 102, 102)\">, SAIC, 2025.5</span></p><p><span style=\"color: #666666\">使用 Unreal Engine 搭建场景环境与灯光，并使用材质与后期处理强化视觉表达，营造叙事氛围+</span><span style=\"color: rgb(102, 102, 102)\">动作捕捉技术制作动画。</span></p>",
+      "visible": true,
+      "link": ""
+    },
+    {
+      "id": "1dd204af-7935-478c-b62b-615f8410f050",
+      "name": "交互装置《Virtual Toilet》",
+      "role": "个人项目",
+      "date": "2024/05 - 2024/08",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Computer Vision, </span><span style=\"color: rgb(102, 102, 102)\">SAIC</span></p><p><span style=\"color: rgb(102, 102, 102)\">结合计算机视觉（PoseNet）实现触发式互动, 基于 p5.js 构建交互系统与视觉反馈机制</span></p>",
+      "visible": true
+    },
+    {
+      "id": "96b34130-9d9e-4f99-b9b4-eff992790598",
+      "name": "吸血鬼主题桌游《Fangs：The Eternal Coven》",
+      "role": "合作项目",
+      "date": "2023/01 - 2023/05",
+      "description": "<p><span style=\"color: rgb(0, 0, 0)\">参展: Polyplay 2023, SAIC</span></p><p><span style=\"color: rgb(102, 102, 102)\">参与设定游戏机制与世界观，制作规则书，道具，创作卡面视觉效果与图标系统，通过playtest优化信息呈现与游戏体验</span></p>",
+      "visible": true
+    },
+    {
+      "id": "6baa6085-9db1-4827-a3f1-09a441ddc640",
+      "name": "",
+      "role": "",
+      "date": "2023.01 - 2023.06",
+      "description": "<p></p>",
+      "visible": false
+    }
+  ],
+  "menuSections": [
+    {
+      "id": "basic",
+      "title": "基本信息",
+      "icon": "👤",
+      "enabled": true,
+      "order": 0
+    },
+    {
+      "id": "education",
+      "title": "教育经历",
+      "icon": "🎓",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "id": "experience",
+      "title": "工作经历",
+      "icon": "💼",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "id": "skills",
+      "title": "专业技能",
+      "icon": "⚡",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "id": "projects",
+      "title": "项目经历",
+      "icon": "🚀",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "id": "selfEvaluation",
+      "title": "自我评价",
+      "icon": "💬",
+      "enabled": true,
+      "order": 5
+    },
+    {
+      "id": "certificates",
+      "title": "证书作品",
+      "icon": "🏆",
+      "enabled": false,
+      "order": 6
+    }
+  ],
+  "certificates": [],
+  "customData": {
+    "custom-1": [
+      {
+        "id": "b8981238-4a51-427a-be3d-65348dfff430",
+        "title": "未命名模块",
+        "subtitle": "",
+        "dateRange": "",
+        "description": "",
+        "visible": true
+      }
+    ]
+  },
+  "activeSection": "experience",
+  "globalSettings": {
+    "baseFontSize": 12,
+    "pagePadding": 40,
+    "paragraphSpacing": 10,
+    "lineHeight": 1.5,
+    "sectionSpacing": 18,
+    "headerSize": 15,
+    "subheaderSize": 15,
+    "useIconMode": true,
+    "themeColor": "#0047AB",
+    "centerSubtitle": true,
+    "fontFamily": "\"MiSans\", sans-serif",
+    "flexibleHeaderLayout": true
+  },
+  "id": "e9195184-3df8-43bb-a9a1-d9ffff15219e",
+  "createdAt": "2026-03-25T16:58:01.125Z",
+  "updatedAt": "2026-03-25T16:58:01.125Z",
+  "templateId": "minimalist"
+}
