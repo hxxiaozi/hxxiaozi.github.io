@@ -1,11 +1,11 @@
 {
-  "title": "Resume",
+  "title": "Resume - tek",
   "basic": {
     "name": "Xiaoxuan Han",
     "title": "",
     "employementStatus": "",
     "email": "hxx031222@gmail.com",
-    "phone": "+1 2893002212",
+    "phone": "3124049821",
     "location": "",
     "birthDate": "2003/12",
     "fieldOrder": [
@@ -35,6 +35,13 @@
         "key": "birthDate",
         "label": "生日",
         "type": "date",
+        "visible": false
+      },
+      {
+        "id": "6",
+        "key": "phone",
+        "label": "电话",
+        "type": "text",
         "visible": true
       },
       {
@@ -45,18 +52,11 @@
         "visible": true
       },
       {
-        "id": "6",
-        "key": "phone",
-        "label": "电话",
-        "type": "text",
-        "visible": true
-      },
-      {
         "id": "7",
         "key": "location",
         "label": "所在地",
         "type": "text",
-        "visible": true
+        "visible": false
       }
     ],
     "icons": {
@@ -76,57 +76,76 @@
     },
     "customFields": [
       {
+        "id": "303bc8b2-818b-4946-8102-e8e33a0ffa05",
+        "label": "umail",
+        "value": "u1655048@utah.edu",
+        "icon": "Mail",
+        "visible": true,
+        "displayLabel": false
+      },
+      {
         "id": "f3de6743-3c8a-4634-853b-806bf9cec972",
         "label": "website",
         "value": "h-xx.website",
         "icon": "Globe",
-        "visible": true
+        "visible": true,
+        "displayLabel": false
       }
     ],
     "photo": "",
-    "githubKey": "",
-    "githubUseName": "",
+    "githubKey": "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",
+    "githubUseName": "hxxiaozi",
     "githubContributionsVisible": false,
-    "layout": "left"
+    "layout": "center"
   },
   "education": [
+    {
+      "id": "1f20f4e1-635a-4914-9067-7ce066f5c8de",
+      "school": "University of Utah",
+      "major": "Technical Art",
+      "degree": "Master of Entertainment Arts & Engineering",
+      "startDate": "2026/08",
+      "endDate": "2028/05",
+      "description": "",
+      "visible": true
+    },
     {
       "id": "3760455d-2adf-488c-ab4c-ecf3d5a5f775",
       "school": "School of the Art Institute of Chicago",
       "major": "Art & Technology",
-      "degree": "BFA",
+      "degree": "Bachelor of Fine Arts",
       "startDate": "2021/08",
       "endDate": "2025/05",
-      "description": "<p><span style=\"color: rgba(102,102,102,var(--O42jJQ,1))\">Relevant Coursework: Art Games, Experimental 3D, Computer Vision, UI/UX Web Design, New Media Art, Illustration Tech Lab</span></p>",
+      "description": "<p><span style=\"color: rgba(102,102,102,var(--O42jJQ,1));\">Relevant Coursework: UI/UX Web Design, Computer Vision, New Media Crush Course</span></p>",
       "visible": true,
       "gpa": ""
     }
   ],
-  "skillContent": "<p><span style=\"color: rgb(0, 0, 0)\">Design:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Photoshop, Illustrator</strong> <span style=\"color: rgb(102, 102, 102)\">(Digital Imaging, Vector Illustration),<strong> </strong></span><strong>Aseprite </strong><span style=\"color: rgb(102, 102, 102)\">(Spritesheet Animation）</span></p><p><span style=\"color: rgb(0, 0, 0)\">Game:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Unity</strong> <span style=\"color: rgb(102, 102, 102)\">(Scene Building, Tilemap, Timeline Animation, UI Canva, Shader Graph, Particle Systems),</span> <strong>Unreal Engine</strong> <span style=\"color: rgb(102, 102, 102)\">(Level Map, Blueprint, Material Editor, Sequencer),</span> <strong>Spine</strong> <span style=\"color: rgb(102, 102, 102)\">(2D Skeleton Animation)</span></p><p><span style=\"color: rgb(0, 0, 0)\">3D:</span><span style=\"color: rgb(102, 102, 102)\"> </span><strong>Maya, Blender</strong> <span style=\"color: rgb(102, 102, 102)\">(Low/High Poly Modeling、UV Unwrapping, Texture),</span> <strong>3D Printing</strong> <span style=\"color: rgb(102, 102, 102)\">(Slicing、Support Structure Optimization)</span></p><p><span style=\"color: rgb(0, 0, 0)\">Web</span><span style=\"color: rgb(102, 102, 102)\">: </span><strong>HTML, CSS</strong>, <strong>P5.js</strong><span style=\"color: rgb(102, 102, 102)\">(Responsive Design、Interactive Code),</span> <strong>GitHub</strong> <span style=\"color: rgb(102, 102, 102)\">(Git Version Control、Collaboratin)</span></p><p><span style=\"color: rgb(0, 0, 0)\">Video: </span><strong>After Effects</strong> <span style=\"color: rgb(102, 102, 102)\">(Motion Graphics、VFX、Particle Systems), </span><strong>Premiere Pro</strong><span style=\"color: rgb(102, 102, 102)\"> (Editing, Color Grading)</span></p>",
-  "selfEvaluationContent": "<p><span style=\"color: rgb(38, 38, 38)\">Proficient across many industry-standard design software and game engines, integrating a solid artistic foundation with a technical mindset. Possessing practical experience in the gaming and arts industry. Able to quickly master new skills and emerging technologies. Capable of working alone or in a team, has great collaboration and communication skills.</span></p>",
+  "skillContent": "<p><em>Programming:</em> <strong>Python, JavaScript,</strong> C#, C++</p><p><em>Web Development:</em> <strong>HTML, CSS, p5.js</strong></p><p><em>Game / Interactive Development:</em> <strong>Unity</strong> <span style=\"color: rgb(102, 102, 102);\">(C#, Shader Graph, Particle System, UI Canvas),</span> <strong>Unreal Engine</strong> <span style=\"color: rgb(102, 102, 102);\">(Blueprint, Material Editor)</span></p><p><em>Development Tools:</em> <strong>Git, Visual Studio / VS Code</strong></p><p><em>3D / Technical Art:</em> <strong>Maya (</strong>MEL &amp; Python Commands, Rigging, UV Unwrapping<strong>), Blender</strong>, 3D Printing</p><p><em>Design &amp; Prototyping: </em><strong><em>Figma, </em>Adobe Photoshop, Illustrator,</strong> InDesign</p>",
+  "selfEvaluationContent": "<p>Technical artist &amp; interdisciplinary designer with hands-on experience in game development and interactive media programming. Proficient in HTML, CSS, JavaScript, Python, C#, and C++, with experience building interactive systems and working with Unity and Unreal Engine. Strong interest in learning new technologies, with experience collaborating across technical and creative teams through the development, debugging, and iteration processes.</p>",
   "experience": [
     {
       "id": "72893230-7234-4a4c-b994-0af52f3d95da",
       "company": "Curaxuan LLC",
-      "position": "Level Artist",
-      "date": "2025/04 - 至今",
-      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: #666666\">Composited game level environments in Unity, integrating environment assets, UI, animation, and VFX</span></p></li><li><p><span style=\"color: #666666\">Collaborated with designers to improve tutorial flow and level guidance, enhancing visual clarity and player navigation</span></p></li><li><p><span style=\"color: #666666\">Participated in playtesting and the iteration process, improving the visual and play experience</span></p></li></ul>",
+      "position": "Technical Artist",
+      "date": "2025/04 - 2026/08",
+      "details": "<ul><li><p><span style=\"color: rgb(102, 102, 102);\">Developed and implemented interactive game features and visual systems in <strong>Unity</strong>, integrating UI, animation, VFX, and environment assets.</span></p></li><li><p><span style=\"color: rgb(102, 102, 102);\">Collaborated with designers to improve tutorial flow, player navigation, and visual communication through iterative development and playtesting.</span></p></li><li><p><span style=\"color: rgb(102, 102, 102);\">Debugged and refined interactive features based on playtesting feedback and team requirements.</span></p></li></ul>",
       "visible": true
     },
     {
       "id": "12c09866-294f-4427-be0e-2c8576fd7ca2",
       "company": "Narrow Bridge Arts Club",
-      "position": "Design & Production 实习",
+      "position": "Design & Production Intern",
       "date": "2024/09 - 2024/12",
-      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: #666666\">Designed a visual system for the environment, leveraging laser-cutters in fabricating 20+ </span><span style=\"color: rgb(102, 102, 102)\">space signs &amp; visual materials</span></p></li><li><p><span style=\"color: rgb(102, 102, 102)\">Managed laser cutting and drawing robot stations; maintained workflow documentations</span></p></li><li><p><span style=\"color: #666666\">Facilitated workshops, guiding participants on equipment operation protocols and safety regulations </span></p></li></ul>",
+      "details": "<ul><li><p><span style=\"color: rgb(102, 102, 102);\">Managed laser cutting and drawing robot stations and supported day-to-day technical workflows.</span></p></li></ul><ul><li><p><span style=\"color: rgb(102, 102, 102);\">Created and maintained workflow documentation for equipment operation and production processes.</span></p></li><li><p><span style=\"color: rgb(102, 102, 102);\">Facilitated workshops, guiding participants on equipment operation procedures, troubleshooting, and safety protocols.</span></p></li></ul>",
       "visible": true
     },
     {
       "id": "0129c8e3-58c8-4230-951e-871fc0f8c2b1",
       "company": "SAIC Continuing Studies",
-      "position": "助教",
+      "position": "Teaching Assistant",
       "date": "2024/10 - 2024/12",
-      "details": "<p><span style=\"color: rgb(102, 102, 102)\">课程: 品牌识别系统 Brand Identity System</span></p><ul class=\"custom-list\"><li><p><span style=\"color: rgb(102, 102, 102)\">指导学生完成设计项目，拆解作业要求，并提供个性化的反馈</span></p></li></ul>",
+      "details": "<p><span style=\"color: rgb(102, 102, 102);\">Course: Brand Identity System</span></p><ul><li><p><span style=\"color: rgb(102, 102, 102);\">Supported students in developing design projects; provided individualized feedback on layout, typography, and visual communication through iterative critique and revision.</span></p></li></ul>",
       "visible": false
     },
     {
@@ -134,7 +153,7 @@
       "company": "280 Digital Fabrication Studio",
       "position": "Studio Monitor",
       "date": "2022/10 - 2024/05",
-      "details": "<ul class=\"custom-list\"><li><p><span style=\"color: #666666\">Monitored the operation and maintenance of laser cutting machines and 3D printers</span></p></li></ul><ul class=\"custom-list\"><li><p><span style=\"color: #666666\">Provided technical support for file preparation, equipment operation, and registration.</span></p></li><li><p><span style=\"color: #666666\">Conduct technical demonstrations of 3D printing and laser cutting processes, leveraging proficiency in Adobe Illustrator, JobControl, 3D modeling, and slicing software.</span></p></li></ul>",
+      "details": "<ul><li><p><span style=\"color: rgb(102, 102, 102);\">Provided technical support to students using <strong>3D printers and laser cutting machines</strong>, troubleshooting file preparation and equipment-related issues.</span></p></li></ul><ul><li><p><span style=\"color: rgb(102, 102, 102);\">Demonstrated software workflows for <strong>Adobe Illustrator, 3D modeling, JobControl, and slicing software</strong>.</span></p></li><li><p><span style=\"color: rgb(102, 102, 102);\">Maintained a reliable and organized studio workflow while supporting multiple users.</span></p></li></ul>",
       "visible": true
     }
   ],
@@ -143,7 +162,7 @@
     {
       "id": "f1bacbbf-3284-4137-9b7a-48bae0a4cd56",
       "name": "Go Groundshel!",
-      "role": "Level Artist",
+      "role": "Technical Artist",
       "date": "2023.01 - 2023.06",
       "description": "<p><span style=\"color: rgb(0, 0, 0)\">2D Puzzle/Adventure RPG; Demo released on Steam</span></p><p><span style=\"color: rgb(102, 102, 102)\">Created and integrated diverse art assets; reconstructed and built 7 primary game scenes; designed and implemented manual and maps; optimized UI for enhanced user experience.</span></p>",
       "visible": true
@@ -154,7 +173,7 @@
       "role": "Personal Project",
       "date": "2023.01 - 2023.06",
       "description": "<p><span style=\"color: rgb(0, 0, 0)\">Exhibition: Computer Vision, </span><span style=\"color: rgb(102, 102, 102)\">SAIC, 2024.5</span></p><p><span style=\"color: rgba(102,102,102,var(--O42jJQ,1))\">Interactive installation built using computer vision (PoseNet) and p5.js </span></p>",
-      "visible": true
+      "visible": false
     },
     {
       "id": "96b34130-9d9e-4f99-b9b4-eff992790598",
@@ -170,7 +189,7 @@
       "role": "Personal Project",
       "date": "2023.01 - 2023.06",
       "description": "<p><span style=\"color: rgb(0, 0, 0)\">Exhibition: Prevailing Winds</span><span style=\"color: rgb(102, 102, 102)\">, SAIC, 2025.5</span></p><p><span style=\"color: #666666\">Built environments and lighting in Unreal Engine, focusing on scene composition and spatial storytelling; Enhanced visual quality through materials and post-processing; Created animation with motion capture techniques</span></p>",
-      "visible": true,
+      "visible": false,
       "link": ""
     },
     {
@@ -191,38 +210,38 @@
       "order": 0
     },
     {
-      "id": "education",
-      "title": "Education",
-      "icon": "🎓",
+      "id": "selfEvaluation",
+      "title": "Summary",
+      "icon": "💬",
       "enabled": true,
       "order": 1
     },
     {
-      "id": "experience",
-      "title": "Work Experience",
-      "icon": "💼",
+      "id": "education",
+      "title": "Education",
+      "icon": "🎓",
       "enabled": true,
       "order": 2
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "icon": "💼",
+      "enabled": true,
+      "order": 3
     },
     {
       "id": "skills",
       "title": "Skills",
       "icon": "⚡",
       "enabled": true,
-      "order": 3
+      "order": 4
     },
     {
       "id": "projects",
       "title": "Projects",
       "icon": "🚀",
-      "enabled": true,
-      "order": 4
-    },
-    {
-      "id": "selfEvaluation",
-      "title": "Summary",
-      "icon": "💬",
-      "enabled": true,
+      "enabled": false,
       "order": 5
     },
     {
@@ -239,10 +258,10 @@
   "globalSettings": {
     "baseFontSize": 12,
     "pagePadding": 40,
-    "paragraphSpacing": 10,
-    "lineHeight": 1.5,
-    "sectionSpacing": 18,
-    "headerSize": 15,
+    "paragraphSpacing": 12,
+    "lineHeight": 1.6,
+    "sectionSpacing": 22,
+    "headerSize": 18,
     "subheaderSize": 15,
     "useIconMode": true,
     "themeColor": "#0047AB",
@@ -250,8 +269,8 @@
     "fontFamily": "\"MiSans\", sans-serif",
     "flexibleHeaderLayout": true
   },
-  "id": "b135f6b7-7534-41d3-86ec-25a3f7b09e3b",
-  "createdAt": "2026-03-21T21:26:18.739Z",
-  "updatedAt": "2026-03-21T21:26:18.739Z",
-  "templateId": "minimalist"
+  "createdAt": "2026-09-04T00:02:34.179Z",
+  "updatedAt": "2026-09-04T00:41:43.474Z",
+  "templateId": "minimalist",
+  "id": "c055b7a5-2831-4101-855f-c909d6cf483f"
 }
