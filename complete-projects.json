@@ -52,7 +52,7 @@
       "date": "2024 April",
       "tools": "P5.js | Posenet",
       "role": "Solo Project",
-      "cover": "img/noface/mirror1.png",
+      "cover": "img/noface/mirror5.png",
       "hover": "vid/mirror1.mov",
       "hoverType": "video",
       "link": "Projects/Mirror.html",
@@ -82,7 +82,7 @@
       "pixel": true,
       "description": "Petey and the Police is a retro mobile game based on Granny and the Gators, one of the first pinball / arcade hybrids created in the early 1980s. "
     },
-    
+
     {
       "title": "Human? Alien? Vegetables!",
       "date": "2022 May",
