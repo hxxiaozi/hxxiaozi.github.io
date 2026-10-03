@@ -37,8 +37,8 @@
       "date": "2025 (Ongoing)",
       "tools": "Unity | Aseprite | Procreate | Illustrator",
       "role": "Game Artist (environment, UI & implementation)",
-      "cover": "img/game/groundshel/minimap1.png",
-      "hover": "img/game/groundshel/IMG_4735.jpg",
+            "cover": "img/game/groundshel/IMG_4735.jpg",
+      "hover": "img/game/groundshel/minimap1.png",
       "link": "Projects/Groundshel.html",
       "description": "Go Groundshel! is a puzzle adventure game. In this project I am responsible for designing and creating the updated game environment, user interface, and implementing the art assets into the Unity engine. The game features a cute charming art style and engaging gameplay mechanics that challenge players to navigate through various levels while solving puzzles and overcoming obstacles."
     },
