@@ -39,73 +39,20 @@
       <div id="descript">
         <p>
 
-          Hi! I am a game/multimedia artist. I create playful, interactive experiences across games, animation, 3D, and beyond. My work mixes fun, a bit of comedy, and a lot of curiosity. Through this alchemy of creation, I aim to build imaginative experiences that encourage people to pause, play, and rediscover a sense of wonder. I hope people to find delight in the ordinary magics in my work that I found from everyday life.
+          Hi! I am a game/multimedia artist. I create playful, interactive experiences across games, animation, 3D, and
+          beyond. My work mixes fun, a bit of comedy, and a lot of curiosity. Through this alchemy of creation, I aim to
+          build imaginative experiences that encourage people to pause, play, and rediscover a sense of wonder. I hope
+          people to find delight in the ordinary magics in my work that I found from everyday life.
 
         </p>
       </div>
 
-      <!-- Explore Section -->
-      <div id="explore">
-        <h3>What do you want to explore now?</h3>
-      </div>
+
 
     </div>
-<!-- Gallery Section -->
-
-    <div class="gallery-container">
-
-
-      <div class=" link-outline galleries">
-        <a href="games.html">
-          <h3 class="p2 block-display">Games</h3>
-
-          <img class="coverimg" src="img/game/unity/unity4.png" alt="">
-          <img class="cov" src="img/game/vfx/forestS.jpg" alt="">
-
-        </a>
-      </div>
-
-
-      <div class=" link-outline galleries g1">
-        <a href="v.html">
-          <h3 class="p2 block-display">Moving Images</h3>
-
-          <img class="coverimg" src="img/game/et/gg.gif" alt="">
-          <img class="cov" src="img/game/et/gg1.png" alt="">
-
-        </a>
-      </div>
-
-
-      <div class=" link-outline galleries">
-        <a href="i.html">
-          <h3 class=" p2 block-display">Visual Archive</h3>
-
-          <img class="coverimg" src="img/3d/wave.jpg" alt="">
-          <img class="cov" src="img/3d/Witch House.jpg" alt="">
-
-        </a>
-      </div>
-
-
-      <div class=" link-outline galleries g1">
-        <a href="p.html">
-          <h3 class="p2 block-display">In Progress</h3>
-
-          <img class="coverimg" src="img/3d/toilet.gif" alt="">
-          <img class="cov" src="img/3d/toilet.png" style="background-color: cornsilk;" alt="">
-
-        </a>
-      </div>
-
-    </div>
-
-    
-
   </section>
- 
   <section class="margin-l margin-r">
- <h2 class="text-centre"> Featured Projects </h2>
+    <h2 class="text-centre"> Featured Projects </h2>
 
     <div id="section-buttons" class="i3 "></div>
     <div id="projects-container"></div>
@@ -190,7 +137,6 @@
                 }
               }
 
-
               if (p.pixel) {
                 coverImg.classList.add("pixel");
               }
@@ -220,33 +166,18 @@
               textDiv.appendChild(document.createElement("br"));
               textDiv.appendChild(metaP);
 
-              // if (p.description) {
-              //   textDiv.appendChild(document.createElement("br"));
-              //   textDiv.appendChild(document.createElement("br"));
-              //   const descP = document.createElement("p");
-              //   descP.textContent = p.description;
-              //   textDiv.appendChild(descP);
-              // }
-
-              // 根据 idx 交替：偶数项（0,2,..）
-              // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
-              // 如果你想反过来，把判断改为 idx%2===0 时先 append image
-              
-              // if (idx % 2 === 0) {
-              
-
-                const mediaContainer = document.createElement("div");
-                mediaContainer.appendChild(coverImg);
-                if (hoverNode) mediaContainer.appendChild(hoverNode);
-                itemDiv.appendChild(mediaContainer);
-                  itemDiv.appendChild(textDiv);
+              const mediaContainer = document.createElement("div");
+              mediaContainer.appendChild(coverImg);
+              if (hoverNode) mediaContainer.appendChild(hoverNode);
+              itemDiv.appendChild(mediaContainer);
+              itemDiv.appendChild(textDiv);
               // } else {
               //  itemDiv.appendChild(textDiv);
               //   const mediaContainer = document.createElement("div");
               //   mediaContainer.appendChild(coverImg);
               //   if (hoverNode) mediaContainer.appendChild(hoverNode);
               //   itemDiv.appendChild(mediaContainer);
-                
+
               // }
               a.appendChild(itemDiv);
               section.appendChild(a);
@@ -260,37 +191,94 @@
     </script>
 
   </section>
+  <!-- Gallery Section -->
+  <div id="explore">
+    <h3>explore more?</h3>
+  </div>
+  <div class="gallery-container">
 
-     <div class="i3" style="background-color: cornsilk; ">
 
-      <h4>Files (PDFs)-></h4>
+    <div class=" link-outline galleries">
+      <a href="games.html">
+        <h3 class="p2 block-display">Games</h3>
 
-
-      <!-- Resume -->
-      <p class="link-underline ">
-        <a href="cv/Resume 26.9.pdf" target="_blank">Resume 2026&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/Resume 26.9.pdf" download>
-          <img class="icon" src="img/pixel/handshake.png" alt="">⬇
-        </a>
-      </p>
-
-      <!-- 中文简历 -->
-      <p class="link-underline">
-        <a href="cv/Resume26.9.pd" target="_blank">简历 2026&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/Resume 26.9.pdf" download>
-          <img class="icon" src="img/pixel/artwork.png" alt="">⬇
-        </a>
-      </p>
-
-      <!--  Portfolio -->
-      <p class="link-underline">
-        <a href="cv/PortfolioGD26.pdf" target="_blank">Graphics Portfolio PDF&#8599;&nbsp;</a>
-        <a class="link-outline" href="cv/portfolioGD26.pdf" download>
-          <img class="icon" src="img/pixel/button.png" alt="">⬇
-        </a>
-      </p>
-
+            <img class="coverimg" src="img/game/et/gg.gif" alt="">
+        <img class="cov" src="img/game/et/gg1.png" alt="">
+     
+      </a>
     </div>
+
+
+    <div class=" link-outline galleries g1">
+      <a href="v.html">
+        <h3 class="p2 block-display">Moving Images</h3>
+
+        <img class="coverimg" src="img/lightOcean/lightOcean10.PNG" alt="">
+        <img class="cov" src="img/lightOcean/lightOcean4.JPEG" alt="">
+
+      </a>
+    </div>
+
+
+    <div class=" link-outline galleries">
+      <a href="i.html">
+        <h3 class=" p2 block-display">Visual Archive</h3>
+
+        <img class="coverimg" src="img/3d/wave.jpg" alt="">
+        <img class="cov" src="img/3d/Witch House.jpg" alt="">
+
+      </a>
+    </div>
+
+
+    <div class=" link-outline galleries g1">
+      <a href="p.html">
+        <h3 class="p2 block-display">In Progress</h3>
+
+        <img class="coverimg" src="img/3d/toilet.gif" alt="">
+        <img class="cov" src="img/3d/toilet.png" style="background-color: cornsilk;" alt="">
+
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <div class="i3" style="background-color: cornsilk; ">
+
+    <h4>Files (PDFs)-></h4>
+
+
+    <!-- Resume -->
+    <p class="link-underline ">
+      <a href="cv/Resume 26.9.pdf" target="_blank">Resume 2026&#8599;&nbsp;</a>
+      <a class="link-outline" href="cv/Resume 26.9.pdf" download>
+        <img class="icon" src="img/pixel/handshake.png" alt="">⬇
+      </a>
+    </p>
+
+    <!-- 中文简历 -->
+    <p class="link-underline">
+      <a href="cv/Resume26.9.pd" target="_blank">简历 2026&#8599;&nbsp;</a>
+      <a class="link-outline" href="cv/Resume 26.9.pdf" download>
+        <img class="icon" src="img/pixel/artwork.png" alt="">⬇
+      </a>
+    </p>
+
+    <!--  Portfolio -->
+    <p class="link-underline">
+      <a href="cv/PortfolioGD26.pdf" target="_blank">Graphics Portfolio PDF&#8599;&nbsp;</a>
+      <a class="link-outline" href="cv/portfolioGD26.pdf" download>
+        <img class="icon" src="img/pixel/button.png" alt="">⬇
+      </a>
+    </p>
+
+  </div>
   <!-- Footer -->
   <footer class="footer">
     <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>

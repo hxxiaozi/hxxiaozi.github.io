@@ -6,7 +6,7 @@
       "tools": "Unity",
       "role": "technical artist",
       "cover": "img/game/petey/Petey_and_the_Police_One_Page.png",
-      "hover": "i",
+      "hover": "img/game/petey/Petey & Police.png",
       "link": "https://hhogandoria.itch.io/petey-and-the-police",
       "pixel": true,
       "description": "Petey and the Police is a retro mobile game based on Granny and the Gators, one of the first pinball / arcade hybrids created in the early 1980s. "
@@ -14,7 +14,7 @@
     {
       "title": "Human? Alien? Vegetables!",
       "date": "2022 May",
-      "tools": "VS Code | HTML CSS JavaScript",
+      "tools": "HTML CSS JavaScript",
       "role": "Game Design, all art & animation",
       "cover": "img/game/et/et-cover.png",
       "hover": "img/game/et/gg.gif",
@@ -122,7 +122,7 @@
     {
       "title": "Stressed.html",
       "date": "2023 March",
-      "tools": "VS Code | HTML CSS JavaScript",
+      "tools": "HTML CSS JavaScript",
       "role": "Solo Project",
       "cover": "img/stressed/stressed.png",
       "hover": "img/stressed/stressed2.png",
