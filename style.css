@@ -116,18 +116,20 @@ a:hover {
   padding-left: var(--spacel);
   padding-right: var(--spacel);
   padding-bottom: 5px;
-  background-color: thistle;
-
-  border-top: yellowgreen 5px solid;
+  border-top: pink 5px solid;
   padding-top: 0px;
+  background-color: cornsilk;
 }
 
 .header:hover {
   border-top: pink 5px solid;
-  padding-top: 0px;
   background-color: cornsilk;
   color: lightpink;
 
+
+    background-color: thistle;
+
+  border-top: yellowgreen 5px solid;
 }
 
 
@@ -173,7 +175,11 @@ a:hover {
 
   background-image: linear-gradient(floralwhite), linear-gradient(to right, var(--transparent));
 }
-
+.margin-all{
+  margin-left: var(--spacel);
+  margin-right: var(--spacel);
+  margin-top: 2rem;
+}
 .margin-l {
   margin-left: var(--spacel);
   margin-right: 1.5%;
@@ -673,7 +679,7 @@ img.icon {
 }
 
 #projects-container section {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;

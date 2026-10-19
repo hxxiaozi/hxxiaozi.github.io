@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Forest Bubble | H-XX</title>
+  <title>The Alley</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -29,9 +29,7 @@
       .then(html => document.getElementById('navbar').innerHTML = html)
       .catch(err => console.error('Navigation load failed:', err));
   </script>
-
-  <div class="scroll-container">
-    <div class=" margin-l ">
+    <div class=" margin-all">
 
       <section id="project-info"></section>
 
@@ -71,7 +69,7 @@
               container.appendChild(document.createElement("br"));
             }
 
-           const fields = [
+            const fields = [
 
               { key: "role" },
               { key: "date" },
@@ -102,8 +100,6 @@
       </script>
       <!-- 🌼 4. Project Media Section -->
 
-
-
       <div class="dash-divide">
         <div class="row full">
 
@@ -113,12 +109,11 @@
 
       <div class="video-container">
         <video class="video-player" autoplay muted loop controls>
-          <source src="../vid/hxx_UnityDream.mov" type="video/mp4">
+          <source src="../vid/Magic.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
 
       </div>
-
       <!-- 🌸 Gallery Part 2 + p5 embed -->
       <div class="dash-divide">
         <div class="row two">
@@ -127,41 +122,32 @@
         </div>
       </div>
 
-      <div class="p5-content"">
-    <h3 class=" p">Process & Concept</h3><br><br>
-        <p class="p">
-          This project explores the intersection between nature and digital play.
-          Users cultivate flowers that grow and transform into bursts of color,
-          creating an evolving ecosystem of visual energy.
-          Built using p5.js, the project emphasizes generative interaction and visual rhythm.
-        </p>
-      </div>
-
-     
 
 
-      <!-- ✏️ 6. Process & Concept -->
-      <section class="p5-content">
+
+
+
+    <!-- <section class="p5-content">
         <h3 class="p">Process & Concept</h3>
         <p class="p">
 
         </p>
       </section>
 
-      <!-- 🌼 Older versions embeds -->
+
       <section class="p5-content">
-        <h3 class="p">Previous Versions</h3>
+        <h3 class="p">Previous Versions</h3> -->
 
+  </div>
+
+  <!-- 🧭 7. Back Navigation -->
+
+  <div id="back">
+    <div class="category_btn" onclick="history.back()">
+      <h4 class="block-display">Go Back</h4>
     </div>
+  </div>
 
-      <!-- 🧭 7. Back Navigation -->
- 
-      <div id="back">
-        <div class="category_btn" onclick="history.back()">
-          <h4 class="block-display">Go Back</h4>
-        </div>
-      </div>
-  
 
 
   </div>
