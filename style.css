@@ -14,11 +14,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: thistle;
+  background: yellowgreen;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: yellowgreen;
+  background: pink;
 }
 
 html {
@@ -116,13 +116,14 @@ a:hover {
   padding-left: var(--spacel);
   padding-right: var(--spacel);
   padding-bottom: 5px;
+  background-color: thistle;
 
-  border-top: pink 5px solid;
+  border-top: yellowgreen 5px solid;
   padding-top: 0px;
 }
 
 .header:hover {
-  border-top: yellowgreen 5px solid;
+  border-top: pink 5px solid;
   padding-top: 0px;
   background-color: cornsilk;
   color: lightpink;
