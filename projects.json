@@ -1,6 +1,6 @@
 {
   "Digital Games": [
-     {
+    {
       "title": "Recycool",
       "date": "2026 October",
       "tools": "Unity",
@@ -9,9 +9,9 @@
       "hover": "img/game/trash/Recycool2.png",
       "link": "https://nsimons.itch.io/recycool",
       "pixel": true,
-      "description": "Petey and the Police is a retro mobile game based on Granny and the Gators, one of the first pinball / arcade hybrids created in the early 1980s. "
+      "description": "Recycool is a serious game built for teaching kids (and adults) how to recycle (coolly). Wish-cycling and improper waste disposal leads to 90% of recyclable materials being sent to landfills within Salt Lake City. This game lets players perform trick shots with trash as they learn the proper way to recycle according to Salt Lake City guidelines. "
     },
-     {
+    {
       "title": "Petey and the Police",
       "date": "2026 September",
       "tools": "Unity",
@@ -20,7 +20,7 @@
       "hover": "img/game/petey/Petey & Police.png",
       "link": "https://hhogandoria.itch.io/petey-and-the-police",
       "pixel": true,
-      "description": "Recycool is a serious game built for teaching kids (and adults) how to recycle (coolly). Wish-cycling and improper waste disposal leads to 90% of recyclable materials being sent to landfills within Salt Lake City. This game lets players perform trick shots with trash as they learn the proper way to recycle according to Salt Lake City guidelines. "
+      "description": "Petey and the Police is a retro mobile game based on Granny and the Gators, one of the first pinball / arcade hybrids created in the early 1980s. "
     },
     {
       "title": "Human? Alien? Vegetables!",
@@ -33,18 +33,17 @@
       "pixel": true,
       "description": "Human? Alien? Vegetables! is an interactive sci-fi game about the displacement of the human body and its environment. The character is abducted by aliens and taken aboard their UFO for experimental purposes. Ultimately, the game challenges players to consider the true nature of humanity and identity."
     },
-  
     {
       "title": "Go! Groundshel",
       "date": "2025 (Ongoing)",
       "tools": "Unity | Aseprite | Procreate | Illustrator",
       "role": "Game Artist (environment, UI & implementation)",
-            "cover": "img/game/groundshel/IMG_4735.jpg",
+      "cover": "img/game/groundshel/IMG_4735.jpg",
       "hover": "img/game/groundshel/minimap1.png",
       "link": "Projects/Groundshel.html",
       "description": "Go Groundshel! is a puzzle adventure game. In this project I am responsible for designing and creating the updated game environment, user interface, and implementing the art assets into the Unity engine. The game features a cute charming art style and engaging gameplay mechanics that challenge players to navigate through various levels while solving puzzles and overcoming obstacles."
     },
-      {
+    {
       "title": "The Alley",
       "date": "2023 November",
       "tools": "Unity",
