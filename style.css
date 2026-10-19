@@ -95,9 +95,11 @@ a:hover {
   --spacel: 4.5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm: '思源黑体', '思源宋体', Avenir, serif;
-  --fontp: "Maven Pro", Work Sans, Avenir, Helvetica, "Gill Sans", "Gill Sans MT", "Myriad Pro", sans-serif, serif;
-  --fontp2: "ZCOOL XiaoWei", monospace, sans-serif;
+  --fontm: '思源黑体', '思源宋体', Avenir, sans-serif;
+  --fontp:   Avenir, Noto Sans, "Myriad Pro", sans-serif, serif;
+  --fontp2: Verdana, Optima,"ZCOOL XiaoWei", sans-serif;
+  --fontt:  Noto Sans, Avenir, Work Sans, sans-serif;
+  --fontm: "Maven Pro", Avenir, Noto Sans, sans-serif;
   --dark: #265400ec;
   --line3: 3px solid lightpink;
   --roundcorner: 5px;
@@ -131,7 +133,7 @@ a:hover {
 
 .title {
   font-size: xx-large;
-  font-family: var(--fontp);
+  font-family: var(--fontm);
 }
 
 .title-right {
@@ -205,6 +207,8 @@ a:hover {
 .link-outline h3,
 .link-outline h4 {
   padding-bottom: 3px;
+
+
 }
 
 
@@ -221,6 +225,8 @@ a:hover {
   outline: var(--line3);
   outline-offset: 2px;
   border-radius: var(--roundcorner);
+  background-color: cornsilk;
+
 
 }
 
@@ -707,9 +713,6 @@ img.icon {
 }
 
 @media (max-width: 800px) {
-  .link-outline.proj-content {
-    display: block;
-  }
 
   .image,
   .image-secondary {
