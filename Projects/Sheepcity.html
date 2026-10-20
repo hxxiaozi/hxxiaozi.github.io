@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sheepcity</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: rgba(177, 237, 57, 0.35);">
+
+  <div id="navbar"></div>
+  <script>
+    // 动态加载公共导航栏
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('navbar').innerHTML = html)
+      .catch(err => console.error('Navigation load failed:', err));
+  </script>
+
+  <div class="scroll-container">
+    <!-- Header -->
+    <section id="header">
+      <script>
+        // 动态加载公共导航栏
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+      </script>
+    </section>
+    <!-- 🌸 3. Project Header -->
+    <div class=" margin-all ">
+
+      <section id="project-info"></section>
+
+      <script>
+        const container = document.getElementById("project-info");
+
+        fetch("/complete-projects.json")
+          .then(res => res.json())
+          .then(data => {
+            let project = null;
+
+            // 🔍 在所有分类中遍历查找
+            for (const category in data) {
+              project = data[category].find(p => p.title === "Sheepcity");
+              if (project) break;
+            }
+
+            if (!project) {
+              container.innerHTML = "<p>Project not found.</p>";
+              return;
+            }
+
+            // 动态标题
+            const h2 = document.createElement("h2");
+            h2.textContent = project.title;
+            container.appendChild(h2);
+
+            container.appendChild(document.createElement("br"));
+            container.appendChild(document.createElement("br"));
+
+            // 动态描述（如果 JSON 里有）
+            if (project.description) {
+              const p = document.createElement("p");
+              p.className = "p";
+              p.textContent = project.description;
+              container.appendChild(p);
+              container.appendChild(document.createElement("br"));
+            }
+
+            const fields = [
+
+              { key: "role" },
+              { key: "date" },
+              { key: "tools" }
+
+            ];
+
+            fields.forEach(({ key }) => {
+              if (project[key]) {
+                container.appendChild(document.createElement("br"));
+                const p = document.createElement("p");
+                p.className = "p";
+                p.innerHTML = ` ${project[key]}`;
+                container.appendChild(p);
+              }
+            });
+            container.appendChild(document.createElement("br"));
+
+
+          })
+          .catch(err => {
+            console.error("Load failed:", err);
+            container.innerHTML = "<p>Error loading project.</p>";
+          });
+
+      </script>
+
+      <!-- <section>
+
+        <div class="dash-divide">
+          <div class="row two">
+            <img class="pixel" src="../img/game/petey/Petey_and_the_Police_Onesheet.png" alt="project image 1" />
+            <img class="pixel" src="../img/game/petey/Petey & Police.png" alt="project image 2" />
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="video-container" style="margin-bottom: 2rem;">
+        <video class="video-player" autoplay loop controls>
+          <source src="../vid/Alien Game Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section> -->
+   <section class="p5-content dash-divide">
+        <p class="p">Sheepcity</p><br><br>
+        <iframe class="iframe" src="../Sheepcity/index.html"></iframe>
+        <p class="p p5-title">
+      
+      <a href="https://hxxiaox.itch.io/sheepcity" target="_blank">Open in itch.io →</a>  </p>
+      </section>
+      <!-- <section class="dash-divide">
+        <div class="row four">
+
+          <img class="pixel" src="../img/icon/pumpkin.png" alt="project image 7" />
+          <img class="pixel" src="../img/icon/cabbage.png" alt="project image 8" />
+          <img class="pixel" src="../img/icon/garlic.png" alt="project image 8" />
+          <img class="pixel" src="../img/icon/tomato.png" alt="project image 8" />
+
+          <img class="pixel" src="../img/game/et/Ending.gif" alt="project image 7" />
+          <img class="pixel" src="../img/game/et/gg.gif" alt="project image 7" />
+
+        </div>
+
+      </section> -->
+
+
+    </div>
+    <!-- 🧭 7. Back Navigation -->
+    <div id="back">
+      <div class="category_btn" onclick="history.back()">
+        <h4 class="block-display">Go Back</h4>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
