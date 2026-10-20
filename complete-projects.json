@@ -1,88 +1,27 @@
 {
-  "Physical Games": [
-    {
-      "title": "My Happy Healthy Rich and Windy Chicago Game",
-      "date": "2022 May",
-      "tools": "Aseprite | Illustrator",
-      "role": "Solo Project",
-      "description": "My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.",
-      "cover": "img/game/cardgame/3.png",
-      "hover": "img/game/cardgame/2.png",
-      "link": "Projects/Chicago.html"
-
-    },
-
-    {
-      "title": "Fangs: The Eternal Coven",
-      "date": "2025 May",
-      "tools": "InDesign | Photoshop",
-      "role": "Game Design, Illustrations, Production, Playtesting",
-      "cover": "img/game/vampire/10.png",
-      "hover": "img/game/vampire/IMG_8377.jpg",
-      "link": "Projects/Vampire.html",
-      "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
-    }
-  ],
- "Interactive Sketches": [
-    {
-      "title": "Garden:Flowers & Fireworks",
-      "date": "2025 October",
-      "tools": "P5.js",
-      "role": "Solo Project",
-      "cover": "img/garden/Firework.png",
-      "hover": "img/garden/flowers-drawing.mov",
-      "hoverType": "video",
-      "link": "Projects/garden.html",
-      "description": "An interactive digital garden where users can plant flowers or create fireworksby clicking . Created using P5.js, creating a visual experience that celebrates creativity and nature."
-      
-
-    },
-    {
-      "title": "Virtual Toilet",
-      "date": "2024 November",
-      "tools": "P5.js | PoseNet",
-      "role": "Solo Project",
-      "cover": "img/3d/toilet.png",
-      "hover": "img/3d/toilet.gif",
-      "link": "Projects/Toilet.html",
-      "description": "An interactive digital art piece where users can interact with a toilet model using their body movements detected by PoseNet. Created using P5.js and PoseNet, this project explores the intersection of technology, humor, and everyday objects."
-    },
-     {
-        "title": "Mirrors",
-      "date": "2024 April",
-      "tools": "P5.js | Posenet",
-      "role": "Solo Project",
-      "cover": "img/noface/mirror5.png",
-      "hover": "vid/mirror1.mov",
-      "hoverType": "video",
-      "link": "Projects/Mirror.html",
-      "description": "An interactive digital art project allowing audiences to view their reflections creatively. Created using P5.js and PoseNet, this project explores identity and self-perception."
-    },
-    {
-      "title": "Stressed.html",
-      "date": "2023 March",
-      "tools": " HTML CSS JavaScript",
-      "role": "Solo Project",
-      "cover": "img/stressed/stressed.png",
-      "hover": "img/stressed/stressed2.png",
-      "link": "/p.html"
-    }
-  ],
-
-
   "Digital Games": [
-       {
+    {
+      "title": "Recycool",
+      "date": "2026 October",
+      "tools": "Unity",
+      "role": "Technical Artist",
+      "cover": "img/game/trash/Recycool_OneSheet.png",
+      "hover": "img/game/trash/Recycool2.png",
+      "link": "https://nsimons.itch.io/recycool",
+      "pixel": true,
+      "description": "Recycool is a serious game designed to teach kids (and adults) how to recycle (coolly). This game lets players perform trick shots with trash as they learn the proper way to recycle according to Salt Lake City guidelines."
+    },
+    {
       "title": "Petey and the Police",
       "date": "2026 September",
       "tools": "Unity",
-      "role": "technical artist",
-      "cover": "img/game/petey/Petey_and_the_Police_One_Page.png",
+      "role": "Technical Artist",
+      "cover": "img/game/petey/Petey_and_the_Police_Onesheet.png",
       "hover": "img/game/petey/Petey & Police.png",
       "link": "https://hhogandoria.itch.io/petey-and-the-police",
       "pixel": true,
       "description": "Petey and the Police is a retro mobile game based on Granny and the Gators, one of the first pinball / arcade hybrids created in the early 1980s. "
     },
-
     {
       "title": "Human? Alien? Vegetables!",
       "date": "2022 May",
@@ -93,7 +32,6 @@
       "link": "Projects/Alien.html",
       "pixel": true,
       "description": "Human? Alien? Vegetables! is an interactive sci-fi game about the displacement of the human body and its environment. The character is abducted by aliens and taken aboard their UFO for experimental purposes. Ultimately, the game challenges players to consider the true nature of humanity and identity."
-      
     },
     {
       "title": "The Alley",
@@ -114,9 +52,7 @@
       "hover": "img/game/groundshel/minimap1.png",
       "link": "Projects/Groundshel.html",
       "description": "Go Groundshel! is a puzzle adventure game. In this project I am responsible for designing and creating the updated game environment, user interface, and implementing the art assets into the Unity engine. The game features a cute charming art style and engaging gameplay mechanics that challenge players to navigate through various levels while solving puzzles and overcoming obstacles."
-
     },
-
     {
       "title": "Deadline",
       "date": "2024",
@@ -126,7 +62,6 @@
       "hover": "img/game/ddl/screenshot1.png",
       "link": "/DeadLine.html"
     },
-
     {
       "title": "Sheepcity",
       "date": "2024 December",
@@ -138,7 +73,49 @@
       "link": "Projects/Sheepcity.html"
     }
   ],
-
+  "Interactive Sketches": [
+    {
+      "title": "Garden:Flowers & Fireworks",
+      "date": "2025 October",
+      "tools": "P5.js",
+      "role": "Solo Project",
+      "cover": "img/garden/Firework.png",
+      "hover": "img/garden/flowers-drawing.mov",
+      "hoverType": "video",
+      "link": "Projects/garden.html",
+      "description": "An interactive digital garden where users can plant flowers or create fireworksby clicking . Created using P5.js, creating a visual experience that celebrates creativity and nature."
+    },
+    {
+      "title": "Virtual Toilet",
+      "date": "2024 November",
+      "tools": "P5.js | PoseNet",
+      "role": "Solo Project",
+      "cover": "img/3d/toilet.png",
+      "hover": "img/3d/toilet.gif",
+      "link": "Projects/Toilet.html",
+      "description": "An interactive digital art piece where users can interact with a toilet model using their body movements detected by PoseNet. Created using P5.js and PoseNet, this project explores the intersection of technology, humor, and everyday objects."
+    },
+    {
+      "title": "Mirrors",
+      "date": "2024 April",
+      "tools": "P5.js | Posenet",
+      "role": "Solo Project",
+      "cover": "img/noface/mirror5.png",
+      "hover": "vid/mirror1.mov",
+      "hoverType": "video",
+      "link": "Projects/Mirror.html",
+      "description": "An interactive digital art project allowing audiences to view their reflections creatively. Created using P5.js and PoseNet, this project explores identity and self-perception."
+    },
+    {
+      "title": "Stressed.html",
+      "date": "2023 March",
+      "tools": " HTML CSS JavaScript",
+      "role": "Solo Project",
+      "cover": "img/stressed/stressed.png",
+      "hover": "img/stressed/stressed2.png",
+      "link": "/p.html"
+    }
+  ],
   "3D Animations": [
     {
       "title": "Light Ocean",
@@ -150,7 +127,6 @@
       "hover": "img/lightOcean/lightOcean10.PNG",
       "link": "Projects/light_ocean.html"
     },
-
     {
       "title": "Sleep less ness",
       "date": "2025 March",
@@ -161,7 +137,6 @@
       "link": "Projects/Sleep.html",
       "description": "This animation explores the journey of the protagonist who feels trapped in the physical and emotional boundaries of their room/ home/comfort zone. The dim light in this small space reflects their sense of isolation and the routine nature of their life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. They experience surreal moments of floating and falling, feelings like losing control, and giving the sensation of nightmares. In the end, they land in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
     },
-
     {
       "title": "Forest Illusion",
       "date": "2024 June",
@@ -171,21 +146,29 @@
       "hover": "img/game/vfx/forest.mp4",
       "hoverType": "video",
       "link": "Projects/Forest.html",
-      "description":"In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
+      "description": "In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
     }
   ],
-
-  "Visual Designs": [
+  "Physical Games": [
     {
-      "title": "Witches House",
+      "title": "My Happy Healthy Rich and Windy Chicago Game",
+      "date": "2022 May",
+      "tools": "Aseprite | Illustrator",
+      "role": "Solo Project",
+      "description": "My Happy Healthy Windy Chicago Life is a one-player simulation card game. This game is about life and daily activities, based on my personal experience living in Chicago. The objective of this game is to survive and be healthy and happy. It is a small and seemingly simple goal but can be challenging to achieve, both in-game and in real life. It aims to make players have fun, while also allowing them to reflect on their own life through playing this simulated life experience.",
+      "cover": "img/game/cardgame/3.png",
+      "hover": "img/game/cardgame/2.png",
+      "link": "Projects/Chicago.html"
+    },
+    {
+      "title": "Fangs: The Eternal Coven",
       "date": "2025 May",
-      "tools": "3D Animation | Unreal Engine | Motion Capture",
-      "role": "Solo Project, Motion Capture Actor",
-      "description": "Animations are motion captured and acted by myself. The blue represents the liberated mind dancing through open space; the orange is the physical body that needs rest and safety.",
-      "cover": "img/lightOcean/lightOcean8.JPEG",
-      "hover": "img/lightOcean/lightOcean10.PNG",
-      "link": "Projects/Light Ocean.html"
+      "tools": "InDesign | Photoshop",
+      "role": "Game Design, Illustrations, Production, Playtesting",
+      "cover": "img/game/vampire/10.png",
+      "hover": "img/game/vampire/IMG_8377.jpg",
+      "link": "Projects/Vampire.html",
+      "description": "Fangs is an original strategy board game set in a mysterious mountain town where players compete as vampires striving to grow the most powerful coven. Blending resource management, chance-based actions, and character development, the game invites players to navigate a world filled with humans, socialites, rituals, and supernatural politics. This game combines stylized visual design, tactical decision-making, and a darkly playful atmosphere to create an immersive and competitive tabletop experience."
     }
-
   ]
 }

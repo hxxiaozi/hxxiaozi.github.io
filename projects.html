@@ -23,11 +23,12 @@
       .then((html) => (document.getElementById("header").innerHTML = html))
       .catch((err) => console.error("Header load failed:", err));
   </script>
-  <div class="margin-l">
+
+   <section class="margin-l margin-r">
     <div id="section-buttons" class="i3 "></div>
     <div id="projects-container"></div>
     <script>
-      fetch("projects.json")
+      fetch("complete-projects.json")
         .then(res => res.json())
         .then(data => {
           const btnContainer = document.getElementById("section-buttons");
@@ -56,9 +57,9 @@
             // 分类标题
             const section = document.createElement("section");
             section.id = category.replace(/\s+/g, "");
-            const h3 = document.createElement("h3");
-            h3.textContent = category;
-            section.appendChild(h3);
+            const h2 = document.createElement("h2");
+            h2.textContent = category;
+            section.appendChild(h2);
 
 
             data[category].forEach((p, idx) => {
@@ -107,7 +108,6 @@
                 }
               }
 
-
               if (p.pixel) {
                 coverImg.classList.add("pixel");
               }
@@ -137,33 +137,19 @@
               textDiv.appendChild(document.createElement("br"));
               textDiv.appendChild(metaP);
 
-              if (p.description) {
-                textDiv.appendChild(document.createElement("br"));
-                textDiv.appendChild(document.createElement("br"));
-                const descP = document.createElement("p");
-                descP.textContent = p.description;
-                textDiv.appendChild(descP);
-              }
+              const mediaContainer = document.createElement("div");
+              mediaContainer.appendChild(coverImg);
+              if (hoverNode) mediaContainer.appendChild(hoverNode);
+              itemDiv.appendChild(mediaContainer);
+              itemDiv.appendChild(textDiv);
+              // } else {
+              //  itemDiv.appendChild(textDiv);
+              //   const mediaContainer = document.createElement("div");
+              //   mediaContainer.appendChild(coverImg);
+              //   if (hoverNode) mediaContainer.appendChild(hoverNode);
+              //   itemDiv.appendChild(mediaContainer);
 
-              // 根据 idx 交替：偶数项（0,2,..）
-              // 这里我们遵循常见逻辑：idx % 2 === 0 -> 图片在右（text左）， idx%2===1 -> 图片在左（text右）
-              // 如果你想反过来，把判断改为 idx%2===0 时先 append image
-              if (idx % 2 === 0) {
-                // text 左，图片 右 -> append text THEN media
-                itemDiv.appendChild(textDiv);
-
-                const mediaContainer = document.createElement("div");
-                mediaContainer.appendChild(coverImg);
-                if (hoverNode) mediaContainer.appendChild(hoverNode);
-                itemDiv.appendChild(mediaContainer);
-              } else {
-                // 图片左，text右 -> append media THEN text
-                const mediaContainer = document.createElement("div");
-                mediaContainer.appendChild(coverImg);
-                if (hoverNode) mediaContainer.appendChild(hoverNode);
-                itemDiv.appendChild(mediaContainer);
-                itemDiv.appendChild(textDiv);
-              }
+              // }
               a.appendChild(itemDiv);
               section.appendChild(a);
             });
@@ -174,7 +160,8 @@
         })
         .catch(err => console.error("Project load failed:", err));
     </script>
-  </div>
+
+  </section>
   <div id="back">
     <div class="category_btn" onclick="history.back()">
       <h4 class="block-display">Go Back</h4>

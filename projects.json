@@ -55,39 +55,7 @@
       "description": "The Alley is a first-person exploration game where players navigate through a mysterious alley filled with surreal and dreamlike environments. It transports players into a whimsical realm filled with various scenes that highlight a unique sense of playfulness.  A hidden doorway leads into a world where everyday objects reveal their enchanting nature — a fish tank becomes a portal, a disco ball hovers, and mystical creatures dance. This magical space celebrates fantasy. "
     }
   ],
-  "3D Animations": [
-    {
-      "title": "Light Ocean",
-      "date": "2025 May",
-      "tools": "3D Animation | Unreal Engine | Motion Capture",
-      "role": "Solo Project, Motion Capture Actor",
-      "description": "This animation aims to illustrate the sensation and feeling of being at the state between dreaming and waking. The blue represents the liberated mind dancing through open space; the orange is the physical body that needs rest and safety. Animations are motion captured and acted by myself; background music is also composed by me.",
-      "cover": "img/lightOcean/lightOcean8.JPEG",
-      "hover": "img/lightOcean/lightOcean10.PNG",
-      "link": "Projects/light_ocean.html"
-    },
-    {
-      "title": "Sleep less ness",
-      "date": "2025 March",
-      "tools": "3D Animation | Unreal Engine | Mixamo",
-      "role": "Solo Project",
-      "cover": "img/sleep/sleep1.png",
-      "hover": "img/sleep/sleep2.png",
-      "link": "Projects/Sleep.html",
-      "description": "This animation explores the journey of the protagonist who feels trapped in the physical and emotional boundaries of their room/ home/comfort zone. The dim light in this small space reflects their sense of isolation and the routine nature of their life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. They experience surreal moments of floating and falling, feelings like losing control, and giving the sensation of nightmares. In the end, they land in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
-    },
-    {
-      "title": "Forest Illusion",
-      "date": "2024 June",
-      "tools": "Unity",
-      "role": "Solo Project",
-      "cover": "img/game/vfx/forest.jpg",
-      "hover": "img/game/vfx/forest.mp4",
-      "hoverType": "video",
-      "link": "Projects/Forest.html",
-      "description": "In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
-    }
-  ],
+  
   "Interactive Sketches": [
     {
       "title": "Garden:Flowers & Fireworks",
@@ -129,6 +97,39 @@
       "cover": "img/stressed/stressed.png",
       "hover": "img/stressed/stressed2.png",
       "link": "/p.html"
+    }
+  ],
+  "3D Animations": [
+    {
+      "title": "Light Ocean",
+      "date": "2025 May",
+      "tools": "3D Animation | Unreal Engine | Motion Capture",
+      "role": "Solo Project, Motion Capture Actor",
+      "description": "This animation aims to illustrate the sensation and feeling of being at the state between dreaming and waking. The blue represents the liberated mind dancing through open space; the orange is the physical body that needs rest and safety. Animations are motion captured and acted by myself; background music is also composed by me.",
+      "cover": "img/lightOcean/lightOcean8.JPEG",
+      "hover": "img/lightOcean/lightOcean10.PNG",
+      "link": "Projects/light_ocean.html"
+    },
+    {
+      "title": "Sleep less ness",
+      "date": "2025 March",
+      "tools": "3D Animation | Unreal Engine | Mixamo",
+      "role": "Solo Project",
+      "cover": "img/sleep/sleep1.png",
+      "hover": "img/sleep/sleep2.png",
+      "link": "Projects/Sleep.html",
+      "description": "This animation explores the journey of the protagonist who feels trapped in the physical and emotional boundaries of their room/ home/comfort zone. The dim light in this small space reflects their sense of isolation and the routine nature of their life. At night, when the protagonist falls asleep, their soul escapes their body, revealing a realm of alternate possibilities. They experience surreal moments of floating and falling, feelings like losing control, and giving the sensation of nightmares. In the end, they land in an open space outside the door with furniture inverted, where they find peace as flowers bloom around. "
+    },
+    {
+      "title": "Forest Illusion",
+      "date": "2024 June",
+      "tools": "Unity",
+      "role": "Solo Project",
+      "cover": "img/game/vfx/forest.jpg",
+      "hover": "img/game/vfx/forest.mp4",
+      "hoverType": "video",
+      "link": "Projects/Forest.html",
+      "description": "In a mythical forest, a shimmering bubble embodies the delicate balance of ecosystems, swirling with vibrant life. As its turbulence grows, reflecting the forest’s essence, it eventually bursts, releasing a cascade of light that ignites a surreal transformation. This animation uses visual effects to explore themes of nature's fragility and the profound impact of environmental change."
     }
   ],
   "Physical Games": [
