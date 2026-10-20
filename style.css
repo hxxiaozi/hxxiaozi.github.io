@@ -186,7 +186,7 @@ a:hover {
 .margin-all {
   margin-left: var(--spacel);
   margin-right: var(--spacel);
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .margin-l {
