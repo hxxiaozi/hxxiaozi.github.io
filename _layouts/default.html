@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .note-page { max-width: 860px; margin: 3rem auto; padding: 0 1.25rem 4rem; color: #27251f; line-height: 1.7; }
+    .note-page a { color: #557d26; }
+    .note-page pre { overflow-x: auto; padding: 1rem; background: #f3f0e8; border-radius: 8px; }
+    .note-page code { overflow-wrap: anywhere; }
+    .note-page table { border-collapse: collapse; display: block; max-width: 100%; overflow-x: auto; }
+    .note-page th, .note-page td { border: 1px solid #bbb; padding: .4rem .65rem; }
+    .note-top { display:flex; justify-content:space-between; gap:1rem; align-items:center; border-bottom:1px solid #aaa; padding-bottom:1rem; }
+    .note-top a { text-decoration:none; }
+    .note-category { text-transform:uppercase; letter-spacing:.08em; font-size:.8rem; color:#65704d; }
+    @media (max-width: 600px) { .note-page { margin-top: 1.5rem; } }
+  </style>
+</head>
+<body>
+  <main class="note-page">
+    <nav class="note-top" aria-label="Notes navigation">
+      <a href="/">Xiaoxuan's Website</a>
+      <a href="/notes/">All notes</a>
+    </nav>
+    {% if page.category %}<p class="note-category">{{ page.category }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <article>{{ content }}</article>
+  </main>
+</body>
+</html>
