@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../style.css" rel="stylesheet">
+  <title>Notes</title>
+</head>
+<body>
+  <div id="navbar"></div>
+  <div id="header"></div>
+
+  <main class="margin-all">
+    <h2>Maya &amp; Scripting</h2>
+    <ul>
+      <li><a href="/notes/maya-scripting/mel/">MEL</a></li>
+      <li><a href="/notes/maya-scripting/maya-python-snippets-1/">Maya Python Snippets 1</a></li>
+      <li><a href="/notes/maya-scripting/maya-python-snippets-2/">Maya Python Snippets 2</a></li>
+      <li><a href="/notes/maya-scripting/python-maya-script-syntax/">Python 与 Maya 脚本语法</a></li>
+    </ul>
+
+    <h2>3D &amp; VFX</h2>
+    <ul>
+      <li><a href="/notes/3d-vfx/houdini-foundations-h21/">Houdini Foundations H21</a></li>
+      <li><a href="/notes/3d-vfx/retopology/">Retopology / 拓扑重建</a></li>
+      <li><a href="/notes/3d-vfx/uv/">UV 与硬边备忘</a></li>
+      <li><a href="/notes/3d-vfx/vfx/">VFX</a></li>
+      <li><a href="/notes/3d-vfx/water-shader/">Water Shader / 水面着色器</a></li>
+      <li><a href="/notes/3d-vfx/zbrush/">ZBrush 快捷键备忘</a></li>
+    </ul>
+  </main>
+
+  <script>
+    fetch("../nav.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar").innerHTML = html)
+      .catch(error => console.error("Navigation load failed:", error));
+
+    fetch("../header.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("header").innerHTML = html)
+      .catch(error => console.error("Header load failed:", error));
+  </script>
+</body>
+</html>
