@@ -4,7 +4,21 @@ title: Notes
 permalink: /notes/
 ---
 
-<p>Learning notes on Maya scripting, 3D, and visual effects.</p>
+<script>
+    // 动态加载公共导航栏
+    fetch('../nav.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('navbar').innerHTML = html)
+      .catch(err => console.error('Navigation load failed:', err));
+  </script>
+
+   <script>
+        // 动态加载公共导航栏
+        fetch('../header.html')
+          .then(res => res.text())
+          .then(html => document.getElementById('header').innerHTML = html)
+          .catch(err => console.error('Header load failed:', err));
+    </script>
 
 <h2>Maya &amp; Scripting</h2>
 <ul>
@@ -14,7 +28,7 @@ permalink: /notes/
   <li><a href="/notes/maya-scripting/python-maya-script-syntax/">Python 与 Maya 脚本语法</a></li>
 </ul>
 
-<h2><a href="/notes/3d-vfx/">3D &amp; VFX</a></h2>
+<h2>3D &amp; VFX</h2>
 <ul>
   <li><a href="/notes/3d-vfx/houdini-foundations-h21/">Houdini Foundations H21</a></li>
   <li><a href="/notes/3d-vfx/retopology/">Retopology / 拓扑重建</a></li>
