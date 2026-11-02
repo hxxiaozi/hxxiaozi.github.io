@@ -92,7 +92,6 @@ a:hover {
   --spacel: 4.5%;
   --spacexl: 10%;
   --gradient-colors: #92e66e 0%, #ffc561 15%, lightpink 30%, #6ee0e6ec 45%, #92e66e 57.5%, #ffc561 72.5%, lightpink 87.5%, #6ee0e6ec 100%;
-  --fontm: '思源黑体', '思源宋体', Avenir, sans-serif;
   --fontp: Avenir, Noto Sans, "Myriad Pro", sans-serif, serif;
   --fontp2: Optima, "ZCOOL XiaoWei", Verdana, sans-serif;
   --fontt: Noto Sans, Avenir, Work Sans, sans-serif;
@@ -287,8 +286,7 @@ img.icon {
   animation: gradientAnimation 120s ease infinite;
   background-image: url("img/gd/sheep.png");
   background-size: 20%;
-  padding: 10px 0;
-  padding-right: 1%;
+  padding: 10px 1% 10px 0;
   width: 100%;
   box-sizing: border-box;
   font-size: small;
@@ -810,7 +808,7 @@ img.icon {
   }
 }
 
-@media (min-width: 0px) and (max-width: 600px) {
+@media (max-width: 600px) {
   .menu {
     opacity: 50%;
 
