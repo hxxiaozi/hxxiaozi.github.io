@@ -12,7 +12,7 @@
   <div id="navbar"></div>
   <div id="header"></div>
 
-  <main class="margin-all">
+  <main class="margin-all" style="min-height: calc(100vh - 155px)">
     <h2>Maya &amp; Scripting</h2>
     <ul style="list-style: none;">
       <li>
@@ -63,6 +63,9 @@
       .then(html => document.getElementById("header").innerHTML = html)
       .catch(error => console.error("Header load failed:", error));
   </script>
+  <footer class="footer">
+    <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
+  </footer>
 </body>
 
 </html>

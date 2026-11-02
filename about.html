@@ -2,88 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>about xiaoxuan</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <title>About</title>
 </head>
 
 <body>
-  <div class="cursor me"></div>
-
-  <script>
-    document.addEventListener("mousemove", (e) => {
-      const cursor = document.querySelector(".cursor.me");
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
-  </script>
-
   <div id="navbar"></div>
-  <script>
-    // 动态加载公共导航栏
-    fetch("../nav.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("navbar").innerHTML = html))
-      .catch((err) => console.error("Navigation load failed:", err));
-  </script>
-
-  <!-- Header -->
   <div id="header"></div>
+<main class="margin-all" style="min-height: calc(100vh - 155px)">
+    <h2>Document Links</h2>
+    <ul style="list-style: none;">
+      <li>
+        <p class="link-underline">
+          <a href="cv/Resume%2026.10.pdf" target="_blank">Resume 2026 ↗</a>
+          &nbsp;
+          <a href="cv/Resume%2026.10.pdf" download>Download ↓</a>
+        </p>
+      </li>
+      <li>
+        <p class="link-underline">
+          <a href="cv/PortfolioGD26.pdf" target="_blank">Graphics Portfolio PDF ↗</a>
+          &nbsp;
+          <a href="cv/PortfolioGD26.pdf" download>Download ↓</a>
+        </p>
+      </li>
+    </ul>
+
+    <h2>Contact</h2>
+    <ul style="list-style: none;">
+      <li>
+        <p class="link-underline">
+          <a href="mailto:hxx031222@gmail.com">📧 hxx031222@gmail.com</a>
+        </p>
+      </li>
+      <li>
+        <p class="link-underline">
+          <a href="https://github.com/hxxiaozi">github.com/hxxiaozi</a>
+        </p>
+      </li>
+    </ul>
+  </main>
+
+  <footer class="footer">
+    <p>© Xiaoxuan Han 2025 All Rights Reserved.</p>
+  </footer>
+
   <script>
-    // 动态加载公共导航栏
+    fetch("../nav.html")
+      .then(response => response.text())
+      .then(html => document.getElementById("navbar").innerHTML = html)
+      .catch(error => console.error("Navigation load failed:", error));
+
     fetch("../header.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("header").innerHTML = html))
-      .catch((err) => console.error("Header load failed:", err));
+      .then(response => response.text())
+      .then(html => document.getElementById("header").innerHTML = html)
+      .catch(error => console.error("Header load failed:", error));
   </script>
-
-  <h4 class="p" style="margin-left: 0px;justify-content:center;  display: flex;">Document Links
-  </h4>
-
-
-
-  <div class="i3">
-
-    <!-- Resume -->
-    <p class="link-underline ">
-      <a href="cv/Resume 26.10.pdf" target="_blank">Resume 2026&#8599;&nbsp;</a>
-      <a class="link-outline" href="cv/Resume 26.10.pdf" download>
-        <img class="icon" src="img/pixel/handshake.png" alt="">⬇
-      </a>
-    </p>
-
-    <!-- Graphic Design Portfolio -->
-    <p class="link-underline">
-      <a href="cv/PortfolioGD26.pdf" target="_blank">Graphics Portfolio PDF&#8599;&nbsp;</a>
-      <a class="link-outline" href="cv/PortfolioGD26.pdf" download>
-        <img class="icon" src="img/pixel/artwork.png" alt="">⬇
-      </a>
-    </p>
-
-    <!-- Game Portfolio -->
-    <!-- <p class="link-underline">
-      <a href="cv/GamePortfolio25.9.pdf" target="_blank">Game Portfolio&#8599;&nbsp;</a>
-      <a class=" link-outline" href="cv/GamePortfolio25.9.pdf" download>
-        <img class="icon" src="img/pixel/button.png" alt="">⬇
-      </a>
-    </p> -->
-
-  </div>
-
-  <div class="i3">
-    <p class="p"><a href="mailto:hxx031222@gmail.com">📧&nbsp;hxx031222@gmail.com</a></p>
-    <p class="p"><span>☎️&nbsp;(312) 404-9821 </span></p>
-    <p class="p"><a href="https://github.com/hxxiaozi">github.com/hxxiaozi</a></p>
-
-  </div>
-
-
-  <div class="footer" style="position: fixed; bottom: 0;">
-
-    <p class="p">© Xiaoxuan Han 2025 All Rights Reserved.&nbsp;</p>
-  </div>
-
 </body>
 
 </html>

@@ -282,13 +282,15 @@ img.icon {
 
 
 .footer {
+  margin-top: auto;
+
   animation: gradientAnimation 120s ease infinite;
   background-image: url("img/gd/sheep.png");
   background-size: 20%;
-  padding: 10px 0px;
+  padding: 10px 0;
+  padding-right: 1%;
   width: 100%;
   box-sizing: border-box;
-  padding-right: 1%;
   font-size: small;
   text-align: right;
 }
