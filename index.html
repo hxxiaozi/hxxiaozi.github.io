@@ -74,21 +74,18 @@
           const btnContainer = document.getElementById("section-buttons");
           btnContainer.innerHTML = "";
 
-          for (const category in data) {
-            const btn = document.createElement("div");
-            btn.className = "category_btn";
+         for (const category in data) {
+  const btn = document.createElement("a");
+  btn.className = "category_btn";
+  btn.href = "#" + category.replace(/\s+/g, "");
 
-            const a = document.createElement("a");
-            a.href = "#" + category.replace(/\s+/g, "");
+  const h3 = document.createElement("h3");
+  h3.className = "p2 block-display";
+  h3.textContent = category;
 
-            const h3 = document.createElement("h3");
-            h3.className = "p2 block-display";
-            h3.textContent = category;
-
-            a.appendChild(h3);
-            btn.appendChild(a);
-            btnContainer.appendChild(btn);
-          }
+  btn.appendChild(h3);
+  btnContainer.appendChild(btn);
+}
 
           const container = document.getElementById("projects-container");
           container.innerHTML = ""; // 清空
