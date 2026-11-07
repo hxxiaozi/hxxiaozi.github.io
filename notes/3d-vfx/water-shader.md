@@ -18,6 +18,7 @@ permalink: /notes/3d-vfx/water-shader/
 
 > 待补充：节点连接图、噪声尺度/速度、法线输出，以及目标软件（如 Maya、Houdini 或实时引擎）。
 
+https://www.cyanilux.com/tutorials/2d-water-shader-breakdown/
 ## 原始版本
 
 > [!example]- 展开查看修改前的原文
@@ -27,3 +28,4 @@ permalink: /notes/3d-vfx/water-shader/
 > gradient noise 左右反向 做sparkles
 > 
 > screenposition gradient
+![Screenshot 2026-10-28 at 9.54.16 PM.png](/notes/)

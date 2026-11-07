@@ -7,7 +7,20 @@ permalink: /notes/maya-scripting/maya-python-snippets-2/
 
 A continuation of the rigging exercises. This note focuses on collecting joints, building names systematically, turning repeated control setup into a function, and using that function across a chain. The examples assume a Maya Python session with `maya.cmds` imported.
 
-#Maya #Python #Rigging
+> [!info] 课件来源 | Source
+> 本笔记整理自 [Class Week 2.pptx](/notes/)（Week 2，42 slides）。下方各节保留了课件中的练习与代码，并补充了中文概览。 | These notes follow the Week 2 deck; the sections below retain its exercises and code with a Chinese overview.
+
+## Week 2 概览 | Overview
+
+- **读取 Maya 命令结果 | Read command results:** 区分命令返回的节点名列表、单个名称和查询值；`cmds.ls()` 返回列表，`listRelatives()` 无结果时可能返回 `None`，可用 `or []` 统一处理。 | Distinguish node-name lists, single names, and query values. Normalize empty `listRelatives()` results with `or []`.
+- **用字符串构建名称 | Build names with strings:** 使用 f-string、`replace()`、`split()` / `join()`、`startswith()` 和 `endswith()` 生成、拆分或镜像命名；`mirrorJoint()` 可镜像关节链并替换侧别前缀。 | Use string methods and `mirrorJoint()` to build, parse, and mirror names.
+- **按顺序运行脚本 | Run scripts in order:** 先导入模块，再定义函数，最后调用。修改函数定义后要重新运行定义；重复测试前清理旧节点，异常时可在新场景中从头运行。 | Import, define, then call. Re-run edited definitions and clean up between tests.
+- **逐步抽象成 `make_ctrl()` | Build `make_ctrl()` incrementally:** 从直接命令开始，提取变化值为变量，再加入函数、参数、默认值、`return`、循环和输入检查。函数可返回 `(ctrl, grp)`，让调用方继续约束或 parent 节点。 | Progress from commands to variables, a function, parameters, defaults, return values, loops, and guards. Return `(ctrl, grp)` for later rig operations.
+- **应用到整条关节链 | Apply to a joint chain:** 选择关节或从 root 收集子关节，创建控制器；再把每个组 parent 到上一级控制器，并添加 parent constraint，形成 FK 层级。 | Gather a joint chain, create controls, parent each group under the preceding control, and constrain the joints.
+
+**运行前检查 | Before running:** 先确认目标关节存在、选择非空、控制器没有重名。示例的安全检查返回 `(None, None)` 表示跳过创建；调用方应检查结果后再继续。 | Verify targets, selection, and duplicate names; check returned values before continuing.
+
+
 ## 0.1  Build the arm
 
 Creates a three-joint left arm, clears the current selection first, then orients the chain. If these names already exist, the shoulder is deleted before rebuilding.
